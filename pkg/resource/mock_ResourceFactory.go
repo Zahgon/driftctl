@@ -14,18 +14,8 @@ type MockResourceFactory struct {
 
 // CreateAbstractResource provides a mock function with given fields: ty, id, data
 func (_m *MockResourceFactory) CreateAbstractResource(ty string, id string, data map[string]interface{}) *enumerationresource.Resource {
-	ret := _m.Called(ty, id, data)
-
-	var r0 *enumerationresource.Resource
-	if rf, ok := ret.Get(0).(func(string, string, map[string]interface{}) *enumerationresource.Resource); ok {
-		r0 = rf(ty, id, data)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*enumerationresource.Resource)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 type mockConstructorTestingTNewMockResourceFactory interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTNewMockResourceFactory interface {
 
 // NewMockResourceFactory creates a new instance of MockResourceFactory. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockResourceFactory(t mockConstructorTestingTNewMockResourceFactory) *MockResourceFactory {
-	mock := &MockResourceFactory{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

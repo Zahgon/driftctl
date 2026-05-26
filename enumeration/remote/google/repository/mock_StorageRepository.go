@@ -11,28 +11,8 @@ type MockStorageRepository struct {
 
 // ListAllBindings provides a mock function with given fields: bucketName
 func (_m *MockStorageRepository) ListAllBindings(bucketName string) (map[string][]string, error) {
-	ret := _m.Called(bucketName)
-
-	var r0 map[string][]string
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) (map[string][]string, error)); ok {
-		return rf(bucketName)
-	}
-	if rf, ok := ret.Get(0).(func(string) map[string][]string); ok {
-		r0 = rf(bucketName)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(map[string][]string)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(bucketName)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockStorageRepository interface {
@@ -42,10 +22,6 @@ type mockConstructorTestingTNewMockStorageRepository interface {
 
 // NewMockStorageRepository creates a new instance of MockStorageRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockStorageRepository(t mockConstructorTestingTNewMockStorageRepository) *MockStorageRepository {
-	mock := &MockStorageRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

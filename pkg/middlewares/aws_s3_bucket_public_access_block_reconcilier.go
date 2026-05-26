@@ -1,10 +1,7 @@
 package middlewares
 
 import (
-	awssdk "github.com/aws/aws-sdk-go/aws"
-	"github.com/sirupsen/logrus"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/pkg/resource/aws"
 )
 
 // AwsS3BucketPublicAccessBlockReconciler middleware ignores every s3 bucket public block that is set to the default values (every option set to false)
@@ -36,48 +33,20 @@ import (
 type AwsS3BucketPublicAccessBlockReconciler struct{}
 
 func NewAwsS3BucketPublicAccessBlockReconciler() *AwsS3BucketPublicAccessBlockReconciler {
-	return &AwsS3BucketPublicAccessBlockReconciler{}
-}
-
-func (r AwsS3BucketPublicAccessBlockReconciler) Execute(remoteResources, resourcesFromState *[]*resource.Resource) error {
-
-	newRemoteResources := make([]*resource.Resource, 0)
-	for _, res := range *remoteResources {
-
-		// Skip every resource that is not a bucket public access block
-		if res.ResourceType() != aws.AwsS3BucketPublicAccessBlockResourceType {
-			newRemoteResources = append(newRemoteResources, res)
-			continue
-		}
-
-		isDefinedInIac := false
-		for _, iacRes := range *resourcesFromState {
-			if res.Equal(iacRes) {
-				isDefinedInIac = true
-				break
-			}
-		}
-
-		// Ignore unmanaged default public access blocks
-		if r.isDefaultPublicAccessBlock(res) && !isDefinedInIac {
-			logrus.WithField("id", res.ResourceId()).Debug("Ignored default aws_s3_bucket_public_access_block from remote")
-			continue
-		}
-
-		newRemoteResources = append(newRemoteResources, res)
-	}
-	*remoteResources = newRemoteResources
-
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (r AwsS3BucketPublicAccessBlockReconciler) isDefaultPublicAccessBlock(res *resource.Resource) bool {
-	if !awssdk.BoolValue(res.Attributes().GetBool("block_public_acls")) &&
-		!awssdk.BoolValue(res.Attributes().GetBool("block_public_policy")) &&
-		!awssdk.BoolValue(res.Attributes().GetBool("ignore_public_acls")) &&
-		!awssdk.BoolValue(res.Attributes().GetBool("restrict_public_buckets")) {
-		return true
-	}
+func (r AwsS3BucketPublicAccessBlockReconciler) Execute(remoteResources, resourcesFromState *[]*resource.Resource) error {
+	_ = "STUB: not implemented"
+	return nil
+}
 
+// Skip every resource that is not a bucket public access block
+
+// Ignore unmanaged default public access blocks
+
+func (r AwsS3BucketPublicAccessBlockReconciler) isDefaultPublicAccessBlock(res *resource.Resource) bool {
+	_ = "STUB: not implemented"
 	return false
 }

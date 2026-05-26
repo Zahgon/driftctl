@@ -14,43 +14,12 @@ type MockIaCSupplier struct {
 
 // Resources provides a mock function with given fields:
 func (_m *MockIaCSupplier) Resources() ([]*enumerationresource.Resource, error) {
-	ret := _m.Called()
-
-	var r0 []*enumerationresource.Resource
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*enumerationresource.Resource, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*enumerationresource.Resource); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*enumerationresource.Resource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SourceCount provides a mock function with given fields:
-func (_m *MockIaCSupplier) SourceCount() uint {
-	ret := _m.Called()
-
-	var r0 uint
-	if rf, ok := ret.Get(0).(func() uint); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Get(0).(uint)
-	}
-
-	return r0
-}
+func (_m *MockIaCSupplier) SourceCount() uint { _ = "STUB: not implemented"; return 0 }
 
 type mockConstructorTestingTNewMockIaCSupplier interface {
 	mock.TestingT
@@ -59,10 +28,6 @@ type mockConstructorTestingTNewMockIaCSupplier interface {
 
 // NewMockIaCSupplier creates a new instance of MockIaCSupplier. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockIaCSupplier(t mockConstructorTestingTNewMockIaCSupplier) *MockIaCSupplier {
-	mock := &MockIaCSupplier{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

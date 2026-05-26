@@ -1,8 +1,6 @@
 package state
 
 import (
-	"fmt"
-
 	"github.com/hashicorp/go-version"
 )
 
@@ -17,26 +15,9 @@ type UnsupportedVersionError struct {
 	Version   *version.Version
 }
 
-func (u *UnsupportedVersionError) Error() string {
-	return fmt.Sprintf("%s was generated using Terraform %s which is currently not supported by driftctl. Please read documentation at https://docs.driftctl.com/limitations", u.StateFile, u.Version)
-}
+func (u *UnsupportedVersionError) Error() string { _ = "STUB: not implemented"; return "" }
 
 func IsVersionSupported(rawVersion string) (bool, error) {
-	v, err := version.NewVersion(rawVersion)
-	if err != nil {
-		return false, err
-	}
-
-	for _, rawConstraint := range UnsupportedVersionConstraints {
-		c, err := version.NewConstraint(rawConstraint)
-		if err != nil {
-			return false, err
-		}
-
-		if c.Check(v) {
-			return false, nil
-		}
-	}
-
-	return true, nil
+	_ = "STUB: not implemented"
+	return false, nil
 }

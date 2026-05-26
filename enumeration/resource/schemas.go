@@ -1,8 +1,6 @@
 package resource
 
 import (
-	"strings"
-
 	"github.com/hashicorp/go-version"
 	"github.com/hashicorp/terraform/configs/configschema"
 )
@@ -14,13 +12,9 @@ type AttributeSchema struct {
 
 type Flags uint32
 
-func (f Flags) HasFlag(flag Flags) bool {
-	return f&flag != 0
-}
+func (f Flags) HasFlag(flag Flags) bool { _ = "STUB: not implemented"; return false }
 
-func (f *Flags) AddFlag(flag Flags) {
-	*f |= flag
-}
+func (f *Flags) AddFlag(flag Flags) { _ = "STUB: not implemented"; return }
 
 type Schema struct {
 	ProviderVersion             *version.Version
@@ -32,18 +26,6 @@ type Schema struct {
 	DiscriminantFunc            func(*Resource, *Resource) bool
 }
 
-func (s *Schema) IsComputedField(path []string) bool {
-	metadata, exist := s.Attributes[strings.Join(path, ".")]
-	if !exist {
-		return false
-	}
-	return metadata.ConfigSchema.Computed
-}
+func (s *Schema) IsComputedField(path []string) bool { _ = "STUB: not implemented"; return false }
 
-func (s *Schema) IsJsonStringField(path []string) bool {
-	metadata, exist := s.Attributes[strings.Join(path, ".")]
-	if !exist {
-		return false
-	}
-	return metadata.JsonString
-}
+func (s *Schema) IsJsonStringField(path []string) bool { _ = "STUB: not implemented"; return false }

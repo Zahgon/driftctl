@@ -1,8 +1,6 @@
 package repository
 
 import (
-	"fmt"
-
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/elbv2"
 	"github.com/aws/aws-sdk-go/service/elbv2/elbv2iface"
@@ -20,49 +18,16 @@ type elbv2Repository struct {
 }
 
 func NewELBV2Repository(session *session.Session, c cache.Cache) *elbv2Repository {
-	return &elbv2Repository{
-		elbv2.New(session),
-		c,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (r *elbv2Repository) ListAllLoadBalancers() ([]*elbv2.LoadBalancer, error) {
-	cacheKey := "elbv2ListAllLoadBalancers"
-	defer r.cache.Unlock(cacheKey)
-	if v := r.cache.GetAndLock(cacheKey); v != nil {
-		return v.([]*elbv2.LoadBalancer), nil
-	}
-
-	results := make([]*elbv2.LoadBalancer, 0)
-	input := &elbv2.DescribeLoadBalancersInput{}
-	err := r.client.DescribeLoadBalancersPages(input, func(res *elbv2.DescribeLoadBalancersOutput, lastPage bool) bool {
-		results = append(results, res.LoadBalancers...)
-		return !lastPage
-	})
-	if err != nil {
-		return nil, err
-	}
-	r.cache.Put(cacheKey, results)
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (r *elbv2Repository) ListAllLoadBalancerListeners(loadBalancerArn string) ([]*elbv2.Listener, error) {
-	cacheKey := fmt.Sprintf("elbv2ListAllLoadBalancerListeners_%s", loadBalancerArn)
-	if v := r.cache.Get(cacheKey); v != nil {
-		return v.([]*elbv2.Listener), nil
-	}
-
-	results := make([]*elbv2.Listener, 0)
-	input := &elbv2.DescribeListenersInput{
-		LoadBalancerArn: &loadBalancerArn,
-	}
-	err := r.client.DescribeListenersPages(input, func(res *elbv2.DescribeListenersOutput, lastPage bool) bool {
-		results = append(results, res.Listeners...)
-		return !lastPage
-	})
-	if err != nil {
-		return nil, err
-	}
-	r.cache.Put(cacheKey, results)
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

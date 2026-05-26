@@ -1,9 +1,7 @@
 package middlewares
 
 import (
-	"github.com/sirupsen/logrus"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/pkg/resource/aws"
 )
 
 // Each API Gateway rest API has by design all the gateway responses available to edit in the console
@@ -12,42 +10,19 @@ import (
 type AwsConsoleApiGatewayGatewayResponse struct{}
 
 func NewAwsConsoleApiGatewayGatewayResponse() AwsConsoleApiGatewayGatewayResponse {
-	return AwsConsoleApiGatewayGatewayResponse{}
+	_ = "STUB: not implemented"
+	return *new(AwsConsoleApiGatewayGatewayResponse)
 }
 
 func (m AwsConsoleApiGatewayGatewayResponse) Execute(remoteResources, resourcesFromState *[]*resource.Resource) error {
-	newRemoteResources := make([]*resource.Resource, 0)
-
-	for _, remoteResource := range *remoteResources {
-		// Ignore all resources other than gateway responses
-		if remoteResource.ResourceType() != aws.AwsApiGatewayGatewayResponseResourceType {
-			newRemoteResources = append(newRemoteResources, remoteResource)
-			continue
-		}
-
-		// Check if gateway response is managed by IaC
-		existInState := false
-		for _, stateResource := range *resourcesFromState {
-			if remoteResource.Equal(stateResource) {
-				existInState = true
-				break
-			}
-		}
-
-		// Include resource if it's managed by IaC
-		if existInState {
-			newRemoteResources = append(newRemoteResources, remoteResource)
-			continue
-		}
-
-		// Else, resource is not added to newRemoteResources slice so it will be ignored
-		logrus.WithFields(logrus.Fields{
-			"id":   remoteResource.ResourceId(),
-			"type": remoteResource.ResourceType(),
-		}).Debug("Ignoring default api gateway response as it is not managed by IaC")
-	}
-
-	*remoteResources = newRemoteResources
-
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// Ignore all resources other than gateway responses
+
+// Check if gateway response is managed by IaC
+
+// Include resource if it's managed by IaC
+
+// Else, resource is not added to newRemoteResources slice so it will be ignored

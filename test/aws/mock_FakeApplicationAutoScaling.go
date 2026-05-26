@@ -19,1012 +19,230 @@ type MockFakeApplicationAutoScaling struct {
 
 // DeleteScalingPolicy provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DeleteScalingPolicy(_a0 *applicationautoscaling.DeleteScalingPolicyInput) (*applicationautoscaling.DeleteScalingPolicyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.DeleteScalingPolicyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeleteScalingPolicyInput) (*applicationautoscaling.DeleteScalingPolicyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeleteScalingPolicyInput) *applicationautoscaling.DeleteScalingPolicyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DeleteScalingPolicyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DeleteScalingPolicyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteScalingPolicyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DeleteScalingPolicyRequest(_a0 *applicationautoscaling.DeleteScalingPolicyInput) (*request.Request, *applicationautoscaling.DeleteScalingPolicyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.DeleteScalingPolicyOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeleteScalingPolicyInput) (*request.Request, *applicationautoscaling.DeleteScalingPolicyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeleteScalingPolicyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DeleteScalingPolicyInput) *applicationautoscaling.DeleteScalingPolicyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.DeleteScalingPolicyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteScalingPolicyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) DeleteScalingPolicyWithContext(_a0 context.Context, _a1 *applicationautoscaling.DeleteScalingPolicyInput, _a2 ...request.Option) (*applicationautoscaling.DeleteScalingPolicyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.DeleteScalingPolicyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DeleteScalingPolicyInput, ...request.Option) (*applicationautoscaling.DeleteScalingPolicyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DeleteScalingPolicyInput, ...request.Option) *applicationautoscaling.DeleteScalingPolicyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DeleteScalingPolicyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.DeleteScalingPolicyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteScheduledAction provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DeleteScheduledAction(_a0 *applicationautoscaling.DeleteScheduledActionInput) (*applicationautoscaling.DeleteScheduledActionOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.DeleteScheduledActionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeleteScheduledActionInput) (*applicationautoscaling.DeleteScheduledActionOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeleteScheduledActionInput) *applicationautoscaling.DeleteScheduledActionOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DeleteScheduledActionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DeleteScheduledActionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteScheduledActionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DeleteScheduledActionRequest(_a0 *applicationautoscaling.DeleteScheduledActionInput) (*request.Request, *applicationautoscaling.DeleteScheduledActionOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.DeleteScheduledActionOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeleteScheduledActionInput) (*request.Request, *applicationautoscaling.DeleteScheduledActionOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeleteScheduledActionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DeleteScheduledActionInput) *applicationautoscaling.DeleteScheduledActionOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.DeleteScheduledActionOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteScheduledActionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) DeleteScheduledActionWithContext(_a0 context.Context, _a1 *applicationautoscaling.DeleteScheduledActionInput, _a2 ...request.Option) (*applicationautoscaling.DeleteScheduledActionOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.DeleteScheduledActionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DeleteScheduledActionInput, ...request.Option) (*applicationautoscaling.DeleteScheduledActionOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DeleteScheduledActionInput, ...request.Option) *applicationautoscaling.DeleteScheduledActionOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DeleteScheduledActionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.DeleteScheduledActionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeregisterScalableTarget provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DeregisterScalableTarget(_a0 *applicationautoscaling.DeregisterScalableTargetInput) (*applicationautoscaling.DeregisterScalableTargetOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.DeregisterScalableTargetOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeregisterScalableTargetInput) (*applicationautoscaling.DeregisterScalableTargetOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeregisterScalableTargetInput) *applicationautoscaling.DeregisterScalableTargetOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DeregisterScalableTargetOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DeregisterScalableTargetInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeregisterScalableTargetRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DeregisterScalableTargetRequest(_a0 *applicationautoscaling.DeregisterScalableTargetInput) (*request.Request, *applicationautoscaling.DeregisterScalableTargetOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.DeregisterScalableTargetOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeregisterScalableTargetInput) (*request.Request, *applicationautoscaling.DeregisterScalableTargetOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DeregisterScalableTargetInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DeregisterScalableTargetInput) *applicationautoscaling.DeregisterScalableTargetOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.DeregisterScalableTargetOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeregisterScalableTargetWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) DeregisterScalableTargetWithContext(_a0 context.Context, _a1 *applicationautoscaling.DeregisterScalableTargetInput, _a2 ...request.Option) (*applicationautoscaling.DeregisterScalableTargetOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.DeregisterScalableTargetOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DeregisterScalableTargetInput, ...request.Option) (*applicationautoscaling.DeregisterScalableTargetOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DeregisterScalableTargetInput, ...request.Option) *applicationautoscaling.DeregisterScalableTargetOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DeregisterScalableTargetOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.DeregisterScalableTargetInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalableTargets provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DescribeScalableTargets(_a0 *applicationautoscaling.DescribeScalableTargetsInput) (*applicationautoscaling.DescribeScalableTargetsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.DescribeScalableTargetsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalableTargetsInput) (*applicationautoscaling.DescribeScalableTargetsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalableTargetsInput) *applicationautoscaling.DescribeScalableTargetsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DescribeScalableTargetsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DescribeScalableTargetsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalableTargetsPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApplicationAutoScaling) DescribeScalableTargetsPages(_a0 *applicationautoscaling.DescribeScalableTargetsInput, _a1 func(*applicationautoscaling.DescribeScalableTargetsOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalableTargetsInput, func(*applicationautoscaling.DescribeScalableTargetsOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeScalableTargetsPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApplicationAutoScaling) DescribeScalableTargetsPagesWithContext(_a0 context.Context, _a1 *applicationautoscaling.DescribeScalableTargetsInput, _a2 func(*applicationautoscaling.DescribeScalableTargetsOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScalableTargetsInput, func(*applicationautoscaling.DescribeScalableTargetsOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeScalableTargetsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DescribeScalableTargetsRequest(_a0 *applicationautoscaling.DescribeScalableTargetsInput) (*request.Request, *applicationautoscaling.DescribeScalableTargetsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.DescribeScalableTargetsOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalableTargetsInput) (*request.Request, *applicationautoscaling.DescribeScalableTargetsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalableTargetsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DescribeScalableTargetsInput) *applicationautoscaling.DescribeScalableTargetsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.DescribeScalableTargetsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalableTargetsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) DescribeScalableTargetsWithContext(_a0 context.Context, _a1 *applicationautoscaling.DescribeScalableTargetsInput, _a2 ...request.Option) (*applicationautoscaling.DescribeScalableTargetsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.DescribeScalableTargetsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScalableTargetsInput, ...request.Option) (*applicationautoscaling.DescribeScalableTargetsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScalableTargetsInput, ...request.Option) *applicationautoscaling.DescribeScalableTargetsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DescribeScalableTargetsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.DescribeScalableTargetsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalingActivities provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingActivities(_a0 *applicationautoscaling.DescribeScalingActivitiesInput) (*applicationautoscaling.DescribeScalingActivitiesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.DescribeScalingActivitiesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingActivitiesInput) (*applicationautoscaling.DescribeScalingActivitiesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingActivitiesInput) *applicationautoscaling.DescribeScalingActivitiesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DescribeScalingActivitiesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DescribeScalingActivitiesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalingActivitiesPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingActivitiesPages(_a0 *applicationautoscaling.DescribeScalingActivitiesInput, _a1 func(*applicationautoscaling.DescribeScalingActivitiesOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingActivitiesInput, func(*applicationautoscaling.DescribeScalingActivitiesOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeScalingActivitiesPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingActivitiesPagesWithContext(_a0 context.Context, _a1 *applicationautoscaling.DescribeScalingActivitiesInput, _a2 func(*applicationautoscaling.DescribeScalingActivitiesOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScalingActivitiesInput, func(*applicationautoscaling.DescribeScalingActivitiesOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeScalingActivitiesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingActivitiesRequest(_a0 *applicationautoscaling.DescribeScalingActivitiesInput) (*request.Request, *applicationautoscaling.DescribeScalingActivitiesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.DescribeScalingActivitiesOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingActivitiesInput) (*request.Request, *applicationautoscaling.DescribeScalingActivitiesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingActivitiesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DescribeScalingActivitiesInput) *applicationautoscaling.DescribeScalingActivitiesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.DescribeScalingActivitiesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalingActivitiesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingActivitiesWithContext(_a0 context.Context, _a1 *applicationautoscaling.DescribeScalingActivitiesInput, _a2 ...request.Option) (*applicationautoscaling.DescribeScalingActivitiesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.DescribeScalingActivitiesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScalingActivitiesInput, ...request.Option) (*applicationautoscaling.DescribeScalingActivitiesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScalingActivitiesInput, ...request.Option) *applicationautoscaling.DescribeScalingActivitiesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DescribeScalingActivitiesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.DescribeScalingActivitiesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalingPolicies provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingPolicies(_a0 *applicationautoscaling.DescribeScalingPoliciesInput) (*applicationautoscaling.DescribeScalingPoliciesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.DescribeScalingPoliciesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingPoliciesInput) (*applicationautoscaling.DescribeScalingPoliciesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingPoliciesInput) *applicationautoscaling.DescribeScalingPoliciesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DescribeScalingPoliciesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DescribeScalingPoliciesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalingPoliciesPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingPoliciesPages(_a0 *applicationautoscaling.DescribeScalingPoliciesInput, _a1 func(*applicationautoscaling.DescribeScalingPoliciesOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingPoliciesInput, func(*applicationautoscaling.DescribeScalingPoliciesOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeScalingPoliciesPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingPoliciesPagesWithContext(_a0 context.Context, _a1 *applicationautoscaling.DescribeScalingPoliciesInput, _a2 func(*applicationautoscaling.DescribeScalingPoliciesOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScalingPoliciesInput, func(*applicationautoscaling.DescribeScalingPoliciesOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeScalingPoliciesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingPoliciesRequest(_a0 *applicationautoscaling.DescribeScalingPoliciesInput) (*request.Request, *applicationautoscaling.DescribeScalingPoliciesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.DescribeScalingPoliciesOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingPoliciesInput) (*request.Request, *applicationautoscaling.DescribeScalingPoliciesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScalingPoliciesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DescribeScalingPoliciesInput) *applicationautoscaling.DescribeScalingPoliciesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.DescribeScalingPoliciesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalingPoliciesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) DescribeScalingPoliciesWithContext(_a0 context.Context, _a1 *applicationautoscaling.DescribeScalingPoliciesInput, _a2 ...request.Option) (*applicationautoscaling.DescribeScalingPoliciesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.DescribeScalingPoliciesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScalingPoliciesInput, ...request.Option) (*applicationautoscaling.DescribeScalingPoliciesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScalingPoliciesInput, ...request.Option) *applicationautoscaling.DescribeScalingPoliciesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DescribeScalingPoliciesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.DescribeScalingPoliciesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScheduledActions provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DescribeScheduledActions(_a0 *applicationautoscaling.DescribeScheduledActionsInput) (*applicationautoscaling.DescribeScheduledActionsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.DescribeScheduledActionsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScheduledActionsInput) (*applicationautoscaling.DescribeScheduledActionsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScheduledActionsInput) *applicationautoscaling.DescribeScheduledActionsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DescribeScheduledActionsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DescribeScheduledActionsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScheduledActionsPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApplicationAutoScaling) DescribeScheduledActionsPages(_a0 *applicationautoscaling.DescribeScheduledActionsInput, _a1 func(*applicationautoscaling.DescribeScheduledActionsOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScheduledActionsInput, func(*applicationautoscaling.DescribeScheduledActionsOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeScheduledActionsPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApplicationAutoScaling) DescribeScheduledActionsPagesWithContext(_a0 context.Context, _a1 *applicationautoscaling.DescribeScheduledActionsInput, _a2 func(*applicationautoscaling.DescribeScheduledActionsOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScheduledActionsInput, func(*applicationautoscaling.DescribeScheduledActionsOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeScheduledActionsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) DescribeScheduledActionsRequest(_a0 *applicationautoscaling.DescribeScheduledActionsInput) (*request.Request, *applicationautoscaling.DescribeScheduledActionsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.DescribeScheduledActionsOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScheduledActionsInput) (*request.Request, *applicationautoscaling.DescribeScheduledActionsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.DescribeScheduledActionsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.DescribeScheduledActionsInput) *applicationautoscaling.DescribeScheduledActionsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.DescribeScheduledActionsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScheduledActionsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) DescribeScheduledActionsWithContext(_a0 context.Context, _a1 *applicationautoscaling.DescribeScheduledActionsInput, _a2 ...request.Option) (*applicationautoscaling.DescribeScheduledActionsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.DescribeScheduledActionsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScheduledActionsInput, ...request.Option) (*applicationautoscaling.DescribeScheduledActionsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.DescribeScheduledActionsInput, ...request.Option) *applicationautoscaling.DescribeScheduledActionsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.DescribeScheduledActionsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.DescribeScheduledActionsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutScalingPolicy provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) PutScalingPolicy(_a0 *applicationautoscaling.PutScalingPolicyInput) (*applicationautoscaling.PutScalingPolicyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.PutScalingPolicyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.PutScalingPolicyInput) (*applicationautoscaling.PutScalingPolicyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.PutScalingPolicyInput) *applicationautoscaling.PutScalingPolicyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.PutScalingPolicyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.PutScalingPolicyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutScalingPolicyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) PutScalingPolicyRequest(_a0 *applicationautoscaling.PutScalingPolicyInput) (*request.Request, *applicationautoscaling.PutScalingPolicyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.PutScalingPolicyOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.PutScalingPolicyInput) (*request.Request, *applicationautoscaling.PutScalingPolicyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.PutScalingPolicyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.PutScalingPolicyInput) *applicationautoscaling.PutScalingPolicyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.PutScalingPolicyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutScalingPolicyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) PutScalingPolicyWithContext(_a0 context.Context, _a1 *applicationautoscaling.PutScalingPolicyInput, _a2 ...request.Option) (*applicationautoscaling.PutScalingPolicyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.PutScalingPolicyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.PutScalingPolicyInput, ...request.Option) (*applicationautoscaling.PutScalingPolicyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.PutScalingPolicyInput, ...request.Option) *applicationautoscaling.PutScalingPolicyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.PutScalingPolicyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.PutScalingPolicyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutScheduledAction provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) PutScheduledAction(_a0 *applicationautoscaling.PutScheduledActionInput) (*applicationautoscaling.PutScheduledActionOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.PutScheduledActionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.PutScheduledActionInput) (*applicationautoscaling.PutScheduledActionOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.PutScheduledActionInput) *applicationautoscaling.PutScheduledActionOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.PutScheduledActionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.PutScheduledActionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutScheduledActionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) PutScheduledActionRequest(_a0 *applicationautoscaling.PutScheduledActionInput) (*request.Request, *applicationautoscaling.PutScheduledActionOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.PutScheduledActionOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.PutScheduledActionInput) (*request.Request, *applicationautoscaling.PutScheduledActionOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.PutScheduledActionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.PutScheduledActionInput) *applicationautoscaling.PutScheduledActionOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.PutScheduledActionOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutScheduledActionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) PutScheduledActionWithContext(_a0 context.Context, _a1 *applicationautoscaling.PutScheduledActionInput, _a2 ...request.Option) (*applicationautoscaling.PutScheduledActionOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.PutScheduledActionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.PutScheduledActionInput, ...request.Option) (*applicationautoscaling.PutScheduledActionOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.PutScheduledActionInput, ...request.Option) *applicationautoscaling.PutScheduledActionOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.PutScheduledActionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.PutScheduledActionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RegisterScalableTarget provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) RegisterScalableTarget(_a0 *applicationautoscaling.RegisterScalableTargetInput) (*applicationautoscaling.RegisterScalableTargetOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *applicationautoscaling.RegisterScalableTargetOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.RegisterScalableTargetInput) (*applicationautoscaling.RegisterScalableTargetOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.RegisterScalableTargetInput) *applicationautoscaling.RegisterScalableTargetOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.RegisterScalableTargetOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.RegisterScalableTargetInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RegisterScalableTargetRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApplicationAutoScaling) RegisterScalableTargetRequest(_a0 *applicationautoscaling.RegisterScalableTargetInput) (*request.Request, *applicationautoscaling.RegisterScalableTargetOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *applicationautoscaling.RegisterScalableTargetOutput
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.RegisterScalableTargetInput) (*request.Request, *applicationautoscaling.RegisterScalableTargetOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*applicationautoscaling.RegisterScalableTargetInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*applicationautoscaling.RegisterScalableTargetInput) *applicationautoscaling.RegisterScalableTargetOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*applicationautoscaling.RegisterScalableTargetOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RegisterScalableTargetWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApplicationAutoScaling) RegisterScalableTargetWithContext(_a0 context.Context, _a1 *applicationautoscaling.RegisterScalableTargetInput, _a2 ...request.Option) (*applicationautoscaling.RegisterScalableTargetOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *applicationautoscaling.RegisterScalableTargetOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.RegisterScalableTargetInput, ...request.Option) (*applicationautoscaling.RegisterScalableTargetOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *applicationautoscaling.RegisterScalableTargetInput, ...request.Option) *applicationautoscaling.RegisterScalableTargetOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*applicationautoscaling.RegisterScalableTargetOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *applicationautoscaling.RegisterScalableTargetInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockFakeApplicationAutoScaling interface {
@@ -1034,10 +252,6 @@ type mockConstructorTestingTNewMockFakeApplicationAutoScaling interface {
 
 // NewMockFakeApplicationAutoScaling creates a new instance of MockFakeApplicationAutoScaling. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockFakeApplicationAutoScaling(t mockConstructorTestingTNewMockFakeApplicationAutoScaling) *MockFakeApplicationAutoScaling {
-	mock := &MockFakeApplicationAutoScaling{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

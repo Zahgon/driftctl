@@ -1,11 +1,8 @@
 package aws
 
 import (
-	awssdk "github.com/aws/aws-sdk-go/aws"
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type IamPolicyEnumerator struct {
@@ -14,34 +11,16 @@ type IamPolicyEnumerator struct {
 }
 
 func NewIamPolicyEnumerator(repo repository.IAMRepository, factory resource.ResourceFactory) *IamPolicyEnumerator {
-	return &IamPolicyEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *IamPolicyEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsIamPolicyResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *IamPolicyEnumerator) Enumerate() ([]*resource.Resource, error) {
-	policies, err := e.repository.ListAllPolicies()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(policies))
-
-	for _, policy := range policies {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				awssdk.StringValue(policy.Arn),
-				map[string]interface{}{},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

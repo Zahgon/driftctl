@@ -14,18 +14,8 @@ type mockImagesClient struct {
 
 // List provides a mock function with given fields: options
 func (_m *mockImagesClient) List(options *armcompute.ImagesListOptions) imagesListPager {
-	ret := _m.Called(options)
-
-	var r0 imagesListPager
-	if rf, ok := ret.Get(0).(func(*armcompute.ImagesListOptions) imagesListPager); ok {
-		r0 = rf(options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(imagesListPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(imagesListPager)
 }
 
 type mockConstructorTestingTnewMockImagesClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockImagesClient interface {
 
 // newMockImagesClient creates a new instance of mockImagesClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockImagesClient(t mockConstructorTestingTnewMockImagesClient) *mockImagesClient {
-	mock := &mockImagesClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

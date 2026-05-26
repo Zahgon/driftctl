@@ -2,9 +2,7 @@ package azurerm
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/azurerm/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/azurerm"
 )
 
 type AzurermFirewallsEnumerator struct {
@@ -13,36 +11,16 @@ type AzurermFirewallsEnumerator struct {
 }
 
 func NewAzurermFirewallsEnumerator(repo repository.NetworkRepository, factory resource.ResourceFactory) *AzurermFirewallsEnumerator {
-	return &AzurermFirewallsEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *AzurermFirewallsEnumerator) SupportedType() resource.ResourceType {
-	return azurerm.AzureFirewallResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *AzurermFirewallsEnumerator) Enumerate() ([]*resource.Resource, error) {
-	resources, err := e.repository.ListAllFirewalls()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(resources))
-
-	for _, res := range resources {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*res.ID,
-				map[string]interface{}{
-					"name": *res.Name,
-				},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

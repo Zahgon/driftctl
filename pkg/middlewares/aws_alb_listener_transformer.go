@@ -2,7 +2,6 @@ package middlewares
 
 import (
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/pkg/resource/aws"
 )
 
 // AwsALBListenerTransformer is a simple middleware to turn all aws_alb_listener resources into aws_lb_listener ones
@@ -13,27 +12,11 @@ type AwsALBListenerTransformer struct {
 }
 
 func NewAwsALBListenerTransformer(resourceFactory resource.ResourceFactory) AwsALBListenerTransformer {
-	return AwsALBListenerTransformer{
-		resourceFactory: resourceFactory,
-	}
+	_ = "STUB: not implemented"
+	return *new(AwsALBListenerTransformer)
 }
 
 func (m AwsALBListenerTransformer) Execute(_, resourcesFromState *[]*resource.Resource) error {
-	newStateResources := make([]*resource.Resource, 0, len(*resourcesFromState))
-
-	for _, res := range *resourcesFromState {
-		if res.ResourceType() != aws.AwsApplicationLoadBalancerListenerResourceType {
-			newStateResources = append(newStateResources, res)
-			continue
-		}
-
-		newStateResources = append(newStateResources, m.resourceFactory.CreateAbstractResource(
-			aws.AwsLoadBalancerListenerResourceType,
-			res.ResourceId(),
-			*res.Attributes(),
-		))
-	}
-
-	*resourcesFromState = newStateResources
+	_ = "STUB: not implemented"
 	return nil
 }

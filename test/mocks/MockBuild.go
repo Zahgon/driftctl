@@ -5,10 +5,6 @@ type MockBuild struct {
 	UsageReporting bool
 }
 
-func (m MockBuild) IsRelease() bool {
-	return m.Release
-}
+func (m MockBuild) IsRelease() bool { _ = "STUB: not implemented"; return false }
 
-func (m MockBuild) IsUsageReportingEnabled() bool {
-	return m.UsageReporting
-}
+func (m MockBuild) IsUsageReportingEnabled() bool { _ = "STUB: not implemented"; return false }

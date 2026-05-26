@@ -14,28 +14,8 @@ type MockS3ControlRepository struct {
 
 // DescribeAccountPublicAccessBlock provides a mock function with given fields: accountID
 func (_m *MockS3ControlRepository) DescribeAccountPublicAccessBlock(accountID string) (*s3control.PublicAccessBlockConfiguration, error) {
-	ret := _m.Called(accountID)
-
-	var r0 *s3control.PublicAccessBlockConfiguration
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) (*s3control.PublicAccessBlockConfiguration, error)); ok {
-		return rf(accountID)
-	}
-	if rf, ok := ret.Get(0).(func(string) *s3control.PublicAccessBlockConfiguration); ok {
-		r0 = rf(accountID)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*s3control.PublicAccessBlockConfiguration)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(accountID)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockS3ControlRepository interface {
@@ -45,10 +25,6 @@ type mockConstructorTestingTNewMockS3ControlRepository interface {
 
 // NewMockS3ControlRepository creates a new instance of MockS3ControlRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockS3ControlRepository(t mockConstructorTestingTNewMockS3ControlRepository) *MockS3ControlRepository {
-	mock := &MockS3ControlRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

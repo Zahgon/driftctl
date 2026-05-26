@@ -17,32 +17,11 @@ type cloudtrailRepository struct {
 }
 
 func NewCloudtrailRepository(session *session.Session, c cache.Cache) *cloudtrailRepository {
-	return &cloudtrailRepository{
-		cloudtrail.New(session),
-		c,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (r *cloudtrailRepository) ListAllTrails() ([]*cloudtrail.TrailInfo, error) {
-	cacheKey := "ListAllTrails"
-	if v := r.cache.Get(cacheKey); v != nil {
-		return v.([]*cloudtrail.TrailInfo), nil
-	}
-
-	var trails []*cloudtrail.TrailInfo
-	input := cloudtrail.ListTrailsInput{}
-	err := r.client.ListTrailsPages(&input,
-		func(resp *cloudtrail.ListTrailsOutput, lastPage bool) bool {
-			if resp.Trails != nil {
-				trails = append(trails, resp.Trails...)
-			}
-			return !lastPage
-		},
-	)
-	if err != nil {
-		return nil, err
-	}
-
-	r.cache.Put(cacheKey, trails)
-	return trails, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

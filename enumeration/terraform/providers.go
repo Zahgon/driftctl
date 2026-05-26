@@ -1,9 +1,5 @@
 package terraform
 
-import (
-	"github.com/sirupsen/logrus"
-)
-
 const (
 	AWS    string = "aws"
 	GITHUB string = "github"
@@ -15,27 +11,16 @@ type ProviderLibrary struct {
 	providers map[string]TerraformProvider
 }
 
-func NewProviderLibrary() *ProviderLibrary {
-	logrus.Debug("New provider library created")
-	return &ProviderLibrary{
-		make(map[string]TerraformProvider),
-	}
-}
+func NewProviderLibrary() *ProviderLibrary { _ = "STUB: not implemented"; return nil }
 
 func (p *ProviderLibrary) AddProvider(name string, provider TerraformProvider) {
-	p.providers[name] = provider
+	_ = "STUB: not implemented"
+	return
 }
 
 func (p *ProviderLibrary) Provider(name string) TerraformProvider {
-	return p.providers[name]
+	_ = "STUB: not implemented"
+	return *new(TerraformProvider)
 }
 
-func (p *ProviderLibrary) Cleanup() {
-	logrus.Debug("Closing providers")
-	for providerKey, provider := range p.providers {
-		logrus.WithFields(logrus.Fields{
-			"key": providerKey,
-		}).Debug("Closing provider")
-		provider.Cleanup()
-	}
-}
+func (p *ProviderLibrary) Cleanup() { _ = "STUB: not implemented"; return }

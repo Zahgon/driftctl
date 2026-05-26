@@ -14,652 +14,152 @@ type MockAssetRepository struct {
 
 // SearchAllAddresses provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllAddresses() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllBigtableInstances provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllBigtableInstances() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllBigtableTables provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllBigtableTables() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllBuckets provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllBuckets() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllCloudRunServices provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllCloudRunServices() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllDNSManagedZones provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllDNSManagedZones() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllDatasets provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllDatasets() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllDisks provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllDisks() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllFirewalls provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllFirewalls() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllForwardingRules provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllForwardingRules() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllFunctions provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllFunctions() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllGlobalAddresses provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllGlobalAddresses() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllGlobalForwardingRules provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllGlobalForwardingRules() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllHealthChecks provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllHealthChecks() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllImages provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllImages() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllInstanceGroupManagers provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllInstanceGroupManagers() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllInstanceGroups provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllInstanceGroups() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllInstances provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllInstances() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllNetworks provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllNetworks() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllNodeGroups provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllNodeGroups() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllRouters provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllRouters() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllSQLDatabaseInstances provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllSQLDatabaseInstances() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllSslCertificates provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllSslCertificates() ([]*asset.Asset, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.Asset
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.Asset, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.Asset); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.Asset)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllSubnetworks provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllSubnetworks() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SearchAllTables provides a mock function with given fields:
 func (_m *MockAssetRepository) SearchAllTables() ([]*asset.ResourceSearchResult, error) {
-	ret := _m.Called()
-
-	var r0 []*asset.ResourceSearchResult
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*asset.ResourceSearchResult, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*asset.ResourceSearchResult); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*asset.ResourceSearchResult)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockAssetRepository interface {
@@ -669,10 +169,6 @@ type mockConstructorTestingTNewMockAssetRepository interface {
 
 // NewMockAssetRepository creates a new instance of MockAssetRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockAssetRepository(t mockConstructorTestingTNewMockAssetRepository) *MockAssetRepository {
-	mock := &MockAssetRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

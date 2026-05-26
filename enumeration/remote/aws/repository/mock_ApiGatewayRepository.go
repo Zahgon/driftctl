@@ -14,314 +14,74 @@ type MockApiGatewayRepository struct {
 
 // GetAccount provides a mock function with given fields:
 func (_m *MockApiGatewayRepository) GetAccount() (*apigateway.Account, error) {
-	ret := _m.Called()
-
-	var r0 *apigateway.Account
-	var r1 error
-	if rf, ok := ret.Get(0).(func() (*apigateway.Account, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() *apigateway.Account); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Account)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllApiKeys provides a mock function with given fields:
 func (_m *MockApiGatewayRepository) ListAllApiKeys() ([]*apigateway.ApiKey, error) {
-	ret := _m.Called()
-
-	var r0 []*apigateway.ApiKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*apigateway.ApiKey, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*apigateway.ApiKey); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.ApiKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllDomainNameBasePathMappings provides a mock function with given fields: _a0
 func (_m *MockApiGatewayRepository) ListAllDomainNameBasePathMappings(_a0 string) ([]*apigateway.BasePathMapping, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*apigateway.BasePathMapping
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*apigateway.BasePathMapping, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*apigateway.BasePathMapping); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.BasePathMapping)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllDomainNames provides a mock function with given fields:
 func (_m *MockApiGatewayRepository) ListAllDomainNames() ([]*apigateway.DomainName, error) {
-	ret := _m.Called()
-
-	var r0 []*apigateway.DomainName
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*apigateway.DomainName, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*apigateway.DomainName); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.DomainName)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllRestApiAuthorizers provides a mock function with given fields: _a0
 func (_m *MockApiGatewayRepository) ListAllRestApiAuthorizers(_a0 string) ([]*apigateway.Authorizer, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*apigateway.Authorizer
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*apigateway.Authorizer, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*apigateway.Authorizer); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.Authorizer)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllRestApiGatewayResponses provides a mock function with given fields: _a0
 func (_m *MockApiGatewayRepository) ListAllRestApiGatewayResponses(_a0 string) ([]*apigateway.UpdateGatewayResponseOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*apigateway.UpdateGatewayResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*apigateway.UpdateGatewayResponseOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*apigateway.UpdateGatewayResponseOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllRestApiModels provides a mock function with given fields: _a0
 func (_m *MockApiGatewayRepository) ListAllRestApiModels(_a0 string) ([]*apigateway.Model, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*apigateway.Model
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*apigateway.Model, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*apigateway.Model); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.Model)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllRestApiRequestValidators provides a mock function with given fields: _a0
 func (_m *MockApiGatewayRepository) ListAllRestApiRequestValidators(_a0 string) ([]*apigateway.UpdateRequestValidatorOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*apigateway.UpdateRequestValidatorOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*apigateway.UpdateRequestValidatorOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*apigateway.UpdateRequestValidatorOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllRestApiResources provides a mock function with given fields: _a0
 func (_m *MockApiGatewayRepository) ListAllRestApiResources(_a0 string) ([]*apigateway.Resource, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*apigateway.Resource
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*apigateway.Resource, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*apigateway.Resource); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.Resource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllRestApiStages provides a mock function with given fields: _a0
 func (_m *MockApiGatewayRepository) ListAllRestApiStages(_a0 string) ([]*apigateway.Stage, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*apigateway.Stage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*apigateway.Stage, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*apigateway.Stage); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.Stage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllRestApis provides a mock function with given fields:
 func (_m *MockApiGatewayRepository) ListAllRestApis() ([]*apigateway.RestApi, error) {
-	ret := _m.Called()
-
-	var r0 []*apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*apigateway.RestApi, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*apigateway.RestApi); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllVpcLinks provides a mock function with given fields:
 func (_m *MockApiGatewayRepository) ListAllVpcLinks() ([]*apigateway.UpdateVpcLinkOutput, error) {
-	ret := _m.Called()
-
-	var r0 []*apigateway.UpdateVpcLinkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*apigateway.UpdateVpcLinkOutput, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*apigateway.UpdateVpcLinkOutput); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockApiGatewayRepository interface {
@@ -331,10 +91,6 @@ type mockConstructorTestingTNewMockApiGatewayRepository interface {
 
 // NewMockApiGatewayRepository creates a new instance of MockApiGatewayRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockApiGatewayRepository(t mockConstructorTestingTNewMockApiGatewayRepository) *MockApiGatewayRepository {
-	mock := &MockApiGatewayRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

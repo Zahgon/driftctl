@@ -1,10 +1,3 @@
 package google
 
-import (
-	"regexp"
-)
-
-func trimResourceName(name string) string {
-	re, _ := regexp.Compile(`^\/\/[\w]+.googleapis.com\/`)
-	return re.ReplaceAllString(name, "")
-}
+func trimResourceName(name string) string { _ = "STUB: not implemented"; return "" }

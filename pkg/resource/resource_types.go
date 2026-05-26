@@ -1,7 +1,5 @@
 package resource
 
-import "sort"
-
 type ResourceType string
 
 var supportedTypes = map[string]ResourceTypeMeta{
@@ -256,34 +254,19 @@ var supportedTypes = map[string]ResourceTypeMeta{
 	"azurerm_ssh_public_key":           {},
 }
 
-func IsResourceTypeSupported(ty string) bool {
-	_, exist := supportedTypes[ty]
-	return exist
-}
+func IsResourceTypeSupported(ty string) bool { _ = "STUB: not implemented"; return false }
 
-func GetSupportedTypes() []string {
-	types := make([]string, 0, len(supportedTypes))
-	for k := range supportedTypes {
-		types = append(types, k)
-	}
+func GetSupportedTypes() []string { _ = "STUB: not implemented"; return nil }
 
-	sort.Strings(types)
-
-	return types
-}
-
-func (ty ResourceType) String() string {
-	return string(ty)
-}
+func (ty ResourceType) String() string { _ = "STUB: not implemented"; return "" }
 
 func GetMeta(ty ResourceType) ResourceTypeMeta {
-	return supportedTypes[ty.String()]
+	_ = "STUB: not implemented"
+	return *new(ResourceTypeMeta)
 }
 
 type ResourceTypeMeta struct {
 	children []ResourceType
 }
 
-func (ty ResourceTypeMeta) GetChildrenTypes() []ResourceType {
-	return ty.children
-}
+func (ty ResourceTypeMeta) GetChildrenTypes() []ResourceType { _ = "STUB: not implemented"; return nil }

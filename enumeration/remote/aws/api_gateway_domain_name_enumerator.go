@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type ApiGatewayDomainNameEnumerator struct {
@@ -13,34 +11,16 @@ type ApiGatewayDomainNameEnumerator struct {
 }
 
 func NewApiGatewayDomainNameEnumerator(repo repository.ApiGatewayRepository, factory resource.ResourceFactory) *ApiGatewayDomainNameEnumerator {
-	return &ApiGatewayDomainNameEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *ApiGatewayDomainNameEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsApiGatewayDomainNameResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *ApiGatewayDomainNameEnumerator) Enumerate() ([]*resource.Resource, error) {
-	domainNames, err := e.repository.ListAllDomainNames()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(domainNames))
-
-	for _, domainName := range domainNames {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*domainName.DomainName,
-				map[string]interface{}{},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

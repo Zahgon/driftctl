@@ -1,12 +1,6 @@
 package aws
 
 import (
-	"bytes"
-	"fmt"
-	"strconv"
-
-	"github.com/hashicorp/terraform/helper/hashcode"
-	"github.com/snyk/driftctl/enumeration/resource"
 	dctlresource "github.com/snyk/driftctl/pkg/resource"
 )
 
@@ -162,92 +156,31 @@ var protocolsNumbers = map[string]int{
 }
 
 func initAwsNetworkACLRuleMetaData(resourceSchemaRepository dctlresource.SchemaRepositoryInterface) {
-	resourceSchemaRepository.SetNormalizeFunc(AwsNetworkACLRuleResourceType, func(res *resource.Resource) {
-		res.Attrs.DeleteIfDefault("icmp_code")
-		res.Attrs.DeleteIfDefault("icmp_type")
-
-		// Since it seems that AWS only works with protocol number, we should normalize when we got a protocol string
-		// and transform it to its proper protocol number
-		// We iterate on ingress and egresses to modify protocols that are full string like "tcp" to "6"
-		//
-		// References:
-		// - https://github.com/hashicorp/terraform-provider-aws/blob/1194e7a11e6b74f1f4834c90940ffef0f6557982/aws/network_acl_entry.go#L69
-		proto := res.Attrs.GetString("protocol")
-		if number, isNotProtoAsNumber := protocolsNumbers[*proto]; isNotProtoAsNumber {
-			_ = res.Attrs.SafeSet([]string{"protocol"}, strconv.Itoa(number))
-		}
-
-		// For some reason, when deserialising the state, this field is deserialized as a float
-		// We need to make this homogeneous between remote and IaC so we cast this to an int64
-		// The real type returned by AWS SDK is int64
-		ruleNumber := (*res.Attrs)["rule_number"]
-		if v, isFloat := ruleNumber.(float64); isFloat {
-			_ = res.Attrs.SafeSet([]string{"rule_number"}, int64(v))
-		}
-
-		// ID can be different even if the resource is the same.
-		// protocol is taken into account while creating the ID, if you set protocol="tcp" you'll end with
-		// a resource with a different ID than if you set protocol="6" which is the same
-		// To be able to match resources, we rewrite ID to always use protocol as a number (we just normalized this above)
-		//
-		// While reading remote we always got protocol as a number.
-		// We cannot predict how the user decided to write the protocol on IaC side.
-		// This workaround is mandatory to harmonize resources ID
-		res.Id = CreateNetworkACLRuleID(
-			*res.Attrs.GetString("network_acl_id"),
-			(*res.Attrs)["rule_number"].(int64),
-			*res.Attrs.GetBool("egress"),
-			*res.Attrs.GetString("protocol"),
-		)
-		_ = res.Attrs.SafeSet([]string{"id"}, res.Id)
-
-		res.Attrs.DeleteIfDefault("cidr_block")
-		res.Attrs.DeleteIfDefault("ipv6_cidr_block")
-	})
-	resourceSchemaRepository.SetHumanReadableAttributesFunc(AwsNetworkACLRuleResourceType, func(res *resource.Resource) map[string]string {
-
-		ruleNumber := strconv.FormatInt((*res.Attrs)["rule_number"].(int64), 10)
-		if ruleNumber == "32767" {
-			ruleNumber = "*"
-		}
-
-		attrs := map[string]string{
-			"Network":     *res.Attrs.GetString("network_acl_id"),
-			"Egress":      strconv.FormatBool(*res.Attrs.GetBool("egress")),
-			"Rule number": ruleNumber,
-		}
-
-		if proto := res.Attrs.GetString("protocol"); proto != nil {
-			if *proto == "-1" {
-				*proto = "All"
-			}
-			attrs["Protocol"] = *proto
-		}
-
-		if res.Attrs.GetFloat64("from_port") != nil && res.Attrs.GetFloat64("to_port") != nil {
-			attrs["Port range"] = fmt.Sprintf("%d - %d",
-				int64(*res.Attrs.GetFloat64("from_port")),
-				int64(*res.Attrs.GetFloat64("to_port")),
-			)
-		}
-
-		if cidr := res.Attrs.GetString("cidr_block"); cidr != nil && *cidr != "" {
-			attrs["CIDR"] = *cidr
-		}
-
-		if cidr := res.Attrs.GetString("ipv6_cidr_block"); cidr != nil && *cidr != "" {
-			attrs["CIDR"] = *cidr
-		}
-
-		return attrs
-	})
+	_ = "STUB: not implemented"
+	return
 }
 
+// Since it seems that AWS only works with protocol number, we should normalize when we got a protocol string
+// and transform it to its proper protocol number
+// We iterate on ingress and egresses to modify protocols that are full string like "tcp" to "6"
+//
+// References:
+// - https://github.com/hashicorp/terraform-provider-aws/blob/1194e7a11e6b74f1f4834c90940ffef0f6557982/aws/network_acl_entry.go#L69
+
+// For some reason, when deserialising the state, this field is deserialized as a float
+// We need to make this homogeneous between remote and IaC so we cast this to an int64
+// The real type returned by AWS SDK is int64
+
+// ID can be different even if the resource is the same.
+// protocol is taken into account while creating the ID, if you set protocol="tcp" you'll end with
+// a resource with a different ID than if you set protocol="6" which is the same
+// To be able to match resources, we rewrite ID to always use protocol as a number (we just normalized this above)
+//
+// While reading remote we always got protocol as a number.
+// We cannot predict how the user decided to write the protocol on IaC side.
+// This workaround is mandatory to harmonize resources ID
+
 func CreateNetworkACLRuleID(networkAclId string, ruleNumber int64, egress bool, protocol string) string {
-	var buf bytes.Buffer
-	buf.WriteString(fmt.Sprintf("%s-", networkAclId))
-	buf.WriteString(fmt.Sprintf("%d-", ruleNumber))
-	buf.WriteString(fmt.Sprintf("%t-", egress))
-	buf.WriteString(fmt.Sprintf("%s-", protocol))
-	return fmt.Sprintf("nacl-%d", hashcode.String(buf.String()))
+	_ = "STUB: not implemented"
+	return ""
 }

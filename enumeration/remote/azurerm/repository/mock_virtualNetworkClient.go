@@ -14,16 +14,6 @@ type mockVirtualNetworkClient struct {
 
 // ListAll provides a mock function with given fields: options
 func (_m *mockVirtualNetworkClient) ListAll(options *armnetwork.VirtualNetworksListAllOptions) virtualNetworksListAllPager {
-	ret := _m.Called(options)
-
-	var r0 virtualNetworksListAllPager
-	if rf, ok := ret.Get(0).(func(*armnetwork.VirtualNetworksListAllOptions) virtualNetworksListAllPager); ok {
-		r0 = rf(options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(virtualNetworksListAllPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(virtualNetworksListAllPager)
 }

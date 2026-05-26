@@ -5,19 +5,6 @@ import (
 )
 
 func InitResourcesMetadata(resourceSchemaRepository resource.SchemaRepositoryInterface) {
-	initGoogleBigqueryDatasetMetadata(resourceSchemaRepository)
-	initGoogleBigqueryTableMetadata(resourceSchemaRepository)
-	initGoogleComputeAddressMetadata(resourceSchemaRepository)
-	initGoogleComputeDiskMetadata(resourceSchemaRepository)
-	initGoogleComputeGlobalAddressMetadata(resourceSchemaRepository)
-	initGoogleComputeHealthCheckMetadata(resourceSchemaRepository)
-	initGoogleComputeImageMetadata(resourceSchemaRepository)
-	initComputeInstanceGroupManagerMetadata(resourceSchemaRepository)
-	initGoogleStorageBucketMetadata(resourceSchemaRepository)
-	initGoogleComputeFirewallMetadata(resourceSchemaRepository)
-	initGoogleComputeNetworkMetadata(resourceSchemaRepository)
-	initGoogleStorageBucketIamBMemberMetadata(resourceSchemaRepository)
-	initGoogleComputeInstanceGroupMetadata(resourceSchemaRepository)
-	initGoogleProjectIAMMemberMetadata(resourceSchemaRepository)
-	initGoogleComputeSubnetworkMetadata(resourceSchemaRepository)
+	_ = "STUB: not implemented"
+	return
 }

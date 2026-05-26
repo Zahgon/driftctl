@@ -1,13 +1,7 @@
 package hcl
 
 import (
-	"os"
-	"path"
-	"strings"
-
 	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/gohcl"
-	"github.com/hashicorp/hcl/v2/hclparse"
 )
 
 const DefaultStateName = "default"
@@ -24,31 +18,10 @@ type TerraformBlock struct {
 }
 
 func ParseTerraformFromHCL(filename string) (*TerraformBlock, error) {
-	var body MainBodyBlock
-
-	parser := hclparse.NewParser()
-	f, diags := parser.ParseHCLFile(filename)
-	if diags.HasErrors() {
-		return nil, diags
-	}
-
-	diags = gohcl.DecodeBody(f.Body, nil, &body)
-	if diags.HasErrors() {
-		return nil, diags
-	}
-
-	return &body.Terraform, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func GetCurrentWorkspaceName(cwd string) string {
-	name := DefaultStateName // See https://github.com/hashicorp/terraform/blob/main/internal/backend/backend.go#L33
+func GetCurrentWorkspaceName(cwd string) string { _ = "STUB: not implemented"; return "" }
 
-	data, err := os.ReadFile(path.Join(cwd, ".terraform/environment"))
-	if err != nil {
-		return name
-	}
-	if v := strings.Trim(string(data), "\n"); v != "" {
-		name = v
-	}
-	return name
-}
+// See https://github.com/hashicorp/terraform/blob/main/internal/backend/backend.go#L33

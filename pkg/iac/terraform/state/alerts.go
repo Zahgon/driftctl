@@ -1,8 +1,6 @@
 package state
 
 import (
-	"fmt"
-
 	"github.com/snyk/driftctl/enumeration/resource"
 )
 
@@ -12,17 +10,12 @@ type StateReadingAlert struct {
 }
 
 func NewStateReadingAlert(key string, err error) *StateReadingAlert {
-	return &StateReadingAlert{key: key, err: err.Error()}
-}
-
-func (s *StateReadingAlert) Message() string {
-	return fmt.Sprintf("Your analysis may be incomplete. There was an error reading state file '%s': %s", s.key, s.err)
-}
-
-func (s *StateReadingAlert) ShouldIgnoreResource() bool {
-	return false
-}
-
-func (s *StateReadingAlert) Resource() *resource.Resource {
+	_ = "STUB: not implemented"
 	return nil
 }
+
+func (s *StateReadingAlert) Message() string { _ = "STUB: not implemented"; return "" }
+
+func (s *StateReadingAlert) ShouldIgnoreResource() bool { _ = "STUB: not implemented"; return false }
+
+func (s *StateReadingAlert) Resource() *resource.Resource { _ = "STUB: not implemented"; return nil }

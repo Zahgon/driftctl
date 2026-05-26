@@ -14,18 +14,8 @@ type mockPublicIPAddressesClient struct {
 
 // ListAll provides a mock function with given fields: options
 func (_m *mockPublicIPAddressesClient) ListAll(options *armnetwork.PublicIPAddressesListAllOptions) publicIPAddressesListAllPager {
-	ret := _m.Called(options)
-
-	var r0 publicIPAddressesListAllPager
-	if rf, ok := ret.Get(0).(func(*armnetwork.PublicIPAddressesListAllOptions) publicIPAddressesListAllPager); ok {
-		r0 = rf(options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(publicIPAddressesListAllPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(publicIPAddressesListAllPager)
 }
 
 type mockConstructorTestingTnewMockPublicIPAddressesClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockPublicIPAddressesClient interface {
 
 // newMockPublicIPAddressesClient creates a new instance of mockPublicIPAddressesClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockPublicIPAddressesClient(t mockConstructorTestingTnewMockPublicIPAddressesClient) *mockPublicIPAddressesClient {
-	mock := &mockPublicIPAddressesClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

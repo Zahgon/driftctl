@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	resourceaws "github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type LambdaEventSourceMappingEnumerator struct {
@@ -13,34 +11,16 @@ type LambdaEventSourceMappingEnumerator struct {
 }
 
 func NewLambdaEventSourceMappingEnumerator(repo repository.LambdaRepository, factory resource.ResourceFactory) *LambdaEventSourceMappingEnumerator {
-	return &LambdaEventSourceMappingEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *LambdaEventSourceMappingEnumerator) SupportedType() resource.ResourceType {
-	return resourceaws.AwsLambdaEventSourceMappingResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *LambdaEventSourceMappingEnumerator) Enumerate() ([]*resource.Resource, error) {
-	eventSourceMappings, err := e.repository.ListAllLambdaEventSourceMappings()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(eventSourceMappings))
-
-	for _, eventSourceMapping := range eventSourceMappings {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*eventSourceMapping.UUID,
-				map[string]interface{}{},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

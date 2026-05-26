@@ -14,18 +14,8 @@ type mockRegistryClient struct {
 
 // List provides a mock function with given fields: options
 func (_m *mockRegistryClient) List(options *armcontainerregistry.RegistriesListOptions) registryListAllPager {
-	ret := _m.Called(options)
-
-	var r0 registryListAllPager
-	if rf, ok := ret.Get(0).(func(*armcontainerregistry.RegistriesListOptions) registryListAllPager); ok {
-		r0 = rf(options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(registryListAllPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(registryListAllPager)
 }
 
 type mockConstructorTestingTnewMockRegistryClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockRegistryClient interface {
 
 // newMockRegistryClient creates a new instance of mockRegistryClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockRegistryClient(t mockConstructorTestingTnewMockRegistryClient) *mockRegistryClient {
-	mock := &mockRegistryClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -15,28 +15,8 @@ type MockHTTPClient struct {
 
 // Do provides a mock function with given fields: req
 func (_m *MockHTTPClient) Do(req *nethttp.Request) (*nethttp.Response, error) {
-	ret := _m.Called(req)
-
-	var r0 *nethttp.Response
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*nethttp.Request) (*nethttp.Response, error)); ok {
-		return rf(req)
-	}
-	if rf, ok := ret.Get(0).(func(*nethttp.Request) *nethttp.Response); ok {
-		r0 = rf(req)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*nethttp.Response)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*nethttp.Request) error); ok {
-		r1 = rf(req)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockHTTPClient interface {
@@ -46,10 +26,6 @@ type mockConstructorTestingTNewMockHTTPClient interface {
 
 // NewMockHTTPClient creates a new instance of MockHTTPClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockHTTPClient(t mockConstructorTestingTNewMockHTTPClient) *MockHTTPClient {
-	mock := &MockHTTPClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

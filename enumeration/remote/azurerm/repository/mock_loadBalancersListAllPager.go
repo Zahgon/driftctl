@@ -16,45 +16,18 @@ type mockLoadBalancersListAllPager struct {
 }
 
 // Err provides a mock function with given fields:
-func (_m *mockLoadBalancersListAllPager) Err() error {
-	ret := _m.Called()
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func() error); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
-}
+func (_m *mockLoadBalancersListAllPager) Err() error { _ = "STUB: not implemented"; return nil }
 
 // NextPage provides a mock function with given fields: ctx
 func (_m *mockLoadBalancersListAllPager) NextPage(ctx context.Context) bool {
-	ret := _m.Called(ctx)
-
-	var r0 bool
-	if rf, ok := ret.Get(0).(func(context.Context) bool); ok {
-		r0 = rf(ctx)
-	} else {
-		r0 = ret.Get(0).(bool)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return false
 }
 
 // PageResponse provides a mock function with given fields:
 func (_m *mockLoadBalancersListAllPager) PageResponse() armnetwork.LoadBalancersListAllResponse {
-	ret := _m.Called()
-
-	var r0 armnetwork.LoadBalancersListAllResponse
-	if rf, ok := ret.Get(0).(func() armnetwork.LoadBalancersListAllResponse); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Get(0).(armnetwork.LoadBalancersListAllResponse)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(armnetwork.LoadBalancersListAllResponse)
 }
 
 type mockConstructorTestingTnewMockLoadBalancersListAllPager interface {
@@ -64,10 +37,6 @@ type mockConstructorTestingTnewMockLoadBalancersListAllPager interface {
 
 // newMockLoadBalancersListAllPager creates a new instance of mockLoadBalancersListAllPager. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockLoadBalancersListAllPager(t mockConstructorTestingTnewMockLoadBalancersListAllPager) *mockLoadBalancersListAllPager {
-	mock := &mockLoadBalancersListAllPager{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

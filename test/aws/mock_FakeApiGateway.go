@@ -19,10862 +19,2306 @@ type MockFakeApiGateway struct {
 
 // CreateApiKey provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateApiKey(_a0 *apigateway.CreateApiKeyInput) (*apigateway.ApiKey, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.ApiKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateApiKeyInput) (*apigateway.ApiKey, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateApiKeyInput) *apigateway.ApiKey); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ApiKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateApiKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateApiKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateApiKeyRequest(_a0 *apigateway.CreateApiKeyInput) (*request.Request, *apigateway.ApiKey) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.ApiKey
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateApiKeyInput) (*request.Request, *apigateway.ApiKey)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateApiKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateApiKeyInput) *apigateway.ApiKey); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.ApiKey)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateApiKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateApiKeyWithContext(_a0 context.Context, _a1 *apigateway.CreateApiKeyInput, _a2 ...request.Option) (*apigateway.ApiKey, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.ApiKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateApiKeyInput, ...request.Option) (*apigateway.ApiKey, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateApiKeyInput, ...request.Option) *apigateway.ApiKey); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ApiKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateApiKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateAuthorizer provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateAuthorizer(_a0 *apigateway.CreateAuthorizerInput) (*apigateway.Authorizer, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Authorizer
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateAuthorizerInput) (*apigateway.Authorizer, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateAuthorizerInput) *apigateway.Authorizer); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Authorizer)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateAuthorizerInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateAuthorizerRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateAuthorizerRequest(_a0 *apigateway.CreateAuthorizerInput) (*request.Request, *apigateway.Authorizer) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Authorizer
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateAuthorizerInput) (*request.Request, *apigateway.Authorizer)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateAuthorizerInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateAuthorizerInput) *apigateway.Authorizer); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Authorizer)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateAuthorizerWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateAuthorizerWithContext(_a0 context.Context, _a1 *apigateway.CreateAuthorizerInput, _a2 ...request.Option) (*apigateway.Authorizer, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Authorizer
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateAuthorizerInput, ...request.Option) (*apigateway.Authorizer, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateAuthorizerInput, ...request.Option) *apigateway.Authorizer); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Authorizer)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateAuthorizerInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateBasePathMapping provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateBasePathMapping(_a0 *apigateway.CreateBasePathMappingInput) (*apigateway.BasePathMapping, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.BasePathMapping
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateBasePathMappingInput) (*apigateway.BasePathMapping, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateBasePathMappingInput) *apigateway.BasePathMapping); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.BasePathMapping)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateBasePathMappingInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateBasePathMappingRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateBasePathMappingRequest(_a0 *apigateway.CreateBasePathMappingInput) (*request.Request, *apigateway.BasePathMapping) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.BasePathMapping
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateBasePathMappingInput) (*request.Request, *apigateway.BasePathMapping)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateBasePathMappingInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateBasePathMappingInput) *apigateway.BasePathMapping); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.BasePathMapping)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateBasePathMappingWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateBasePathMappingWithContext(_a0 context.Context, _a1 *apigateway.CreateBasePathMappingInput, _a2 ...request.Option) (*apigateway.BasePathMapping, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.BasePathMapping
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateBasePathMappingInput, ...request.Option) (*apigateway.BasePathMapping, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateBasePathMappingInput, ...request.Option) *apigateway.BasePathMapping); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.BasePathMapping)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateBasePathMappingInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDeployment provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateDeployment(_a0 *apigateway.CreateDeploymentInput) (*apigateway.Deployment, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Deployment
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDeploymentInput) (*apigateway.Deployment, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDeploymentInput) *apigateway.Deployment); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Deployment)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateDeploymentInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDeploymentRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateDeploymentRequest(_a0 *apigateway.CreateDeploymentInput) (*request.Request, *apigateway.Deployment) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Deployment
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDeploymentInput) (*request.Request, *apigateway.Deployment)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDeploymentInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateDeploymentInput) *apigateway.Deployment); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Deployment)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDeploymentWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateDeploymentWithContext(_a0 context.Context, _a1 *apigateway.CreateDeploymentInput, _a2 ...request.Option) (*apigateway.Deployment, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Deployment
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateDeploymentInput, ...request.Option) (*apigateway.Deployment, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateDeploymentInput, ...request.Option) *apigateway.Deployment); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Deployment)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateDeploymentInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDocumentationPart provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateDocumentationPart(_a0 *apigateway.CreateDocumentationPartInput) (*apigateway.DocumentationPart, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DocumentationPart
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDocumentationPartInput) (*apigateway.DocumentationPart, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDocumentationPartInput) *apigateway.DocumentationPart); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationPart)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateDocumentationPartInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDocumentationPartRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateDocumentationPartRequest(_a0 *apigateway.CreateDocumentationPartInput) (*request.Request, *apigateway.DocumentationPart) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DocumentationPart
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDocumentationPartInput) (*request.Request, *apigateway.DocumentationPart)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDocumentationPartInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateDocumentationPartInput) *apigateway.DocumentationPart); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DocumentationPart)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDocumentationPartWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateDocumentationPartWithContext(_a0 context.Context, _a1 *apigateway.CreateDocumentationPartInput, _a2 ...request.Option) (*apigateway.DocumentationPart, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DocumentationPart
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateDocumentationPartInput, ...request.Option) (*apigateway.DocumentationPart, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateDocumentationPartInput, ...request.Option) *apigateway.DocumentationPart); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationPart)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateDocumentationPartInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDocumentationVersion provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateDocumentationVersion(_a0 *apigateway.CreateDocumentationVersionInput) (*apigateway.DocumentationVersion, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DocumentationVersion
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDocumentationVersionInput) (*apigateway.DocumentationVersion, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDocumentationVersionInput) *apigateway.DocumentationVersion); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationVersion)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateDocumentationVersionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDocumentationVersionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateDocumentationVersionRequest(_a0 *apigateway.CreateDocumentationVersionInput) (*request.Request, *apigateway.DocumentationVersion) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DocumentationVersion
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDocumentationVersionInput) (*request.Request, *apigateway.DocumentationVersion)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDocumentationVersionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateDocumentationVersionInput) *apigateway.DocumentationVersion); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DocumentationVersion)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDocumentationVersionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateDocumentationVersionWithContext(_a0 context.Context, _a1 *apigateway.CreateDocumentationVersionInput, _a2 ...request.Option) (*apigateway.DocumentationVersion, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DocumentationVersion
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateDocumentationVersionInput, ...request.Option) (*apigateway.DocumentationVersion, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateDocumentationVersionInput, ...request.Option) *apigateway.DocumentationVersion); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationVersion)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateDocumentationVersionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDomainName provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateDomainName(_a0 *apigateway.CreateDomainNameInput) (*apigateway.DomainName, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DomainName
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDomainNameInput) (*apigateway.DomainName, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDomainNameInput) *apigateway.DomainName); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DomainName)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateDomainNameInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDomainNameRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateDomainNameRequest(_a0 *apigateway.CreateDomainNameInput) (*request.Request, *apigateway.DomainName) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DomainName
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDomainNameInput) (*request.Request, *apigateway.DomainName)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateDomainNameInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateDomainNameInput) *apigateway.DomainName); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DomainName)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateDomainNameWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateDomainNameWithContext(_a0 context.Context, _a1 *apigateway.CreateDomainNameInput, _a2 ...request.Option) (*apigateway.DomainName, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DomainName
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateDomainNameInput, ...request.Option) (*apigateway.DomainName, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateDomainNameInput, ...request.Option) *apigateway.DomainName); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DomainName)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateDomainNameInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateModel provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateModel(_a0 *apigateway.CreateModelInput) (*apigateway.Model, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Model
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateModelInput) (*apigateway.Model, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateModelInput) *apigateway.Model); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Model)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateModelInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateModelRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateModelRequest(_a0 *apigateway.CreateModelInput) (*request.Request, *apigateway.Model) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Model
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateModelInput) (*request.Request, *apigateway.Model)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateModelInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateModelInput) *apigateway.Model); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Model)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateModelWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateModelWithContext(_a0 context.Context, _a1 *apigateway.CreateModelInput, _a2 ...request.Option) (*apigateway.Model, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Model
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateModelInput, ...request.Option) (*apigateway.Model, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateModelInput, ...request.Option) *apigateway.Model); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Model)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateModelInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateRequestValidator provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateRequestValidator(_a0 *apigateway.CreateRequestValidatorInput) (*apigateway.UpdateRequestValidatorOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UpdateRequestValidatorOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateRequestValidatorInput) (*apigateway.UpdateRequestValidatorOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateRequestValidatorInput) *apigateway.UpdateRequestValidatorOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateRequestValidatorInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateRequestValidatorRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateRequestValidatorRequest(_a0 *apigateway.CreateRequestValidatorInput) (*request.Request, *apigateway.UpdateRequestValidatorOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UpdateRequestValidatorOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateRequestValidatorInput) (*request.Request, *apigateway.UpdateRequestValidatorOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateRequestValidatorInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateRequestValidatorInput) *apigateway.UpdateRequestValidatorOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateRequestValidatorWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateRequestValidatorWithContext(_a0 context.Context, _a1 *apigateway.CreateRequestValidatorInput, _a2 ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UpdateRequestValidatorOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateRequestValidatorInput, ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateRequestValidatorInput, ...request.Option) *apigateway.UpdateRequestValidatorOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateRequestValidatorInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateResource provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateResource(_a0 *apigateway.CreateResourceInput) (*apigateway.Resource, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Resource
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateResourceInput) (*apigateway.Resource, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateResourceInput) *apigateway.Resource); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Resource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateResourceInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateResourceRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateResourceRequest(_a0 *apigateway.CreateResourceInput) (*request.Request, *apigateway.Resource) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Resource
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateResourceInput) (*request.Request, *apigateway.Resource)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateResourceInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateResourceInput) *apigateway.Resource); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Resource)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateResourceWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateResourceWithContext(_a0 context.Context, _a1 *apigateway.CreateResourceInput, _a2 ...request.Option) (*apigateway.Resource, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Resource
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateResourceInput, ...request.Option) (*apigateway.Resource, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateResourceInput, ...request.Option) *apigateway.Resource); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Resource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateResourceInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateRestApi provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateRestApi(_a0 *apigateway.CreateRestApiInput) (*apigateway.RestApi, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateRestApiInput) (*apigateway.RestApi, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateRestApiInput) *apigateway.RestApi); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateRestApiInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateRestApiRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateRestApiRequest(_a0 *apigateway.CreateRestApiInput) (*request.Request, *apigateway.RestApi) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.RestApi
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateRestApiInput) (*request.Request, *apigateway.RestApi)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateRestApiInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateRestApiInput) *apigateway.RestApi); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.RestApi)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateRestApiWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateRestApiWithContext(_a0 context.Context, _a1 *apigateway.CreateRestApiInput, _a2 ...request.Option) (*apigateway.RestApi, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateRestApiInput, ...request.Option) (*apigateway.RestApi, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateRestApiInput, ...request.Option) *apigateway.RestApi); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateRestApiInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateStage provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateStage(_a0 *apigateway.CreateStageInput) (*apigateway.Stage, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Stage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateStageInput) (*apigateway.Stage, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateStageInput) *apigateway.Stage); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Stage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateStageInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateStageRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateStageRequest(_a0 *apigateway.CreateStageInput) (*request.Request, *apigateway.Stage) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Stage
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateStageInput) (*request.Request, *apigateway.Stage)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateStageInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateStageInput) *apigateway.Stage); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Stage)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateStageWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateStageWithContext(_a0 context.Context, _a1 *apigateway.CreateStageInput, _a2 ...request.Option) (*apigateway.Stage, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Stage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateStageInput, ...request.Option) (*apigateway.Stage, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateStageInput, ...request.Option) *apigateway.Stage); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Stage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateStageInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateUsagePlan provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateUsagePlan(_a0 *apigateway.CreateUsagePlanInput) (*apigateway.UsagePlan, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UsagePlan
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateUsagePlanInput) (*apigateway.UsagePlan, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateUsagePlanInput) *apigateway.UsagePlan); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlan)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateUsagePlanInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateUsagePlanKey provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateUsagePlanKey(_a0 *apigateway.CreateUsagePlanKeyInput) (*apigateway.UsagePlanKey, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UsagePlanKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateUsagePlanKeyInput) (*apigateway.UsagePlanKey, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateUsagePlanKeyInput) *apigateway.UsagePlanKey); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlanKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateUsagePlanKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateUsagePlanKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateUsagePlanKeyRequest(_a0 *apigateway.CreateUsagePlanKeyInput) (*request.Request, *apigateway.UsagePlanKey) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UsagePlanKey
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateUsagePlanKeyInput) (*request.Request, *apigateway.UsagePlanKey)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateUsagePlanKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateUsagePlanKeyInput) *apigateway.UsagePlanKey); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UsagePlanKey)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateUsagePlanKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateUsagePlanKeyWithContext(_a0 context.Context, _a1 *apigateway.CreateUsagePlanKeyInput, _a2 ...request.Option) (*apigateway.UsagePlanKey, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UsagePlanKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateUsagePlanKeyInput, ...request.Option) (*apigateway.UsagePlanKey, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateUsagePlanKeyInput, ...request.Option) *apigateway.UsagePlanKey); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlanKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateUsagePlanKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateUsagePlanRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateUsagePlanRequest(_a0 *apigateway.CreateUsagePlanInput) (*request.Request, *apigateway.UsagePlan) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UsagePlan
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateUsagePlanInput) (*request.Request, *apigateway.UsagePlan)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateUsagePlanInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateUsagePlanInput) *apigateway.UsagePlan); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UsagePlan)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateUsagePlanWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateUsagePlanWithContext(_a0 context.Context, _a1 *apigateway.CreateUsagePlanInput, _a2 ...request.Option) (*apigateway.UsagePlan, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UsagePlan
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateUsagePlanInput, ...request.Option) (*apigateway.UsagePlan, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateUsagePlanInput, ...request.Option) *apigateway.UsagePlan); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlan)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateUsagePlanInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateVpcLink provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateVpcLink(_a0 *apigateway.CreateVpcLinkInput) (*apigateway.UpdateVpcLinkOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UpdateVpcLinkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateVpcLinkInput) (*apigateway.UpdateVpcLinkOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateVpcLinkInput) *apigateway.UpdateVpcLinkOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateVpcLinkInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateVpcLinkRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) CreateVpcLinkRequest(_a0 *apigateway.CreateVpcLinkInput) (*request.Request, *apigateway.UpdateVpcLinkOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UpdateVpcLinkOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateVpcLinkInput) (*request.Request, *apigateway.UpdateVpcLinkOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.CreateVpcLinkInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.CreateVpcLinkInput) *apigateway.UpdateVpcLinkOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateVpcLinkWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) CreateVpcLinkWithContext(_a0 context.Context, _a1 *apigateway.CreateVpcLinkInput, _a2 ...request.Option) (*apigateway.UpdateVpcLinkOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UpdateVpcLinkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateVpcLinkInput, ...request.Option) (*apigateway.UpdateVpcLinkOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.CreateVpcLinkInput, ...request.Option) *apigateway.UpdateVpcLinkOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.CreateVpcLinkInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteApiKey provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteApiKey(_a0 *apigateway.DeleteApiKeyInput) (*apigateway.DeleteApiKeyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteApiKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteApiKeyInput) (*apigateway.DeleteApiKeyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteApiKeyInput) *apigateway.DeleteApiKeyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteApiKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteApiKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteApiKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteApiKeyRequest(_a0 *apigateway.DeleteApiKeyInput) (*request.Request, *apigateway.DeleteApiKeyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteApiKeyOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteApiKeyInput) (*request.Request, *apigateway.DeleteApiKeyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteApiKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteApiKeyInput) *apigateway.DeleteApiKeyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteApiKeyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteApiKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteApiKeyWithContext(_a0 context.Context, _a1 *apigateway.DeleteApiKeyInput, _a2 ...request.Option) (*apigateway.DeleteApiKeyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteApiKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteApiKeyInput, ...request.Option) (*apigateway.DeleteApiKeyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteApiKeyInput, ...request.Option) *apigateway.DeleteApiKeyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteApiKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteApiKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteAuthorizer provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteAuthorizer(_a0 *apigateway.DeleteAuthorizerInput) (*apigateway.DeleteAuthorizerOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteAuthorizerOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteAuthorizerInput) (*apigateway.DeleteAuthorizerOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteAuthorizerInput) *apigateway.DeleteAuthorizerOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteAuthorizerOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteAuthorizerInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteAuthorizerRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteAuthorizerRequest(_a0 *apigateway.DeleteAuthorizerInput) (*request.Request, *apigateway.DeleteAuthorizerOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteAuthorizerOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteAuthorizerInput) (*request.Request, *apigateway.DeleteAuthorizerOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteAuthorizerInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteAuthorizerInput) *apigateway.DeleteAuthorizerOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteAuthorizerOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteAuthorizerWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteAuthorizerWithContext(_a0 context.Context, _a1 *apigateway.DeleteAuthorizerInput, _a2 ...request.Option) (*apigateway.DeleteAuthorizerOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteAuthorizerOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteAuthorizerInput, ...request.Option) (*apigateway.DeleteAuthorizerOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteAuthorizerInput, ...request.Option) *apigateway.DeleteAuthorizerOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteAuthorizerOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteAuthorizerInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteBasePathMapping provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteBasePathMapping(_a0 *apigateway.DeleteBasePathMappingInput) (*apigateway.DeleteBasePathMappingOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteBasePathMappingOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteBasePathMappingInput) (*apigateway.DeleteBasePathMappingOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteBasePathMappingInput) *apigateway.DeleteBasePathMappingOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteBasePathMappingOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteBasePathMappingInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteBasePathMappingRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteBasePathMappingRequest(_a0 *apigateway.DeleteBasePathMappingInput) (*request.Request, *apigateway.DeleteBasePathMappingOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteBasePathMappingOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteBasePathMappingInput) (*request.Request, *apigateway.DeleteBasePathMappingOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteBasePathMappingInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteBasePathMappingInput) *apigateway.DeleteBasePathMappingOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteBasePathMappingOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteBasePathMappingWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteBasePathMappingWithContext(_a0 context.Context, _a1 *apigateway.DeleteBasePathMappingInput, _a2 ...request.Option) (*apigateway.DeleteBasePathMappingOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteBasePathMappingOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteBasePathMappingInput, ...request.Option) (*apigateway.DeleteBasePathMappingOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteBasePathMappingInput, ...request.Option) *apigateway.DeleteBasePathMappingOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteBasePathMappingOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteBasePathMappingInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteClientCertificate provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteClientCertificate(_a0 *apigateway.DeleteClientCertificateInput) (*apigateway.DeleteClientCertificateOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteClientCertificateOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteClientCertificateInput) (*apigateway.DeleteClientCertificateOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteClientCertificateInput) *apigateway.DeleteClientCertificateOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteClientCertificateOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteClientCertificateInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteClientCertificateRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteClientCertificateRequest(_a0 *apigateway.DeleteClientCertificateInput) (*request.Request, *apigateway.DeleteClientCertificateOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteClientCertificateOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteClientCertificateInput) (*request.Request, *apigateway.DeleteClientCertificateOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteClientCertificateInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteClientCertificateInput) *apigateway.DeleteClientCertificateOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteClientCertificateOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteClientCertificateWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteClientCertificateWithContext(_a0 context.Context, _a1 *apigateway.DeleteClientCertificateInput, _a2 ...request.Option) (*apigateway.DeleteClientCertificateOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteClientCertificateOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteClientCertificateInput, ...request.Option) (*apigateway.DeleteClientCertificateOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteClientCertificateInput, ...request.Option) *apigateway.DeleteClientCertificateOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteClientCertificateOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteClientCertificateInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDeployment provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteDeployment(_a0 *apigateway.DeleteDeploymentInput) (*apigateway.DeleteDeploymentOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteDeploymentOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDeploymentInput) (*apigateway.DeleteDeploymentOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDeploymentInput) *apigateway.DeleteDeploymentOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteDeploymentOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteDeploymentInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDeploymentRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteDeploymentRequest(_a0 *apigateway.DeleteDeploymentInput) (*request.Request, *apigateway.DeleteDeploymentOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteDeploymentOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDeploymentInput) (*request.Request, *apigateway.DeleteDeploymentOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDeploymentInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteDeploymentInput) *apigateway.DeleteDeploymentOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteDeploymentOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDeploymentWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteDeploymentWithContext(_a0 context.Context, _a1 *apigateway.DeleteDeploymentInput, _a2 ...request.Option) (*apigateway.DeleteDeploymentOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteDeploymentOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteDeploymentInput, ...request.Option) (*apigateway.DeleteDeploymentOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteDeploymentInput, ...request.Option) *apigateway.DeleteDeploymentOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteDeploymentOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteDeploymentInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDocumentationPart provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteDocumentationPart(_a0 *apigateway.DeleteDocumentationPartInput) (*apigateway.DeleteDocumentationPartOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteDocumentationPartOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDocumentationPartInput) (*apigateway.DeleteDocumentationPartOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDocumentationPartInput) *apigateway.DeleteDocumentationPartOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteDocumentationPartOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteDocumentationPartInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDocumentationPartRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteDocumentationPartRequest(_a0 *apigateway.DeleteDocumentationPartInput) (*request.Request, *apigateway.DeleteDocumentationPartOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteDocumentationPartOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDocumentationPartInput) (*request.Request, *apigateway.DeleteDocumentationPartOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDocumentationPartInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteDocumentationPartInput) *apigateway.DeleteDocumentationPartOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteDocumentationPartOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDocumentationPartWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteDocumentationPartWithContext(_a0 context.Context, _a1 *apigateway.DeleteDocumentationPartInput, _a2 ...request.Option) (*apigateway.DeleteDocumentationPartOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteDocumentationPartOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteDocumentationPartInput, ...request.Option) (*apigateway.DeleteDocumentationPartOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteDocumentationPartInput, ...request.Option) *apigateway.DeleteDocumentationPartOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteDocumentationPartOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteDocumentationPartInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDocumentationVersion provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteDocumentationVersion(_a0 *apigateway.DeleteDocumentationVersionInput) (*apigateway.DeleteDocumentationVersionOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteDocumentationVersionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDocumentationVersionInput) (*apigateway.DeleteDocumentationVersionOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDocumentationVersionInput) *apigateway.DeleteDocumentationVersionOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteDocumentationVersionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteDocumentationVersionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDocumentationVersionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteDocumentationVersionRequest(_a0 *apigateway.DeleteDocumentationVersionInput) (*request.Request, *apigateway.DeleteDocumentationVersionOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteDocumentationVersionOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDocumentationVersionInput) (*request.Request, *apigateway.DeleteDocumentationVersionOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDocumentationVersionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteDocumentationVersionInput) *apigateway.DeleteDocumentationVersionOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteDocumentationVersionOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDocumentationVersionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteDocumentationVersionWithContext(_a0 context.Context, _a1 *apigateway.DeleteDocumentationVersionInput, _a2 ...request.Option) (*apigateway.DeleteDocumentationVersionOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteDocumentationVersionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteDocumentationVersionInput, ...request.Option) (*apigateway.DeleteDocumentationVersionOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteDocumentationVersionInput, ...request.Option) *apigateway.DeleteDocumentationVersionOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteDocumentationVersionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteDocumentationVersionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDomainName provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteDomainName(_a0 *apigateway.DeleteDomainNameInput) (*apigateway.DeleteDomainNameOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteDomainNameOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDomainNameInput) (*apigateway.DeleteDomainNameOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDomainNameInput) *apigateway.DeleteDomainNameOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteDomainNameOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteDomainNameInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDomainNameRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteDomainNameRequest(_a0 *apigateway.DeleteDomainNameInput) (*request.Request, *apigateway.DeleteDomainNameOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteDomainNameOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDomainNameInput) (*request.Request, *apigateway.DeleteDomainNameOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteDomainNameInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteDomainNameInput) *apigateway.DeleteDomainNameOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteDomainNameOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteDomainNameWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteDomainNameWithContext(_a0 context.Context, _a1 *apigateway.DeleteDomainNameInput, _a2 ...request.Option) (*apigateway.DeleteDomainNameOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteDomainNameOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteDomainNameInput, ...request.Option) (*apigateway.DeleteDomainNameOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteDomainNameInput, ...request.Option) *apigateway.DeleteDomainNameOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteDomainNameOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteDomainNameInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteGatewayResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteGatewayResponse(_a0 *apigateway.DeleteGatewayResponseInput) (*apigateway.DeleteGatewayResponseOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteGatewayResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteGatewayResponseInput) (*apigateway.DeleteGatewayResponseOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteGatewayResponseInput) *apigateway.DeleteGatewayResponseOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteGatewayResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteGatewayResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteGatewayResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteGatewayResponseRequest(_a0 *apigateway.DeleteGatewayResponseInput) (*request.Request, *apigateway.DeleteGatewayResponseOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteGatewayResponseOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteGatewayResponseInput) (*request.Request, *apigateway.DeleteGatewayResponseOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteGatewayResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteGatewayResponseInput) *apigateway.DeleteGatewayResponseOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteGatewayResponseOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteGatewayResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteGatewayResponseWithContext(_a0 context.Context, _a1 *apigateway.DeleteGatewayResponseInput, _a2 ...request.Option) (*apigateway.DeleteGatewayResponseOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteGatewayResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteGatewayResponseInput, ...request.Option) (*apigateway.DeleteGatewayResponseOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteGatewayResponseInput, ...request.Option) *apigateway.DeleteGatewayResponseOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteGatewayResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteGatewayResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteIntegration provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteIntegration(_a0 *apigateway.DeleteIntegrationInput) (*apigateway.DeleteIntegrationOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteIntegrationOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteIntegrationInput) (*apigateway.DeleteIntegrationOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteIntegrationInput) *apigateway.DeleteIntegrationOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteIntegrationOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteIntegrationInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteIntegrationRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteIntegrationRequest(_a0 *apigateway.DeleteIntegrationInput) (*request.Request, *apigateway.DeleteIntegrationOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteIntegrationOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteIntegrationInput) (*request.Request, *apigateway.DeleteIntegrationOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteIntegrationInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteIntegrationInput) *apigateway.DeleteIntegrationOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteIntegrationOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteIntegrationResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteIntegrationResponse(_a0 *apigateway.DeleteIntegrationResponseInput) (*apigateway.DeleteIntegrationResponseOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteIntegrationResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteIntegrationResponseInput) (*apigateway.DeleteIntegrationResponseOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteIntegrationResponseInput) *apigateway.DeleteIntegrationResponseOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteIntegrationResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteIntegrationResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteIntegrationResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteIntegrationResponseRequest(_a0 *apigateway.DeleteIntegrationResponseInput) (*request.Request, *apigateway.DeleteIntegrationResponseOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteIntegrationResponseOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteIntegrationResponseInput) (*request.Request, *apigateway.DeleteIntegrationResponseOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteIntegrationResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteIntegrationResponseInput) *apigateway.DeleteIntegrationResponseOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteIntegrationResponseOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteIntegrationResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteIntegrationResponseWithContext(_a0 context.Context, _a1 *apigateway.DeleteIntegrationResponseInput, _a2 ...request.Option) (*apigateway.DeleteIntegrationResponseOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteIntegrationResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteIntegrationResponseInput, ...request.Option) (*apigateway.DeleteIntegrationResponseOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteIntegrationResponseInput, ...request.Option) *apigateway.DeleteIntegrationResponseOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteIntegrationResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteIntegrationResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteIntegrationWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteIntegrationWithContext(_a0 context.Context, _a1 *apigateway.DeleteIntegrationInput, _a2 ...request.Option) (*apigateway.DeleteIntegrationOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteIntegrationOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteIntegrationInput, ...request.Option) (*apigateway.DeleteIntegrationOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteIntegrationInput, ...request.Option) *apigateway.DeleteIntegrationOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteIntegrationOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteIntegrationInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteMethod provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteMethod(_a0 *apigateway.DeleteMethodInput) (*apigateway.DeleteMethodOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteMethodOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteMethodInput) (*apigateway.DeleteMethodOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteMethodInput) *apigateway.DeleteMethodOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteMethodOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteMethodInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteMethodRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteMethodRequest(_a0 *apigateway.DeleteMethodInput) (*request.Request, *apigateway.DeleteMethodOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteMethodOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteMethodInput) (*request.Request, *apigateway.DeleteMethodOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteMethodInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteMethodInput) *apigateway.DeleteMethodOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteMethodOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteMethodResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteMethodResponse(_a0 *apigateway.DeleteMethodResponseInput) (*apigateway.DeleteMethodResponseOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteMethodResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteMethodResponseInput) (*apigateway.DeleteMethodResponseOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteMethodResponseInput) *apigateway.DeleteMethodResponseOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteMethodResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteMethodResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteMethodResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteMethodResponseRequest(_a0 *apigateway.DeleteMethodResponseInput) (*request.Request, *apigateway.DeleteMethodResponseOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteMethodResponseOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteMethodResponseInput) (*request.Request, *apigateway.DeleteMethodResponseOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteMethodResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteMethodResponseInput) *apigateway.DeleteMethodResponseOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteMethodResponseOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteMethodResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteMethodResponseWithContext(_a0 context.Context, _a1 *apigateway.DeleteMethodResponseInput, _a2 ...request.Option) (*apigateway.DeleteMethodResponseOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteMethodResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteMethodResponseInput, ...request.Option) (*apigateway.DeleteMethodResponseOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteMethodResponseInput, ...request.Option) *apigateway.DeleteMethodResponseOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteMethodResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteMethodResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteMethodWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteMethodWithContext(_a0 context.Context, _a1 *apigateway.DeleteMethodInput, _a2 ...request.Option) (*apigateway.DeleteMethodOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteMethodOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteMethodInput, ...request.Option) (*apigateway.DeleteMethodOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteMethodInput, ...request.Option) *apigateway.DeleteMethodOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteMethodOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteMethodInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteModel provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteModel(_a0 *apigateway.DeleteModelInput) (*apigateway.DeleteModelOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteModelOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteModelInput) (*apigateway.DeleteModelOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteModelInput) *apigateway.DeleteModelOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteModelOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteModelInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteModelRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteModelRequest(_a0 *apigateway.DeleteModelInput) (*request.Request, *apigateway.DeleteModelOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteModelOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteModelInput) (*request.Request, *apigateway.DeleteModelOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteModelInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteModelInput) *apigateway.DeleteModelOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteModelOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteModelWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteModelWithContext(_a0 context.Context, _a1 *apigateway.DeleteModelInput, _a2 ...request.Option) (*apigateway.DeleteModelOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteModelOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteModelInput, ...request.Option) (*apigateway.DeleteModelOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteModelInput, ...request.Option) *apigateway.DeleteModelOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteModelOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteModelInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteRequestValidator provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteRequestValidator(_a0 *apigateway.DeleteRequestValidatorInput) (*apigateway.DeleteRequestValidatorOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteRequestValidatorOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteRequestValidatorInput) (*apigateway.DeleteRequestValidatorOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteRequestValidatorInput) *apigateway.DeleteRequestValidatorOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteRequestValidatorOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteRequestValidatorInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteRequestValidatorRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteRequestValidatorRequest(_a0 *apigateway.DeleteRequestValidatorInput) (*request.Request, *apigateway.DeleteRequestValidatorOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteRequestValidatorOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteRequestValidatorInput) (*request.Request, *apigateway.DeleteRequestValidatorOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteRequestValidatorInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteRequestValidatorInput) *apigateway.DeleteRequestValidatorOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteRequestValidatorOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteRequestValidatorWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteRequestValidatorWithContext(_a0 context.Context, _a1 *apigateway.DeleteRequestValidatorInput, _a2 ...request.Option) (*apigateway.DeleteRequestValidatorOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteRequestValidatorOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteRequestValidatorInput, ...request.Option) (*apigateway.DeleteRequestValidatorOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteRequestValidatorInput, ...request.Option) *apigateway.DeleteRequestValidatorOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteRequestValidatorOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteRequestValidatorInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteResource provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteResource(_a0 *apigateway.DeleteResourceInput) (*apigateway.DeleteResourceOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteResourceInput) (*apigateway.DeleteResourceOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteResourceInput) *apigateway.DeleteResourceOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteResourceInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteResourceRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteResourceRequest(_a0 *apigateway.DeleteResourceInput) (*request.Request, *apigateway.DeleteResourceOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteResourceOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteResourceInput) (*request.Request, *apigateway.DeleteResourceOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteResourceInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteResourceInput) *apigateway.DeleteResourceOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteResourceOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteResourceWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteResourceWithContext(_a0 context.Context, _a1 *apigateway.DeleteResourceInput, _a2 ...request.Option) (*apigateway.DeleteResourceOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteResourceInput, ...request.Option) (*apigateway.DeleteResourceOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteResourceInput, ...request.Option) *apigateway.DeleteResourceOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteResourceInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteRestApi provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteRestApi(_a0 *apigateway.DeleteRestApiInput) (*apigateway.DeleteRestApiOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteRestApiOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteRestApiInput) (*apigateway.DeleteRestApiOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteRestApiInput) *apigateway.DeleteRestApiOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteRestApiOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteRestApiInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteRestApiRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteRestApiRequest(_a0 *apigateway.DeleteRestApiInput) (*request.Request, *apigateway.DeleteRestApiOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteRestApiOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteRestApiInput) (*request.Request, *apigateway.DeleteRestApiOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteRestApiInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteRestApiInput) *apigateway.DeleteRestApiOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteRestApiOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteRestApiWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteRestApiWithContext(_a0 context.Context, _a1 *apigateway.DeleteRestApiInput, _a2 ...request.Option) (*apigateway.DeleteRestApiOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteRestApiOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteRestApiInput, ...request.Option) (*apigateway.DeleteRestApiOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteRestApiInput, ...request.Option) *apigateway.DeleteRestApiOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteRestApiOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteRestApiInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteStage provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteStage(_a0 *apigateway.DeleteStageInput) (*apigateway.DeleteStageOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteStageOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteStageInput) (*apigateway.DeleteStageOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteStageInput) *apigateway.DeleteStageOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteStageOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteStageInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteStageRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteStageRequest(_a0 *apigateway.DeleteStageInput) (*request.Request, *apigateway.DeleteStageOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteStageOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteStageInput) (*request.Request, *apigateway.DeleteStageOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteStageInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteStageInput) *apigateway.DeleteStageOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteStageOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteStageWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteStageWithContext(_a0 context.Context, _a1 *apigateway.DeleteStageInput, _a2 ...request.Option) (*apigateway.DeleteStageOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteStageOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteStageInput, ...request.Option) (*apigateway.DeleteStageOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteStageInput, ...request.Option) *apigateway.DeleteStageOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteStageOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteStageInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteUsagePlan provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteUsagePlan(_a0 *apigateway.DeleteUsagePlanInput) (*apigateway.DeleteUsagePlanOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteUsagePlanOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteUsagePlanInput) (*apigateway.DeleteUsagePlanOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteUsagePlanInput) *apigateway.DeleteUsagePlanOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteUsagePlanOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteUsagePlanInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteUsagePlanKey provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteUsagePlanKey(_a0 *apigateway.DeleteUsagePlanKeyInput) (*apigateway.DeleteUsagePlanKeyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteUsagePlanKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteUsagePlanKeyInput) (*apigateway.DeleteUsagePlanKeyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteUsagePlanKeyInput) *apigateway.DeleteUsagePlanKeyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteUsagePlanKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteUsagePlanKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteUsagePlanKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteUsagePlanKeyRequest(_a0 *apigateway.DeleteUsagePlanKeyInput) (*request.Request, *apigateway.DeleteUsagePlanKeyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteUsagePlanKeyOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteUsagePlanKeyInput) (*request.Request, *apigateway.DeleteUsagePlanKeyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteUsagePlanKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteUsagePlanKeyInput) *apigateway.DeleteUsagePlanKeyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteUsagePlanKeyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteUsagePlanKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteUsagePlanKeyWithContext(_a0 context.Context, _a1 *apigateway.DeleteUsagePlanKeyInput, _a2 ...request.Option) (*apigateway.DeleteUsagePlanKeyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteUsagePlanKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteUsagePlanKeyInput, ...request.Option) (*apigateway.DeleteUsagePlanKeyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteUsagePlanKeyInput, ...request.Option) *apigateway.DeleteUsagePlanKeyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteUsagePlanKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteUsagePlanKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteUsagePlanRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteUsagePlanRequest(_a0 *apigateway.DeleteUsagePlanInput) (*request.Request, *apigateway.DeleteUsagePlanOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteUsagePlanOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteUsagePlanInput) (*request.Request, *apigateway.DeleteUsagePlanOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteUsagePlanInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteUsagePlanInput) *apigateway.DeleteUsagePlanOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteUsagePlanOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteUsagePlanWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteUsagePlanWithContext(_a0 context.Context, _a1 *apigateway.DeleteUsagePlanInput, _a2 ...request.Option) (*apigateway.DeleteUsagePlanOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteUsagePlanOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteUsagePlanInput, ...request.Option) (*apigateway.DeleteUsagePlanOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteUsagePlanInput, ...request.Option) *apigateway.DeleteUsagePlanOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteUsagePlanOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteUsagePlanInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteVpcLink provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteVpcLink(_a0 *apigateway.DeleteVpcLinkInput) (*apigateway.DeleteVpcLinkOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DeleteVpcLinkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteVpcLinkInput) (*apigateway.DeleteVpcLinkOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteVpcLinkInput) *apigateway.DeleteVpcLinkOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteVpcLinkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteVpcLinkInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteVpcLinkRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) DeleteVpcLinkRequest(_a0 *apigateway.DeleteVpcLinkInput) (*request.Request, *apigateway.DeleteVpcLinkOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DeleteVpcLinkOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteVpcLinkInput) (*request.Request, *apigateway.DeleteVpcLinkOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.DeleteVpcLinkInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.DeleteVpcLinkInput) *apigateway.DeleteVpcLinkOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DeleteVpcLinkOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteVpcLinkWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) DeleteVpcLinkWithContext(_a0 context.Context, _a1 *apigateway.DeleteVpcLinkInput, _a2 ...request.Option) (*apigateway.DeleteVpcLinkOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DeleteVpcLinkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteVpcLinkInput, ...request.Option) (*apigateway.DeleteVpcLinkOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.DeleteVpcLinkInput, ...request.Option) *apigateway.DeleteVpcLinkOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DeleteVpcLinkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.DeleteVpcLinkInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // FlushStageAuthorizersCache provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) FlushStageAuthorizersCache(_a0 *apigateway.FlushStageAuthorizersCacheInput) (*apigateway.FlushStageAuthorizersCacheOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.FlushStageAuthorizersCacheOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.FlushStageAuthorizersCacheInput) (*apigateway.FlushStageAuthorizersCacheOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.FlushStageAuthorizersCacheInput) *apigateway.FlushStageAuthorizersCacheOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.FlushStageAuthorizersCacheOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.FlushStageAuthorizersCacheInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // FlushStageAuthorizersCacheRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) FlushStageAuthorizersCacheRequest(_a0 *apigateway.FlushStageAuthorizersCacheInput) (*request.Request, *apigateway.FlushStageAuthorizersCacheOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.FlushStageAuthorizersCacheOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.FlushStageAuthorizersCacheInput) (*request.Request, *apigateway.FlushStageAuthorizersCacheOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.FlushStageAuthorizersCacheInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.FlushStageAuthorizersCacheInput) *apigateway.FlushStageAuthorizersCacheOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.FlushStageAuthorizersCacheOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // FlushStageAuthorizersCacheWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) FlushStageAuthorizersCacheWithContext(_a0 context.Context, _a1 *apigateway.FlushStageAuthorizersCacheInput, _a2 ...request.Option) (*apigateway.FlushStageAuthorizersCacheOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.FlushStageAuthorizersCacheOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.FlushStageAuthorizersCacheInput, ...request.Option) (*apigateway.FlushStageAuthorizersCacheOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.FlushStageAuthorizersCacheInput, ...request.Option) *apigateway.FlushStageAuthorizersCacheOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.FlushStageAuthorizersCacheOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.FlushStageAuthorizersCacheInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // FlushStageCache provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) FlushStageCache(_a0 *apigateway.FlushStageCacheInput) (*apigateway.FlushStageCacheOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.FlushStageCacheOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.FlushStageCacheInput) (*apigateway.FlushStageCacheOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.FlushStageCacheInput) *apigateway.FlushStageCacheOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.FlushStageCacheOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.FlushStageCacheInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // FlushStageCacheRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) FlushStageCacheRequest(_a0 *apigateway.FlushStageCacheInput) (*request.Request, *apigateway.FlushStageCacheOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.FlushStageCacheOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.FlushStageCacheInput) (*request.Request, *apigateway.FlushStageCacheOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.FlushStageCacheInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.FlushStageCacheInput) *apigateway.FlushStageCacheOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.FlushStageCacheOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // FlushStageCacheWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) FlushStageCacheWithContext(_a0 context.Context, _a1 *apigateway.FlushStageCacheInput, _a2 ...request.Option) (*apigateway.FlushStageCacheOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.FlushStageCacheOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.FlushStageCacheInput, ...request.Option) (*apigateway.FlushStageCacheOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.FlushStageCacheInput, ...request.Option) *apigateway.FlushStageCacheOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.FlushStageCacheOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.FlushStageCacheInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateClientCertificate provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GenerateClientCertificate(_a0 *apigateway.GenerateClientCertificateInput) (*apigateway.ClientCertificate, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.ClientCertificate
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GenerateClientCertificateInput) (*apigateway.ClientCertificate, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GenerateClientCertificateInput) *apigateway.ClientCertificate); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ClientCertificate)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GenerateClientCertificateInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateClientCertificateRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GenerateClientCertificateRequest(_a0 *apigateway.GenerateClientCertificateInput) (*request.Request, *apigateway.ClientCertificate) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.ClientCertificate
-	if rf, ok := ret.Get(0).(func(*apigateway.GenerateClientCertificateInput) (*request.Request, *apigateway.ClientCertificate)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GenerateClientCertificateInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GenerateClientCertificateInput) *apigateway.ClientCertificate); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.ClientCertificate)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateClientCertificateWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GenerateClientCertificateWithContext(_a0 context.Context, _a1 *apigateway.GenerateClientCertificateInput, _a2 ...request.Option) (*apigateway.ClientCertificate, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.ClientCertificate
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GenerateClientCertificateInput, ...request.Option) (*apigateway.ClientCertificate, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GenerateClientCertificateInput, ...request.Option) *apigateway.ClientCertificate); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ClientCertificate)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GenerateClientCertificateInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetAccount provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetAccount(_a0 *apigateway.GetAccountInput) (*apigateway.Account, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Account
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAccountInput) (*apigateway.Account, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAccountInput) *apigateway.Account); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Account)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetAccountInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetAccountRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetAccountRequest(_a0 *apigateway.GetAccountInput) (*request.Request, *apigateway.Account) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Account
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAccountInput) (*request.Request, *apigateway.Account)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAccountInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetAccountInput) *apigateway.Account); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Account)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetAccountWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetAccountWithContext(_a0 context.Context, _a1 *apigateway.GetAccountInput, _a2 ...request.Option) (*apigateway.Account, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Account
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetAccountInput, ...request.Option) (*apigateway.Account, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetAccountInput, ...request.Option) *apigateway.Account); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Account)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetAccountInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetApiKey provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetApiKey(_a0 *apigateway.GetApiKeyInput) (*apigateway.ApiKey, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.ApiKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetApiKeyInput) (*apigateway.ApiKey, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetApiKeyInput) *apigateway.ApiKey); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ApiKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetApiKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetApiKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetApiKeyRequest(_a0 *apigateway.GetApiKeyInput) (*request.Request, *apigateway.ApiKey) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.ApiKey
-	if rf, ok := ret.Get(0).(func(*apigateway.GetApiKeyInput) (*request.Request, *apigateway.ApiKey)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetApiKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetApiKeyInput) *apigateway.ApiKey); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.ApiKey)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetApiKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetApiKeyWithContext(_a0 context.Context, _a1 *apigateway.GetApiKeyInput, _a2 ...request.Option) (*apigateway.ApiKey, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.ApiKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetApiKeyInput, ...request.Option) (*apigateway.ApiKey, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetApiKeyInput, ...request.Option) *apigateway.ApiKey); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ApiKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetApiKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetApiKeys provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetApiKeys(_a0 *apigateway.GetApiKeysInput) (*apigateway.GetApiKeysOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetApiKeysOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetApiKeysInput) (*apigateway.GetApiKeysOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetApiKeysInput) *apigateway.GetApiKeysOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetApiKeysOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetApiKeysInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetApiKeysPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetApiKeysPages(_a0 *apigateway.GetApiKeysInput, _a1 func(*apigateway.GetApiKeysOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetApiKeysInput, func(*apigateway.GetApiKeysOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetApiKeysPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetApiKeysPagesWithContext(_a0 context.Context, _a1 *apigateway.GetApiKeysInput, _a2 func(*apigateway.GetApiKeysOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetApiKeysInput, func(*apigateway.GetApiKeysOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetApiKeysRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetApiKeysRequest(_a0 *apigateway.GetApiKeysInput) (*request.Request, *apigateway.GetApiKeysOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetApiKeysOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetApiKeysInput) (*request.Request, *apigateway.GetApiKeysOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetApiKeysInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetApiKeysInput) *apigateway.GetApiKeysOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetApiKeysOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetApiKeysWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetApiKeysWithContext(_a0 context.Context, _a1 *apigateway.GetApiKeysInput, _a2 ...request.Option) (*apigateway.GetApiKeysOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetApiKeysOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetApiKeysInput, ...request.Option) (*apigateway.GetApiKeysOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetApiKeysInput, ...request.Option) *apigateway.GetApiKeysOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetApiKeysOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetApiKeysInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetAuthorizer provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetAuthorizer(_a0 *apigateway.GetAuthorizerInput) (*apigateway.Authorizer, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Authorizer
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAuthorizerInput) (*apigateway.Authorizer, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAuthorizerInput) *apigateway.Authorizer); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Authorizer)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetAuthorizerInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetAuthorizerRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetAuthorizerRequest(_a0 *apigateway.GetAuthorizerInput) (*request.Request, *apigateway.Authorizer) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Authorizer
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAuthorizerInput) (*request.Request, *apigateway.Authorizer)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAuthorizerInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetAuthorizerInput) *apigateway.Authorizer); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Authorizer)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetAuthorizerWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetAuthorizerWithContext(_a0 context.Context, _a1 *apigateway.GetAuthorizerInput, _a2 ...request.Option) (*apigateway.Authorizer, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Authorizer
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetAuthorizerInput, ...request.Option) (*apigateway.Authorizer, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetAuthorizerInput, ...request.Option) *apigateway.Authorizer); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Authorizer)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetAuthorizerInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetAuthorizers provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetAuthorizers(_a0 *apigateway.GetAuthorizersInput) (*apigateway.GetAuthorizersOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetAuthorizersOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAuthorizersInput) (*apigateway.GetAuthorizersOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAuthorizersInput) *apigateway.GetAuthorizersOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetAuthorizersOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetAuthorizersInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetAuthorizersRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetAuthorizersRequest(_a0 *apigateway.GetAuthorizersInput) (*request.Request, *apigateway.GetAuthorizersOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetAuthorizersOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAuthorizersInput) (*request.Request, *apigateway.GetAuthorizersOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetAuthorizersInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetAuthorizersInput) *apigateway.GetAuthorizersOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetAuthorizersOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetAuthorizersWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetAuthorizersWithContext(_a0 context.Context, _a1 *apigateway.GetAuthorizersInput, _a2 ...request.Option) (*apigateway.GetAuthorizersOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetAuthorizersOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetAuthorizersInput, ...request.Option) (*apigateway.GetAuthorizersOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetAuthorizersInput, ...request.Option) *apigateway.GetAuthorizersOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetAuthorizersOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetAuthorizersInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetBasePathMapping provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetBasePathMapping(_a0 *apigateway.GetBasePathMappingInput) (*apigateway.BasePathMapping, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.BasePathMapping
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetBasePathMappingInput) (*apigateway.BasePathMapping, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetBasePathMappingInput) *apigateway.BasePathMapping); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.BasePathMapping)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetBasePathMappingInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetBasePathMappingRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetBasePathMappingRequest(_a0 *apigateway.GetBasePathMappingInput) (*request.Request, *apigateway.BasePathMapping) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.BasePathMapping
-	if rf, ok := ret.Get(0).(func(*apigateway.GetBasePathMappingInput) (*request.Request, *apigateway.BasePathMapping)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetBasePathMappingInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetBasePathMappingInput) *apigateway.BasePathMapping); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.BasePathMapping)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetBasePathMappingWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetBasePathMappingWithContext(_a0 context.Context, _a1 *apigateway.GetBasePathMappingInput, _a2 ...request.Option) (*apigateway.BasePathMapping, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.BasePathMapping
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetBasePathMappingInput, ...request.Option) (*apigateway.BasePathMapping, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetBasePathMappingInput, ...request.Option) *apigateway.BasePathMapping); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.BasePathMapping)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetBasePathMappingInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetBasePathMappings provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetBasePathMappings(_a0 *apigateway.GetBasePathMappingsInput) (*apigateway.GetBasePathMappingsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetBasePathMappingsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetBasePathMappingsInput) (*apigateway.GetBasePathMappingsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetBasePathMappingsInput) *apigateway.GetBasePathMappingsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetBasePathMappingsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetBasePathMappingsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetBasePathMappingsPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetBasePathMappingsPages(_a0 *apigateway.GetBasePathMappingsInput, _a1 func(*apigateway.GetBasePathMappingsOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetBasePathMappingsInput, func(*apigateway.GetBasePathMappingsOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetBasePathMappingsPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetBasePathMappingsPagesWithContext(_a0 context.Context, _a1 *apigateway.GetBasePathMappingsInput, _a2 func(*apigateway.GetBasePathMappingsOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetBasePathMappingsInput, func(*apigateway.GetBasePathMappingsOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetBasePathMappingsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetBasePathMappingsRequest(_a0 *apigateway.GetBasePathMappingsInput) (*request.Request, *apigateway.GetBasePathMappingsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetBasePathMappingsOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetBasePathMappingsInput) (*request.Request, *apigateway.GetBasePathMappingsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetBasePathMappingsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetBasePathMappingsInput) *apigateway.GetBasePathMappingsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetBasePathMappingsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetBasePathMappingsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetBasePathMappingsWithContext(_a0 context.Context, _a1 *apigateway.GetBasePathMappingsInput, _a2 ...request.Option) (*apigateway.GetBasePathMappingsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetBasePathMappingsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetBasePathMappingsInput, ...request.Option) (*apigateway.GetBasePathMappingsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetBasePathMappingsInput, ...request.Option) *apigateway.GetBasePathMappingsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetBasePathMappingsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetBasePathMappingsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetClientCertificate provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetClientCertificate(_a0 *apigateway.GetClientCertificateInput) (*apigateway.ClientCertificate, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.ClientCertificate
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetClientCertificateInput) (*apigateway.ClientCertificate, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetClientCertificateInput) *apigateway.ClientCertificate); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ClientCertificate)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetClientCertificateInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetClientCertificateRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetClientCertificateRequest(_a0 *apigateway.GetClientCertificateInput) (*request.Request, *apigateway.ClientCertificate) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.ClientCertificate
-	if rf, ok := ret.Get(0).(func(*apigateway.GetClientCertificateInput) (*request.Request, *apigateway.ClientCertificate)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetClientCertificateInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetClientCertificateInput) *apigateway.ClientCertificate); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.ClientCertificate)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetClientCertificateWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetClientCertificateWithContext(_a0 context.Context, _a1 *apigateway.GetClientCertificateInput, _a2 ...request.Option) (*apigateway.ClientCertificate, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.ClientCertificate
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetClientCertificateInput, ...request.Option) (*apigateway.ClientCertificate, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetClientCertificateInput, ...request.Option) *apigateway.ClientCertificate); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ClientCertificate)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetClientCertificateInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetClientCertificates provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetClientCertificates(_a0 *apigateway.GetClientCertificatesInput) (*apigateway.GetClientCertificatesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetClientCertificatesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetClientCertificatesInput) (*apigateway.GetClientCertificatesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetClientCertificatesInput) *apigateway.GetClientCertificatesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetClientCertificatesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetClientCertificatesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetClientCertificatesPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetClientCertificatesPages(_a0 *apigateway.GetClientCertificatesInput, _a1 func(*apigateway.GetClientCertificatesOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetClientCertificatesInput, func(*apigateway.GetClientCertificatesOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetClientCertificatesPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetClientCertificatesPagesWithContext(_a0 context.Context, _a1 *apigateway.GetClientCertificatesInput, _a2 func(*apigateway.GetClientCertificatesOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetClientCertificatesInput, func(*apigateway.GetClientCertificatesOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetClientCertificatesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetClientCertificatesRequest(_a0 *apigateway.GetClientCertificatesInput) (*request.Request, *apigateway.GetClientCertificatesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetClientCertificatesOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetClientCertificatesInput) (*request.Request, *apigateway.GetClientCertificatesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetClientCertificatesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetClientCertificatesInput) *apigateway.GetClientCertificatesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetClientCertificatesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetClientCertificatesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetClientCertificatesWithContext(_a0 context.Context, _a1 *apigateway.GetClientCertificatesInput, _a2 ...request.Option) (*apigateway.GetClientCertificatesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetClientCertificatesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetClientCertificatesInput, ...request.Option) (*apigateway.GetClientCertificatesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetClientCertificatesInput, ...request.Option) *apigateway.GetClientCertificatesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetClientCertificatesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetClientCertificatesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDeployment provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDeployment(_a0 *apigateway.GetDeploymentInput) (*apigateway.Deployment, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Deployment
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDeploymentInput) (*apigateway.Deployment, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDeploymentInput) *apigateway.Deployment); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Deployment)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDeploymentInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDeploymentRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDeploymentRequest(_a0 *apigateway.GetDeploymentInput) (*request.Request, *apigateway.Deployment) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Deployment
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDeploymentInput) (*request.Request, *apigateway.Deployment)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDeploymentInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDeploymentInput) *apigateway.Deployment); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Deployment)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDeploymentWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetDeploymentWithContext(_a0 context.Context, _a1 *apigateway.GetDeploymentInput, _a2 ...request.Option) (*apigateway.Deployment, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Deployment
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDeploymentInput, ...request.Option) (*apigateway.Deployment, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDeploymentInput, ...request.Option) *apigateway.Deployment); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Deployment)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetDeploymentInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDeployments provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDeployments(_a0 *apigateway.GetDeploymentsInput) (*apigateway.GetDeploymentsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetDeploymentsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDeploymentsInput) (*apigateway.GetDeploymentsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDeploymentsInput) *apigateway.GetDeploymentsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetDeploymentsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDeploymentsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDeploymentsPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetDeploymentsPages(_a0 *apigateway.GetDeploymentsInput, _a1 func(*apigateway.GetDeploymentsOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDeploymentsInput, func(*apigateway.GetDeploymentsOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetDeploymentsPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetDeploymentsPagesWithContext(_a0 context.Context, _a1 *apigateway.GetDeploymentsInput, _a2 func(*apigateway.GetDeploymentsOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDeploymentsInput, func(*apigateway.GetDeploymentsOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetDeploymentsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDeploymentsRequest(_a0 *apigateway.GetDeploymentsInput) (*request.Request, *apigateway.GetDeploymentsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetDeploymentsOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDeploymentsInput) (*request.Request, *apigateway.GetDeploymentsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDeploymentsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDeploymentsInput) *apigateway.GetDeploymentsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetDeploymentsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDeploymentsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetDeploymentsWithContext(_a0 context.Context, _a1 *apigateway.GetDeploymentsInput, _a2 ...request.Option) (*apigateway.GetDeploymentsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetDeploymentsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDeploymentsInput, ...request.Option) (*apigateway.GetDeploymentsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDeploymentsInput, ...request.Option) *apigateway.GetDeploymentsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetDeploymentsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetDeploymentsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationPart provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDocumentationPart(_a0 *apigateway.GetDocumentationPartInput) (*apigateway.DocumentationPart, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DocumentationPart
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationPartInput) (*apigateway.DocumentationPart, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationPartInput) *apigateway.DocumentationPart); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationPart)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDocumentationPartInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationPartRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDocumentationPartRequest(_a0 *apigateway.GetDocumentationPartInput) (*request.Request, *apigateway.DocumentationPart) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DocumentationPart
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationPartInput) (*request.Request, *apigateway.DocumentationPart)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationPartInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDocumentationPartInput) *apigateway.DocumentationPart); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DocumentationPart)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationPartWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetDocumentationPartWithContext(_a0 context.Context, _a1 *apigateway.GetDocumentationPartInput, _a2 ...request.Option) (*apigateway.DocumentationPart, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DocumentationPart
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDocumentationPartInput, ...request.Option) (*apigateway.DocumentationPart, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDocumentationPartInput, ...request.Option) *apigateway.DocumentationPart); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationPart)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetDocumentationPartInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationParts provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDocumentationParts(_a0 *apigateway.GetDocumentationPartsInput) (*apigateway.GetDocumentationPartsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetDocumentationPartsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationPartsInput) (*apigateway.GetDocumentationPartsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationPartsInput) *apigateway.GetDocumentationPartsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetDocumentationPartsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDocumentationPartsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationPartsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDocumentationPartsRequest(_a0 *apigateway.GetDocumentationPartsInput) (*request.Request, *apigateway.GetDocumentationPartsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetDocumentationPartsOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationPartsInput) (*request.Request, *apigateway.GetDocumentationPartsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationPartsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDocumentationPartsInput) *apigateway.GetDocumentationPartsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetDocumentationPartsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationPartsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetDocumentationPartsWithContext(_a0 context.Context, _a1 *apigateway.GetDocumentationPartsInput, _a2 ...request.Option) (*apigateway.GetDocumentationPartsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetDocumentationPartsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDocumentationPartsInput, ...request.Option) (*apigateway.GetDocumentationPartsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDocumentationPartsInput, ...request.Option) *apigateway.GetDocumentationPartsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetDocumentationPartsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetDocumentationPartsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationVersion provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDocumentationVersion(_a0 *apigateway.GetDocumentationVersionInput) (*apigateway.DocumentationVersion, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DocumentationVersion
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationVersionInput) (*apigateway.DocumentationVersion, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationVersionInput) *apigateway.DocumentationVersion); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationVersion)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDocumentationVersionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationVersionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDocumentationVersionRequest(_a0 *apigateway.GetDocumentationVersionInput) (*request.Request, *apigateway.DocumentationVersion) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DocumentationVersion
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationVersionInput) (*request.Request, *apigateway.DocumentationVersion)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationVersionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDocumentationVersionInput) *apigateway.DocumentationVersion); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DocumentationVersion)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationVersionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetDocumentationVersionWithContext(_a0 context.Context, _a1 *apigateway.GetDocumentationVersionInput, _a2 ...request.Option) (*apigateway.DocumentationVersion, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DocumentationVersion
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDocumentationVersionInput, ...request.Option) (*apigateway.DocumentationVersion, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDocumentationVersionInput, ...request.Option) *apigateway.DocumentationVersion); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationVersion)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetDocumentationVersionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationVersions provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDocumentationVersions(_a0 *apigateway.GetDocumentationVersionsInput) (*apigateway.GetDocumentationVersionsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetDocumentationVersionsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationVersionsInput) (*apigateway.GetDocumentationVersionsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationVersionsInput) *apigateway.GetDocumentationVersionsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetDocumentationVersionsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDocumentationVersionsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationVersionsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDocumentationVersionsRequest(_a0 *apigateway.GetDocumentationVersionsInput) (*request.Request, *apigateway.GetDocumentationVersionsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetDocumentationVersionsOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationVersionsInput) (*request.Request, *apigateway.GetDocumentationVersionsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDocumentationVersionsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDocumentationVersionsInput) *apigateway.GetDocumentationVersionsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetDocumentationVersionsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDocumentationVersionsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetDocumentationVersionsWithContext(_a0 context.Context, _a1 *apigateway.GetDocumentationVersionsInput, _a2 ...request.Option) (*apigateway.GetDocumentationVersionsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetDocumentationVersionsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDocumentationVersionsInput, ...request.Option) (*apigateway.GetDocumentationVersionsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDocumentationVersionsInput, ...request.Option) *apigateway.GetDocumentationVersionsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetDocumentationVersionsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetDocumentationVersionsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDomainName provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDomainName(_a0 *apigateway.GetDomainNameInput) (*apigateway.DomainName, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DomainName
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDomainNameInput) (*apigateway.DomainName, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDomainNameInput) *apigateway.DomainName); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DomainName)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDomainNameInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDomainNameRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDomainNameRequest(_a0 *apigateway.GetDomainNameInput) (*request.Request, *apigateway.DomainName) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DomainName
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDomainNameInput) (*request.Request, *apigateway.DomainName)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDomainNameInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDomainNameInput) *apigateway.DomainName); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DomainName)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDomainNameWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetDomainNameWithContext(_a0 context.Context, _a1 *apigateway.GetDomainNameInput, _a2 ...request.Option) (*apigateway.DomainName, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DomainName
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDomainNameInput, ...request.Option) (*apigateway.DomainName, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDomainNameInput, ...request.Option) *apigateway.DomainName); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DomainName)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetDomainNameInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDomainNames provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDomainNames(_a0 *apigateway.GetDomainNamesInput) (*apigateway.GetDomainNamesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetDomainNamesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDomainNamesInput) (*apigateway.GetDomainNamesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDomainNamesInput) *apigateway.GetDomainNamesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetDomainNamesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDomainNamesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDomainNamesPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetDomainNamesPages(_a0 *apigateway.GetDomainNamesInput, _a1 func(*apigateway.GetDomainNamesOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDomainNamesInput, func(*apigateway.GetDomainNamesOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetDomainNamesPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetDomainNamesPagesWithContext(_a0 context.Context, _a1 *apigateway.GetDomainNamesInput, _a2 func(*apigateway.GetDomainNamesOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDomainNamesInput, func(*apigateway.GetDomainNamesOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetDomainNamesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetDomainNamesRequest(_a0 *apigateway.GetDomainNamesInput) (*request.Request, *apigateway.GetDomainNamesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetDomainNamesOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDomainNamesInput) (*request.Request, *apigateway.GetDomainNamesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetDomainNamesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetDomainNamesInput) *apigateway.GetDomainNamesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetDomainNamesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetDomainNamesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetDomainNamesWithContext(_a0 context.Context, _a1 *apigateway.GetDomainNamesInput, _a2 ...request.Option) (*apigateway.GetDomainNamesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetDomainNamesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDomainNamesInput, ...request.Option) (*apigateway.GetDomainNamesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetDomainNamesInput, ...request.Option) *apigateway.GetDomainNamesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetDomainNamesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetDomainNamesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetExport provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetExport(_a0 *apigateway.GetExportInput) (*apigateway.GetExportOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetExportOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetExportInput) (*apigateway.GetExportOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetExportInput) *apigateway.GetExportOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetExportOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetExportInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetExportRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetExportRequest(_a0 *apigateway.GetExportInput) (*request.Request, *apigateway.GetExportOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetExportOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetExportInput) (*request.Request, *apigateway.GetExportOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetExportInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetExportInput) *apigateway.GetExportOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetExportOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetExportWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetExportWithContext(_a0 context.Context, _a1 *apigateway.GetExportInput, _a2 ...request.Option) (*apigateway.GetExportOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetExportOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetExportInput, ...request.Option) (*apigateway.GetExportOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetExportInput, ...request.Option) *apigateway.GetExportOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetExportOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetExportInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetGatewayResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetGatewayResponse(_a0 *apigateway.GetGatewayResponseInput) (*apigateway.UpdateGatewayResponseOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UpdateGatewayResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetGatewayResponseInput) (*apigateway.UpdateGatewayResponseOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetGatewayResponseInput) *apigateway.UpdateGatewayResponseOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetGatewayResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetGatewayResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetGatewayResponseRequest(_a0 *apigateway.GetGatewayResponseInput) (*request.Request, *apigateway.UpdateGatewayResponseOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UpdateGatewayResponseOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetGatewayResponseInput) (*request.Request, *apigateway.UpdateGatewayResponseOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetGatewayResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetGatewayResponseInput) *apigateway.UpdateGatewayResponseOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetGatewayResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetGatewayResponseWithContext(_a0 context.Context, _a1 *apigateway.GetGatewayResponseInput, _a2 ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UpdateGatewayResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetGatewayResponseInput, ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetGatewayResponseInput, ...request.Option) *apigateway.UpdateGatewayResponseOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetGatewayResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetGatewayResponses provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetGatewayResponses(_a0 *apigateway.GetGatewayResponsesInput) (*apigateway.GetGatewayResponsesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetGatewayResponsesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetGatewayResponsesInput) (*apigateway.GetGatewayResponsesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetGatewayResponsesInput) *apigateway.GetGatewayResponsesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetGatewayResponsesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetGatewayResponsesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetGatewayResponsesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetGatewayResponsesRequest(_a0 *apigateway.GetGatewayResponsesInput) (*request.Request, *apigateway.GetGatewayResponsesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetGatewayResponsesOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetGatewayResponsesInput) (*request.Request, *apigateway.GetGatewayResponsesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetGatewayResponsesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetGatewayResponsesInput) *apigateway.GetGatewayResponsesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetGatewayResponsesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetGatewayResponsesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetGatewayResponsesWithContext(_a0 context.Context, _a1 *apigateway.GetGatewayResponsesInput, _a2 ...request.Option) (*apigateway.GetGatewayResponsesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetGatewayResponsesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetGatewayResponsesInput, ...request.Option) (*apigateway.GetGatewayResponsesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetGatewayResponsesInput, ...request.Option) *apigateway.GetGatewayResponsesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetGatewayResponsesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetGatewayResponsesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetIntegration provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetIntegration(_a0 *apigateway.GetIntegrationInput) (*apigateway.Integration, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Integration
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetIntegrationInput) (*apigateway.Integration, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetIntegrationInput) *apigateway.Integration); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Integration)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetIntegrationInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetIntegrationRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetIntegrationRequest(_a0 *apigateway.GetIntegrationInput) (*request.Request, *apigateway.Integration) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Integration
-	if rf, ok := ret.Get(0).(func(*apigateway.GetIntegrationInput) (*request.Request, *apigateway.Integration)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetIntegrationInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetIntegrationInput) *apigateway.Integration); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Integration)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetIntegrationResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetIntegrationResponse(_a0 *apigateway.GetIntegrationResponseInput) (*apigateway.IntegrationResponse, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.IntegrationResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetIntegrationResponseInput) (*apigateway.IntegrationResponse, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetIntegrationResponseInput) *apigateway.IntegrationResponse); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.IntegrationResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetIntegrationResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetIntegrationResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetIntegrationResponseRequest(_a0 *apigateway.GetIntegrationResponseInput) (*request.Request, *apigateway.IntegrationResponse) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.IntegrationResponse
-	if rf, ok := ret.Get(0).(func(*apigateway.GetIntegrationResponseInput) (*request.Request, *apigateway.IntegrationResponse)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetIntegrationResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetIntegrationResponseInput) *apigateway.IntegrationResponse); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.IntegrationResponse)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetIntegrationResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetIntegrationResponseWithContext(_a0 context.Context, _a1 *apigateway.GetIntegrationResponseInput, _a2 ...request.Option) (*apigateway.IntegrationResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.IntegrationResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetIntegrationResponseInput, ...request.Option) (*apigateway.IntegrationResponse, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetIntegrationResponseInput, ...request.Option) *apigateway.IntegrationResponse); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.IntegrationResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetIntegrationResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetIntegrationWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetIntegrationWithContext(_a0 context.Context, _a1 *apigateway.GetIntegrationInput, _a2 ...request.Option) (*apigateway.Integration, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Integration
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetIntegrationInput, ...request.Option) (*apigateway.Integration, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetIntegrationInput, ...request.Option) *apigateway.Integration); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Integration)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetIntegrationInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetMethod provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetMethod(_a0 *apigateway.GetMethodInput) (*apigateway.Method, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Method
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetMethodInput) (*apigateway.Method, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetMethodInput) *apigateway.Method); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Method)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetMethodInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetMethodRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetMethodRequest(_a0 *apigateway.GetMethodInput) (*request.Request, *apigateway.Method) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Method
-	if rf, ok := ret.Get(0).(func(*apigateway.GetMethodInput) (*request.Request, *apigateway.Method)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetMethodInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetMethodInput) *apigateway.Method); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Method)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetMethodResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetMethodResponse(_a0 *apigateway.GetMethodResponseInput) (*apigateway.MethodResponse, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.MethodResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetMethodResponseInput) (*apigateway.MethodResponse, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetMethodResponseInput) *apigateway.MethodResponse); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.MethodResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetMethodResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetMethodResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetMethodResponseRequest(_a0 *apigateway.GetMethodResponseInput) (*request.Request, *apigateway.MethodResponse) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.MethodResponse
-	if rf, ok := ret.Get(0).(func(*apigateway.GetMethodResponseInput) (*request.Request, *apigateway.MethodResponse)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetMethodResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetMethodResponseInput) *apigateway.MethodResponse); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.MethodResponse)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetMethodResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetMethodResponseWithContext(_a0 context.Context, _a1 *apigateway.GetMethodResponseInput, _a2 ...request.Option) (*apigateway.MethodResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.MethodResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetMethodResponseInput, ...request.Option) (*apigateway.MethodResponse, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetMethodResponseInput, ...request.Option) *apigateway.MethodResponse); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.MethodResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetMethodResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetMethodWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetMethodWithContext(_a0 context.Context, _a1 *apigateway.GetMethodInput, _a2 ...request.Option) (*apigateway.Method, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Method
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetMethodInput, ...request.Option) (*apigateway.Method, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetMethodInput, ...request.Option) *apigateway.Method); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Method)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetMethodInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetModel provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetModel(_a0 *apigateway.GetModelInput) (*apigateway.Model, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Model
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelInput) (*apigateway.Model, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelInput) *apigateway.Model); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Model)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetModelInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetModelRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetModelRequest(_a0 *apigateway.GetModelInput) (*request.Request, *apigateway.Model) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Model
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelInput) (*request.Request, *apigateway.Model)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetModelInput) *apigateway.Model); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Model)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetModelTemplate provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetModelTemplate(_a0 *apigateway.GetModelTemplateInput) (*apigateway.GetModelTemplateOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetModelTemplateOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelTemplateInput) (*apigateway.GetModelTemplateOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelTemplateInput) *apigateway.GetModelTemplateOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetModelTemplateOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetModelTemplateInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetModelTemplateRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetModelTemplateRequest(_a0 *apigateway.GetModelTemplateInput) (*request.Request, *apigateway.GetModelTemplateOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetModelTemplateOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelTemplateInput) (*request.Request, *apigateway.GetModelTemplateOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelTemplateInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetModelTemplateInput) *apigateway.GetModelTemplateOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetModelTemplateOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetModelTemplateWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetModelTemplateWithContext(_a0 context.Context, _a1 *apigateway.GetModelTemplateInput, _a2 ...request.Option) (*apigateway.GetModelTemplateOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetModelTemplateOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetModelTemplateInput, ...request.Option) (*apigateway.GetModelTemplateOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetModelTemplateInput, ...request.Option) *apigateway.GetModelTemplateOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetModelTemplateOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetModelTemplateInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetModelWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetModelWithContext(_a0 context.Context, _a1 *apigateway.GetModelInput, _a2 ...request.Option) (*apigateway.Model, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Model
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetModelInput, ...request.Option) (*apigateway.Model, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetModelInput, ...request.Option) *apigateway.Model); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Model)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetModelInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetModels provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetModels(_a0 *apigateway.GetModelsInput) (*apigateway.GetModelsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetModelsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelsInput) (*apigateway.GetModelsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelsInput) *apigateway.GetModelsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetModelsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetModelsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetModelsPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetModelsPages(_a0 *apigateway.GetModelsInput, _a1 func(*apigateway.GetModelsOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelsInput, func(*apigateway.GetModelsOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetModelsPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetModelsPagesWithContext(_a0 context.Context, _a1 *apigateway.GetModelsInput, _a2 func(*apigateway.GetModelsOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetModelsInput, func(*apigateway.GetModelsOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetModelsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetModelsRequest(_a0 *apigateway.GetModelsInput) (*request.Request, *apigateway.GetModelsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetModelsOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelsInput) (*request.Request, *apigateway.GetModelsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetModelsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetModelsInput) *apigateway.GetModelsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetModelsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetModelsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetModelsWithContext(_a0 context.Context, _a1 *apigateway.GetModelsInput, _a2 ...request.Option) (*apigateway.GetModelsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetModelsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetModelsInput, ...request.Option) (*apigateway.GetModelsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetModelsInput, ...request.Option) *apigateway.GetModelsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetModelsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetModelsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRequestValidator provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetRequestValidator(_a0 *apigateway.GetRequestValidatorInput) (*apigateway.UpdateRequestValidatorOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UpdateRequestValidatorOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRequestValidatorInput) (*apigateway.UpdateRequestValidatorOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRequestValidatorInput) *apigateway.UpdateRequestValidatorOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetRequestValidatorInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRequestValidatorRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetRequestValidatorRequest(_a0 *apigateway.GetRequestValidatorInput) (*request.Request, *apigateway.UpdateRequestValidatorOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UpdateRequestValidatorOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRequestValidatorInput) (*request.Request, *apigateway.UpdateRequestValidatorOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRequestValidatorInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetRequestValidatorInput) *apigateway.UpdateRequestValidatorOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRequestValidatorWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetRequestValidatorWithContext(_a0 context.Context, _a1 *apigateway.GetRequestValidatorInput, _a2 ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UpdateRequestValidatorOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetRequestValidatorInput, ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetRequestValidatorInput, ...request.Option) *apigateway.UpdateRequestValidatorOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetRequestValidatorInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRequestValidators provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetRequestValidators(_a0 *apigateway.GetRequestValidatorsInput) (*apigateway.GetRequestValidatorsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetRequestValidatorsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRequestValidatorsInput) (*apigateway.GetRequestValidatorsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRequestValidatorsInput) *apigateway.GetRequestValidatorsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetRequestValidatorsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetRequestValidatorsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRequestValidatorsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetRequestValidatorsRequest(_a0 *apigateway.GetRequestValidatorsInput) (*request.Request, *apigateway.GetRequestValidatorsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetRequestValidatorsOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRequestValidatorsInput) (*request.Request, *apigateway.GetRequestValidatorsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRequestValidatorsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetRequestValidatorsInput) *apigateway.GetRequestValidatorsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetRequestValidatorsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRequestValidatorsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetRequestValidatorsWithContext(_a0 context.Context, _a1 *apigateway.GetRequestValidatorsInput, _a2 ...request.Option) (*apigateway.GetRequestValidatorsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetRequestValidatorsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetRequestValidatorsInput, ...request.Option) (*apigateway.GetRequestValidatorsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetRequestValidatorsInput, ...request.Option) *apigateway.GetRequestValidatorsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetRequestValidatorsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetRequestValidatorsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetResource provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetResource(_a0 *apigateway.GetResourceInput) (*apigateway.Resource, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Resource
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetResourceInput) (*apigateway.Resource, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetResourceInput) *apigateway.Resource); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Resource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetResourceInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetResourceRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetResourceRequest(_a0 *apigateway.GetResourceInput) (*request.Request, *apigateway.Resource) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Resource
-	if rf, ok := ret.Get(0).(func(*apigateway.GetResourceInput) (*request.Request, *apigateway.Resource)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetResourceInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetResourceInput) *apigateway.Resource); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Resource)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetResourceWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetResourceWithContext(_a0 context.Context, _a1 *apigateway.GetResourceInput, _a2 ...request.Option) (*apigateway.Resource, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Resource
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetResourceInput, ...request.Option) (*apigateway.Resource, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetResourceInput, ...request.Option) *apigateway.Resource); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Resource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetResourceInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetResources provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetResources(_a0 *apigateway.GetResourcesInput) (*apigateway.GetResourcesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetResourcesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetResourcesInput) (*apigateway.GetResourcesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetResourcesInput) *apigateway.GetResourcesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetResourcesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetResourcesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetResourcesPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetResourcesPages(_a0 *apigateway.GetResourcesInput, _a1 func(*apigateway.GetResourcesOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetResourcesInput, func(*apigateway.GetResourcesOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetResourcesPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetResourcesPagesWithContext(_a0 context.Context, _a1 *apigateway.GetResourcesInput, _a2 func(*apigateway.GetResourcesOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetResourcesInput, func(*apigateway.GetResourcesOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetResourcesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetResourcesRequest(_a0 *apigateway.GetResourcesInput) (*request.Request, *apigateway.GetResourcesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetResourcesOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetResourcesInput) (*request.Request, *apigateway.GetResourcesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetResourcesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetResourcesInput) *apigateway.GetResourcesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetResourcesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetResourcesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetResourcesWithContext(_a0 context.Context, _a1 *apigateway.GetResourcesInput, _a2 ...request.Option) (*apigateway.GetResourcesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetResourcesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetResourcesInput, ...request.Option) (*apigateway.GetResourcesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetResourcesInput, ...request.Option) *apigateway.GetResourcesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetResourcesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetResourcesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRestApi provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetRestApi(_a0 *apigateway.GetRestApiInput) (*apigateway.RestApi, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRestApiInput) (*apigateway.RestApi, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRestApiInput) *apigateway.RestApi); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetRestApiInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRestApiRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetRestApiRequest(_a0 *apigateway.GetRestApiInput) (*request.Request, *apigateway.RestApi) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.RestApi
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRestApiInput) (*request.Request, *apigateway.RestApi)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRestApiInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetRestApiInput) *apigateway.RestApi); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.RestApi)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRestApiWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetRestApiWithContext(_a0 context.Context, _a1 *apigateway.GetRestApiInput, _a2 ...request.Option) (*apigateway.RestApi, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetRestApiInput, ...request.Option) (*apigateway.RestApi, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetRestApiInput, ...request.Option) *apigateway.RestApi); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetRestApiInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRestApis provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetRestApis(_a0 *apigateway.GetRestApisInput) (*apigateway.GetRestApisOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetRestApisOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRestApisInput) (*apigateway.GetRestApisOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRestApisInput) *apigateway.GetRestApisOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetRestApisOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetRestApisInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRestApisPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetRestApisPages(_a0 *apigateway.GetRestApisInput, _a1 func(*apigateway.GetRestApisOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRestApisInput, func(*apigateway.GetRestApisOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetRestApisPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetRestApisPagesWithContext(_a0 context.Context, _a1 *apigateway.GetRestApisInput, _a2 func(*apigateway.GetRestApisOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetRestApisInput, func(*apigateway.GetRestApisOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetRestApisRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetRestApisRequest(_a0 *apigateway.GetRestApisInput) (*request.Request, *apigateway.GetRestApisOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetRestApisOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRestApisInput) (*request.Request, *apigateway.GetRestApisOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetRestApisInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetRestApisInput) *apigateway.GetRestApisOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetRestApisOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetRestApisWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetRestApisWithContext(_a0 context.Context, _a1 *apigateway.GetRestApisInput, _a2 ...request.Option) (*apigateway.GetRestApisOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetRestApisOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetRestApisInput, ...request.Option) (*apigateway.GetRestApisOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetRestApisInput, ...request.Option) *apigateway.GetRestApisOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetRestApisOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetRestApisInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetSdk provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetSdk(_a0 *apigateway.GetSdkInput) (*apigateway.GetSdkOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetSdkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkInput) (*apigateway.GetSdkOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkInput) *apigateway.GetSdkOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetSdkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetSdkInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetSdkRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetSdkRequest(_a0 *apigateway.GetSdkInput) (*request.Request, *apigateway.GetSdkOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetSdkOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkInput) (*request.Request, *apigateway.GetSdkOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetSdkInput) *apigateway.GetSdkOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetSdkOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetSdkType provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetSdkType(_a0 *apigateway.GetSdkTypeInput) (*apigateway.SdkType, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.SdkType
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkTypeInput) (*apigateway.SdkType, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkTypeInput) *apigateway.SdkType); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.SdkType)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetSdkTypeInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetSdkTypeRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetSdkTypeRequest(_a0 *apigateway.GetSdkTypeInput) (*request.Request, *apigateway.SdkType) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.SdkType
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkTypeInput) (*request.Request, *apigateway.SdkType)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkTypeInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetSdkTypeInput) *apigateway.SdkType); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.SdkType)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetSdkTypeWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetSdkTypeWithContext(_a0 context.Context, _a1 *apigateway.GetSdkTypeInput, _a2 ...request.Option) (*apigateway.SdkType, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.SdkType
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetSdkTypeInput, ...request.Option) (*apigateway.SdkType, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetSdkTypeInput, ...request.Option) *apigateway.SdkType); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.SdkType)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetSdkTypeInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetSdkTypes provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetSdkTypes(_a0 *apigateway.GetSdkTypesInput) (*apigateway.GetSdkTypesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetSdkTypesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkTypesInput) (*apigateway.GetSdkTypesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkTypesInput) *apigateway.GetSdkTypesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetSdkTypesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetSdkTypesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetSdkTypesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetSdkTypesRequest(_a0 *apigateway.GetSdkTypesInput) (*request.Request, *apigateway.GetSdkTypesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetSdkTypesOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkTypesInput) (*request.Request, *apigateway.GetSdkTypesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetSdkTypesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetSdkTypesInput) *apigateway.GetSdkTypesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetSdkTypesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetSdkTypesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetSdkTypesWithContext(_a0 context.Context, _a1 *apigateway.GetSdkTypesInput, _a2 ...request.Option) (*apigateway.GetSdkTypesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetSdkTypesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetSdkTypesInput, ...request.Option) (*apigateway.GetSdkTypesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetSdkTypesInput, ...request.Option) *apigateway.GetSdkTypesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetSdkTypesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetSdkTypesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetSdkWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetSdkWithContext(_a0 context.Context, _a1 *apigateway.GetSdkInput, _a2 ...request.Option) (*apigateway.GetSdkOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetSdkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetSdkInput, ...request.Option) (*apigateway.GetSdkOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetSdkInput, ...request.Option) *apigateway.GetSdkOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetSdkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetSdkInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetStage provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetStage(_a0 *apigateway.GetStageInput) (*apigateway.Stage, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Stage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetStageInput) (*apigateway.Stage, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetStageInput) *apigateway.Stage); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Stage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetStageInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetStageRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetStageRequest(_a0 *apigateway.GetStageInput) (*request.Request, *apigateway.Stage) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Stage
-	if rf, ok := ret.Get(0).(func(*apigateway.GetStageInput) (*request.Request, *apigateway.Stage)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetStageInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetStageInput) *apigateway.Stage); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Stage)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetStageWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetStageWithContext(_a0 context.Context, _a1 *apigateway.GetStageInput, _a2 ...request.Option) (*apigateway.Stage, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Stage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetStageInput, ...request.Option) (*apigateway.Stage, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetStageInput, ...request.Option) *apigateway.Stage); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Stage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetStageInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetStages provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetStages(_a0 *apigateway.GetStagesInput) (*apigateway.GetStagesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetStagesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetStagesInput) (*apigateway.GetStagesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetStagesInput) *apigateway.GetStagesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetStagesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetStagesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetStagesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetStagesRequest(_a0 *apigateway.GetStagesInput) (*request.Request, *apigateway.GetStagesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetStagesOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetStagesInput) (*request.Request, *apigateway.GetStagesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetStagesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetStagesInput) *apigateway.GetStagesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetStagesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetStagesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetStagesWithContext(_a0 context.Context, _a1 *apigateway.GetStagesInput, _a2 ...request.Option) (*apigateway.GetStagesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetStagesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetStagesInput, ...request.Option) (*apigateway.GetStagesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetStagesInput, ...request.Option) *apigateway.GetStagesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetStagesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetStagesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetTags provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetTags(_a0 *apigateway.GetTagsInput) (*apigateway.GetTagsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetTagsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetTagsInput) (*apigateway.GetTagsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetTagsInput) *apigateway.GetTagsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetTagsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetTagsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetTagsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetTagsRequest(_a0 *apigateway.GetTagsInput) (*request.Request, *apigateway.GetTagsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetTagsOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetTagsInput) (*request.Request, *apigateway.GetTagsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetTagsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetTagsInput) *apigateway.GetTagsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetTagsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetTagsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetTagsWithContext(_a0 context.Context, _a1 *apigateway.GetTagsInput, _a2 ...request.Option) (*apigateway.GetTagsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetTagsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetTagsInput, ...request.Option) (*apigateway.GetTagsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetTagsInput, ...request.Option) *apigateway.GetTagsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetTagsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetTagsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsage provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsage(_a0 *apigateway.GetUsageInput) (*apigateway.Usage, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Usage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsageInput) (*apigateway.Usage, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsageInput) *apigateway.Usage); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Usage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsageInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetUsagePages(_a0 *apigateway.GetUsageInput, _a1 func(*apigateway.Usage, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsageInput, func(*apigateway.Usage, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetUsagePagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetUsagePagesWithContext(_a0 context.Context, _a1 *apigateway.GetUsageInput, _a2 func(*apigateway.Usage, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsageInput, func(*apigateway.Usage, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetUsagePlan provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsagePlan(_a0 *apigateway.GetUsagePlanInput) (*apigateway.UsagePlan, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UsagePlan
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanInput) (*apigateway.UsagePlan, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanInput) *apigateway.UsagePlan); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlan)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsagePlanInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlanKey provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsagePlanKey(_a0 *apigateway.GetUsagePlanKeyInput) (*apigateway.UsagePlanKey, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UsagePlanKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanKeyInput) (*apigateway.UsagePlanKey, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanKeyInput) *apigateway.UsagePlanKey); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlanKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsagePlanKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlanKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsagePlanKeyRequest(_a0 *apigateway.GetUsagePlanKeyInput) (*request.Request, *apigateway.UsagePlanKey) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UsagePlanKey
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanKeyInput) (*request.Request, *apigateway.UsagePlanKey)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsagePlanKeyInput) *apigateway.UsagePlanKey); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UsagePlanKey)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlanKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetUsagePlanKeyWithContext(_a0 context.Context, _a1 *apigateway.GetUsagePlanKeyInput, _a2 ...request.Option) (*apigateway.UsagePlanKey, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UsagePlanKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlanKeyInput, ...request.Option) (*apigateway.UsagePlanKey, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlanKeyInput, ...request.Option) *apigateway.UsagePlanKey); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlanKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetUsagePlanKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlanKeys provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsagePlanKeys(_a0 *apigateway.GetUsagePlanKeysInput) (*apigateway.GetUsagePlanKeysOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetUsagePlanKeysOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanKeysInput) (*apigateway.GetUsagePlanKeysOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanKeysInput) *apigateway.GetUsagePlanKeysOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetUsagePlanKeysOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsagePlanKeysInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlanKeysPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetUsagePlanKeysPages(_a0 *apigateway.GetUsagePlanKeysInput, _a1 func(*apigateway.GetUsagePlanKeysOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanKeysInput, func(*apigateway.GetUsagePlanKeysOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetUsagePlanKeysPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetUsagePlanKeysPagesWithContext(_a0 context.Context, _a1 *apigateway.GetUsagePlanKeysInput, _a2 func(*apigateway.GetUsagePlanKeysOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlanKeysInput, func(*apigateway.GetUsagePlanKeysOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetUsagePlanKeysRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsagePlanKeysRequest(_a0 *apigateway.GetUsagePlanKeysInput) (*request.Request, *apigateway.GetUsagePlanKeysOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetUsagePlanKeysOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanKeysInput) (*request.Request, *apigateway.GetUsagePlanKeysOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanKeysInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsagePlanKeysInput) *apigateway.GetUsagePlanKeysOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetUsagePlanKeysOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlanKeysWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetUsagePlanKeysWithContext(_a0 context.Context, _a1 *apigateway.GetUsagePlanKeysInput, _a2 ...request.Option) (*apigateway.GetUsagePlanKeysOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetUsagePlanKeysOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlanKeysInput, ...request.Option) (*apigateway.GetUsagePlanKeysOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlanKeysInput, ...request.Option) *apigateway.GetUsagePlanKeysOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetUsagePlanKeysOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetUsagePlanKeysInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlanRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsagePlanRequest(_a0 *apigateway.GetUsagePlanInput) (*request.Request, *apigateway.UsagePlan) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UsagePlan
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanInput) (*request.Request, *apigateway.UsagePlan)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlanInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsagePlanInput) *apigateway.UsagePlan); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UsagePlan)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlanWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetUsagePlanWithContext(_a0 context.Context, _a1 *apigateway.GetUsagePlanInput, _a2 ...request.Option) (*apigateway.UsagePlan, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UsagePlan
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlanInput, ...request.Option) (*apigateway.UsagePlan, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlanInput, ...request.Option) *apigateway.UsagePlan); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlan)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetUsagePlanInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlans provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsagePlans(_a0 *apigateway.GetUsagePlansInput) (*apigateway.GetUsagePlansOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetUsagePlansOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlansInput) (*apigateway.GetUsagePlansOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlansInput) *apigateway.GetUsagePlansOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetUsagePlansOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsagePlansInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlansPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetUsagePlansPages(_a0 *apigateway.GetUsagePlansInput, _a1 func(*apigateway.GetUsagePlansOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlansInput, func(*apigateway.GetUsagePlansOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetUsagePlansPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetUsagePlansPagesWithContext(_a0 context.Context, _a1 *apigateway.GetUsagePlansInput, _a2 func(*apigateway.GetUsagePlansOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlansInput, func(*apigateway.GetUsagePlansOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetUsagePlansRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsagePlansRequest(_a0 *apigateway.GetUsagePlansInput) (*request.Request, *apigateway.GetUsagePlansOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetUsagePlansOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlansInput) (*request.Request, *apigateway.GetUsagePlansOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsagePlansInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsagePlansInput) *apigateway.GetUsagePlansOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetUsagePlansOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsagePlansWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetUsagePlansWithContext(_a0 context.Context, _a1 *apigateway.GetUsagePlansInput, _a2 ...request.Option) (*apigateway.GetUsagePlansOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetUsagePlansOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlansInput, ...request.Option) (*apigateway.GetUsagePlansOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsagePlansInput, ...request.Option) *apigateway.GetUsagePlansOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetUsagePlansOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetUsagePlansInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsageRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetUsageRequest(_a0 *apigateway.GetUsageInput) (*request.Request, *apigateway.Usage) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Usage
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsageInput) (*request.Request, *apigateway.Usage)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetUsageInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetUsageInput) *apigateway.Usage); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Usage)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetUsageWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetUsageWithContext(_a0 context.Context, _a1 *apigateway.GetUsageInput, _a2 ...request.Option) (*apigateway.Usage, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Usage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsageInput, ...request.Option) (*apigateway.Usage, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetUsageInput, ...request.Option) *apigateway.Usage); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Usage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetUsageInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetVpcLink provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetVpcLink(_a0 *apigateway.GetVpcLinkInput) (*apigateway.UpdateVpcLinkOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UpdateVpcLinkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetVpcLinkInput) (*apigateway.UpdateVpcLinkOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetVpcLinkInput) *apigateway.UpdateVpcLinkOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetVpcLinkInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetVpcLinkRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetVpcLinkRequest(_a0 *apigateway.GetVpcLinkInput) (*request.Request, *apigateway.UpdateVpcLinkOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UpdateVpcLinkOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetVpcLinkInput) (*request.Request, *apigateway.UpdateVpcLinkOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetVpcLinkInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetVpcLinkInput) *apigateway.UpdateVpcLinkOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetVpcLinkWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetVpcLinkWithContext(_a0 context.Context, _a1 *apigateway.GetVpcLinkInput, _a2 ...request.Option) (*apigateway.UpdateVpcLinkOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UpdateVpcLinkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetVpcLinkInput, ...request.Option) (*apigateway.UpdateVpcLinkOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetVpcLinkInput, ...request.Option) *apigateway.UpdateVpcLinkOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetVpcLinkInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetVpcLinks provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetVpcLinks(_a0 *apigateway.GetVpcLinksInput) (*apigateway.GetVpcLinksOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.GetVpcLinksOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetVpcLinksInput) (*apigateway.GetVpcLinksOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetVpcLinksInput) *apigateway.GetVpcLinksOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetVpcLinksOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetVpcLinksInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetVpcLinksPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeApiGateway) GetVpcLinksPages(_a0 *apigateway.GetVpcLinksInput, _a1 func(*apigateway.GetVpcLinksOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*apigateway.GetVpcLinksInput, func(*apigateway.GetVpcLinksOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetVpcLinksPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeApiGateway) GetVpcLinksPagesWithContext(_a0 context.Context, _a1 *apigateway.GetVpcLinksInput, _a2 func(*apigateway.GetVpcLinksOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetVpcLinksInput, func(*apigateway.GetVpcLinksOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // GetVpcLinksRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) GetVpcLinksRequest(_a0 *apigateway.GetVpcLinksInput) (*request.Request, *apigateway.GetVpcLinksOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.GetVpcLinksOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.GetVpcLinksInput) (*request.Request, *apigateway.GetVpcLinksOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.GetVpcLinksInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.GetVpcLinksInput) *apigateway.GetVpcLinksOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.GetVpcLinksOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetVpcLinksWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) GetVpcLinksWithContext(_a0 context.Context, _a1 *apigateway.GetVpcLinksInput, _a2 ...request.Option) (*apigateway.GetVpcLinksOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.GetVpcLinksOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetVpcLinksInput, ...request.Option) (*apigateway.GetVpcLinksOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.GetVpcLinksInput, ...request.Option) *apigateway.GetVpcLinksOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.GetVpcLinksOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.GetVpcLinksInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportApiKeys provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) ImportApiKeys(_a0 *apigateway.ImportApiKeysInput) (*apigateway.ImportApiKeysOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.ImportApiKeysOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportApiKeysInput) (*apigateway.ImportApiKeysOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportApiKeysInput) *apigateway.ImportApiKeysOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ImportApiKeysOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.ImportApiKeysInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportApiKeysRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) ImportApiKeysRequest(_a0 *apigateway.ImportApiKeysInput) (*request.Request, *apigateway.ImportApiKeysOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.ImportApiKeysOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportApiKeysInput) (*request.Request, *apigateway.ImportApiKeysOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportApiKeysInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.ImportApiKeysInput) *apigateway.ImportApiKeysOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.ImportApiKeysOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportApiKeysWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) ImportApiKeysWithContext(_a0 context.Context, _a1 *apigateway.ImportApiKeysInput, _a2 ...request.Option) (*apigateway.ImportApiKeysOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.ImportApiKeysOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.ImportApiKeysInput, ...request.Option) (*apigateway.ImportApiKeysOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.ImportApiKeysInput, ...request.Option) *apigateway.ImportApiKeysOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ImportApiKeysOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.ImportApiKeysInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportDocumentationParts provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) ImportDocumentationParts(_a0 *apigateway.ImportDocumentationPartsInput) (*apigateway.ImportDocumentationPartsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.ImportDocumentationPartsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportDocumentationPartsInput) (*apigateway.ImportDocumentationPartsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportDocumentationPartsInput) *apigateway.ImportDocumentationPartsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ImportDocumentationPartsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.ImportDocumentationPartsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportDocumentationPartsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) ImportDocumentationPartsRequest(_a0 *apigateway.ImportDocumentationPartsInput) (*request.Request, *apigateway.ImportDocumentationPartsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.ImportDocumentationPartsOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportDocumentationPartsInput) (*request.Request, *apigateway.ImportDocumentationPartsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportDocumentationPartsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.ImportDocumentationPartsInput) *apigateway.ImportDocumentationPartsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.ImportDocumentationPartsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportDocumentationPartsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) ImportDocumentationPartsWithContext(_a0 context.Context, _a1 *apigateway.ImportDocumentationPartsInput, _a2 ...request.Option) (*apigateway.ImportDocumentationPartsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.ImportDocumentationPartsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.ImportDocumentationPartsInput, ...request.Option) (*apigateway.ImportDocumentationPartsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.ImportDocumentationPartsInput, ...request.Option) *apigateway.ImportDocumentationPartsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ImportDocumentationPartsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.ImportDocumentationPartsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportRestApi provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) ImportRestApi(_a0 *apigateway.ImportRestApiInput) (*apigateway.RestApi, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportRestApiInput) (*apigateway.RestApi, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportRestApiInput) *apigateway.RestApi); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.ImportRestApiInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportRestApiRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) ImportRestApiRequest(_a0 *apigateway.ImportRestApiInput) (*request.Request, *apigateway.RestApi) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.RestApi
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportRestApiInput) (*request.Request, *apigateway.RestApi)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.ImportRestApiInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.ImportRestApiInput) *apigateway.RestApi); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.RestApi)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportRestApiWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) ImportRestApiWithContext(_a0 context.Context, _a1 *apigateway.ImportRestApiInput, _a2 ...request.Option) (*apigateway.RestApi, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.ImportRestApiInput, ...request.Option) (*apigateway.RestApi, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.ImportRestApiInput, ...request.Option) *apigateway.RestApi); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.ImportRestApiInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutGatewayResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutGatewayResponse(_a0 *apigateway.PutGatewayResponseInput) (*apigateway.UpdateGatewayResponseOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UpdateGatewayResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.PutGatewayResponseInput) (*apigateway.UpdateGatewayResponseOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutGatewayResponseInput) *apigateway.UpdateGatewayResponseOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutGatewayResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutGatewayResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutGatewayResponseRequest(_a0 *apigateway.PutGatewayResponseInput) (*request.Request, *apigateway.UpdateGatewayResponseOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UpdateGatewayResponseOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.PutGatewayResponseInput) (*request.Request, *apigateway.UpdateGatewayResponseOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutGatewayResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutGatewayResponseInput) *apigateway.UpdateGatewayResponseOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutGatewayResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) PutGatewayResponseWithContext(_a0 context.Context, _a1 *apigateway.PutGatewayResponseInput, _a2 ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UpdateGatewayResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutGatewayResponseInput, ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutGatewayResponseInput, ...request.Option) *apigateway.UpdateGatewayResponseOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.PutGatewayResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutIntegration provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutIntegration(_a0 *apigateway.PutIntegrationInput) (*apigateway.Integration, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Integration
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.PutIntegrationInput) (*apigateway.Integration, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutIntegrationInput) *apigateway.Integration); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Integration)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutIntegrationInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutIntegrationRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutIntegrationRequest(_a0 *apigateway.PutIntegrationInput) (*request.Request, *apigateway.Integration) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Integration
-	if rf, ok := ret.Get(0).(func(*apigateway.PutIntegrationInput) (*request.Request, *apigateway.Integration)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutIntegrationInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutIntegrationInput) *apigateway.Integration); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Integration)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutIntegrationResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutIntegrationResponse(_a0 *apigateway.PutIntegrationResponseInput) (*apigateway.IntegrationResponse, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.IntegrationResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.PutIntegrationResponseInput) (*apigateway.IntegrationResponse, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutIntegrationResponseInput) *apigateway.IntegrationResponse); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.IntegrationResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutIntegrationResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutIntegrationResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutIntegrationResponseRequest(_a0 *apigateway.PutIntegrationResponseInput) (*request.Request, *apigateway.IntegrationResponse) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.IntegrationResponse
-	if rf, ok := ret.Get(0).(func(*apigateway.PutIntegrationResponseInput) (*request.Request, *apigateway.IntegrationResponse)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutIntegrationResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutIntegrationResponseInput) *apigateway.IntegrationResponse); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.IntegrationResponse)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutIntegrationResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) PutIntegrationResponseWithContext(_a0 context.Context, _a1 *apigateway.PutIntegrationResponseInput, _a2 ...request.Option) (*apigateway.IntegrationResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.IntegrationResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutIntegrationResponseInput, ...request.Option) (*apigateway.IntegrationResponse, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutIntegrationResponseInput, ...request.Option) *apigateway.IntegrationResponse); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.IntegrationResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.PutIntegrationResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutIntegrationWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) PutIntegrationWithContext(_a0 context.Context, _a1 *apigateway.PutIntegrationInput, _a2 ...request.Option) (*apigateway.Integration, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Integration
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutIntegrationInput, ...request.Option) (*apigateway.Integration, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutIntegrationInput, ...request.Option) *apigateway.Integration); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Integration)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.PutIntegrationInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutMethod provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutMethod(_a0 *apigateway.PutMethodInput) (*apigateway.Method, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Method
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.PutMethodInput) (*apigateway.Method, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutMethodInput) *apigateway.Method); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Method)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutMethodInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutMethodRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutMethodRequest(_a0 *apigateway.PutMethodInput) (*request.Request, *apigateway.Method) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Method
-	if rf, ok := ret.Get(0).(func(*apigateway.PutMethodInput) (*request.Request, *apigateway.Method)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutMethodInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutMethodInput) *apigateway.Method); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Method)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutMethodResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutMethodResponse(_a0 *apigateway.PutMethodResponseInput) (*apigateway.MethodResponse, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.MethodResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.PutMethodResponseInput) (*apigateway.MethodResponse, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutMethodResponseInput) *apigateway.MethodResponse); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.MethodResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutMethodResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutMethodResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutMethodResponseRequest(_a0 *apigateway.PutMethodResponseInput) (*request.Request, *apigateway.MethodResponse) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.MethodResponse
-	if rf, ok := ret.Get(0).(func(*apigateway.PutMethodResponseInput) (*request.Request, *apigateway.MethodResponse)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutMethodResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutMethodResponseInput) *apigateway.MethodResponse); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.MethodResponse)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutMethodResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) PutMethodResponseWithContext(_a0 context.Context, _a1 *apigateway.PutMethodResponseInput, _a2 ...request.Option) (*apigateway.MethodResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.MethodResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutMethodResponseInput, ...request.Option) (*apigateway.MethodResponse, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutMethodResponseInput, ...request.Option) *apigateway.MethodResponse); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.MethodResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.PutMethodResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutMethodWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) PutMethodWithContext(_a0 context.Context, _a1 *apigateway.PutMethodInput, _a2 ...request.Option) (*apigateway.Method, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Method
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutMethodInput, ...request.Option) (*apigateway.Method, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutMethodInput, ...request.Option) *apigateway.Method); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Method)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.PutMethodInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutRestApi provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutRestApi(_a0 *apigateway.PutRestApiInput) (*apigateway.RestApi, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.PutRestApiInput) (*apigateway.RestApi, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutRestApiInput) *apigateway.RestApi); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutRestApiInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutRestApiRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) PutRestApiRequest(_a0 *apigateway.PutRestApiInput) (*request.Request, *apigateway.RestApi) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.RestApi
-	if rf, ok := ret.Get(0).(func(*apigateway.PutRestApiInput) (*request.Request, *apigateway.RestApi)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.PutRestApiInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.PutRestApiInput) *apigateway.RestApi); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.RestApi)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutRestApiWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) PutRestApiWithContext(_a0 context.Context, _a1 *apigateway.PutRestApiInput, _a2 ...request.Option) (*apigateway.RestApi, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutRestApiInput, ...request.Option) (*apigateway.RestApi, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.PutRestApiInput, ...request.Option) *apigateway.RestApi); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.PutRestApiInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TagResource provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) TagResource(_a0 *apigateway.TagResourceInput) (*apigateway.TagResourceOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.TagResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.TagResourceInput) (*apigateway.TagResourceOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.TagResourceInput) *apigateway.TagResourceOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.TagResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.TagResourceInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TagResourceRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) TagResourceRequest(_a0 *apigateway.TagResourceInput) (*request.Request, *apigateway.TagResourceOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.TagResourceOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.TagResourceInput) (*request.Request, *apigateway.TagResourceOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.TagResourceInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.TagResourceInput) *apigateway.TagResourceOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.TagResourceOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TagResourceWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) TagResourceWithContext(_a0 context.Context, _a1 *apigateway.TagResourceInput, _a2 ...request.Option) (*apigateway.TagResourceOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.TagResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.TagResourceInput, ...request.Option) (*apigateway.TagResourceOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.TagResourceInput, ...request.Option) *apigateway.TagResourceOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.TagResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.TagResourceInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TestInvokeAuthorizer provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) TestInvokeAuthorizer(_a0 *apigateway.TestInvokeAuthorizerInput) (*apigateway.TestInvokeAuthorizerOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.TestInvokeAuthorizerOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.TestInvokeAuthorizerInput) (*apigateway.TestInvokeAuthorizerOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.TestInvokeAuthorizerInput) *apigateway.TestInvokeAuthorizerOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.TestInvokeAuthorizerOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.TestInvokeAuthorizerInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TestInvokeAuthorizerRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) TestInvokeAuthorizerRequest(_a0 *apigateway.TestInvokeAuthorizerInput) (*request.Request, *apigateway.TestInvokeAuthorizerOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.TestInvokeAuthorizerOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.TestInvokeAuthorizerInput) (*request.Request, *apigateway.TestInvokeAuthorizerOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.TestInvokeAuthorizerInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.TestInvokeAuthorizerInput) *apigateway.TestInvokeAuthorizerOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.TestInvokeAuthorizerOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TestInvokeAuthorizerWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) TestInvokeAuthorizerWithContext(_a0 context.Context, _a1 *apigateway.TestInvokeAuthorizerInput, _a2 ...request.Option) (*apigateway.TestInvokeAuthorizerOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.TestInvokeAuthorizerOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.TestInvokeAuthorizerInput, ...request.Option) (*apigateway.TestInvokeAuthorizerOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.TestInvokeAuthorizerInput, ...request.Option) *apigateway.TestInvokeAuthorizerOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.TestInvokeAuthorizerOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.TestInvokeAuthorizerInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TestInvokeMethod provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) TestInvokeMethod(_a0 *apigateway.TestInvokeMethodInput) (*apigateway.TestInvokeMethodOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.TestInvokeMethodOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.TestInvokeMethodInput) (*apigateway.TestInvokeMethodOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.TestInvokeMethodInput) *apigateway.TestInvokeMethodOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.TestInvokeMethodOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.TestInvokeMethodInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TestInvokeMethodRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) TestInvokeMethodRequest(_a0 *apigateway.TestInvokeMethodInput) (*request.Request, *apigateway.TestInvokeMethodOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.TestInvokeMethodOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.TestInvokeMethodInput) (*request.Request, *apigateway.TestInvokeMethodOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.TestInvokeMethodInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.TestInvokeMethodInput) *apigateway.TestInvokeMethodOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.TestInvokeMethodOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TestInvokeMethodWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) TestInvokeMethodWithContext(_a0 context.Context, _a1 *apigateway.TestInvokeMethodInput, _a2 ...request.Option) (*apigateway.TestInvokeMethodOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.TestInvokeMethodOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.TestInvokeMethodInput, ...request.Option) (*apigateway.TestInvokeMethodOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.TestInvokeMethodInput, ...request.Option) *apigateway.TestInvokeMethodOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.TestInvokeMethodOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.TestInvokeMethodInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UntagResource provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UntagResource(_a0 *apigateway.UntagResourceInput) (*apigateway.UntagResourceOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UntagResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UntagResourceInput) (*apigateway.UntagResourceOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UntagResourceInput) *apigateway.UntagResourceOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UntagResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UntagResourceInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UntagResourceRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UntagResourceRequest(_a0 *apigateway.UntagResourceInput) (*request.Request, *apigateway.UntagResourceOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UntagResourceOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.UntagResourceInput) (*request.Request, *apigateway.UntagResourceOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UntagResourceInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UntagResourceInput) *apigateway.UntagResourceOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UntagResourceOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UntagResourceWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UntagResourceWithContext(_a0 context.Context, _a1 *apigateway.UntagResourceInput, _a2 ...request.Option) (*apigateway.UntagResourceOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UntagResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UntagResourceInput, ...request.Option) (*apigateway.UntagResourceOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UntagResourceInput, ...request.Option) *apigateway.UntagResourceOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UntagResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UntagResourceInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateAccount provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateAccount(_a0 *apigateway.UpdateAccountInput) (*apigateway.Account, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Account
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateAccountInput) (*apigateway.Account, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateAccountInput) *apigateway.Account); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Account)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateAccountInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateAccountRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateAccountRequest(_a0 *apigateway.UpdateAccountInput) (*request.Request, *apigateway.Account) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Account
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateAccountInput) (*request.Request, *apigateway.Account)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateAccountInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateAccountInput) *apigateway.Account); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Account)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateAccountWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateAccountWithContext(_a0 context.Context, _a1 *apigateway.UpdateAccountInput, _a2 ...request.Option) (*apigateway.Account, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Account
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateAccountInput, ...request.Option) (*apigateway.Account, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateAccountInput, ...request.Option) *apigateway.Account); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Account)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateAccountInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateApiKey provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateApiKey(_a0 *apigateway.UpdateApiKeyInput) (*apigateway.ApiKey, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.ApiKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateApiKeyInput) (*apigateway.ApiKey, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateApiKeyInput) *apigateway.ApiKey); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ApiKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateApiKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateApiKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateApiKeyRequest(_a0 *apigateway.UpdateApiKeyInput) (*request.Request, *apigateway.ApiKey) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.ApiKey
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateApiKeyInput) (*request.Request, *apigateway.ApiKey)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateApiKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateApiKeyInput) *apigateway.ApiKey); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.ApiKey)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateApiKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateApiKeyWithContext(_a0 context.Context, _a1 *apigateway.UpdateApiKeyInput, _a2 ...request.Option) (*apigateway.ApiKey, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.ApiKey
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateApiKeyInput, ...request.Option) (*apigateway.ApiKey, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateApiKeyInput, ...request.Option) *apigateway.ApiKey); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ApiKey)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateApiKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateAuthorizer provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateAuthorizer(_a0 *apigateway.UpdateAuthorizerInput) (*apigateway.Authorizer, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Authorizer
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateAuthorizerInput) (*apigateway.Authorizer, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateAuthorizerInput) *apigateway.Authorizer); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Authorizer)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateAuthorizerInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateAuthorizerRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateAuthorizerRequest(_a0 *apigateway.UpdateAuthorizerInput) (*request.Request, *apigateway.Authorizer) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Authorizer
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateAuthorizerInput) (*request.Request, *apigateway.Authorizer)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateAuthorizerInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateAuthorizerInput) *apigateway.Authorizer); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Authorizer)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateAuthorizerWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateAuthorizerWithContext(_a0 context.Context, _a1 *apigateway.UpdateAuthorizerInput, _a2 ...request.Option) (*apigateway.Authorizer, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Authorizer
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateAuthorizerInput, ...request.Option) (*apigateway.Authorizer, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateAuthorizerInput, ...request.Option) *apigateway.Authorizer); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Authorizer)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateAuthorizerInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateBasePathMapping provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateBasePathMapping(_a0 *apigateway.UpdateBasePathMappingInput) (*apigateway.BasePathMapping, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.BasePathMapping
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateBasePathMappingInput) (*apigateway.BasePathMapping, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateBasePathMappingInput) *apigateway.BasePathMapping); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.BasePathMapping)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateBasePathMappingInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateBasePathMappingRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateBasePathMappingRequest(_a0 *apigateway.UpdateBasePathMappingInput) (*request.Request, *apigateway.BasePathMapping) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.BasePathMapping
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateBasePathMappingInput) (*request.Request, *apigateway.BasePathMapping)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateBasePathMappingInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateBasePathMappingInput) *apigateway.BasePathMapping); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.BasePathMapping)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateBasePathMappingWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateBasePathMappingWithContext(_a0 context.Context, _a1 *apigateway.UpdateBasePathMappingInput, _a2 ...request.Option) (*apigateway.BasePathMapping, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.BasePathMapping
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateBasePathMappingInput, ...request.Option) (*apigateway.BasePathMapping, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateBasePathMappingInput, ...request.Option) *apigateway.BasePathMapping); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.BasePathMapping)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateBasePathMappingInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateClientCertificate provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateClientCertificate(_a0 *apigateway.UpdateClientCertificateInput) (*apigateway.ClientCertificate, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.ClientCertificate
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateClientCertificateInput) (*apigateway.ClientCertificate, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateClientCertificateInput) *apigateway.ClientCertificate); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ClientCertificate)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateClientCertificateInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateClientCertificateRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateClientCertificateRequest(_a0 *apigateway.UpdateClientCertificateInput) (*request.Request, *apigateway.ClientCertificate) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.ClientCertificate
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateClientCertificateInput) (*request.Request, *apigateway.ClientCertificate)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateClientCertificateInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateClientCertificateInput) *apigateway.ClientCertificate); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.ClientCertificate)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateClientCertificateWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateClientCertificateWithContext(_a0 context.Context, _a1 *apigateway.UpdateClientCertificateInput, _a2 ...request.Option) (*apigateway.ClientCertificate, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.ClientCertificate
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateClientCertificateInput, ...request.Option) (*apigateway.ClientCertificate, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateClientCertificateInput, ...request.Option) *apigateway.ClientCertificate); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.ClientCertificate)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateClientCertificateInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDeployment provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateDeployment(_a0 *apigateway.UpdateDeploymentInput) (*apigateway.Deployment, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Deployment
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDeploymentInput) (*apigateway.Deployment, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDeploymentInput) *apigateway.Deployment); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Deployment)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateDeploymentInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDeploymentRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateDeploymentRequest(_a0 *apigateway.UpdateDeploymentInput) (*request.Request, *apigateway.Deployment) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Deployment
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDeploymentInput) (*request.Request, *apigateway.Deployment)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDeploymentInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateDeploymentInput) *apigateway.Deployment); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Deployment)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDeploymentWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateDeploymentWithContext(_a0 context.Context, _a1 *apigateway.UpdateDeploymentInput, _a2 ...request.Option) (*apigateway.Deployment, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Deployment
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateDeploymentInput, ...request.Option) (*apigateway.Deployment, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateDeploymentInput, ...request.Option) *apigateway.Deployment); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Deployment)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateDeploymentInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDocumentationPart provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateDocumentationPart(_a0 *apigateway.UpdateDocumentationPartInput) (*apigateway.DocumentationPart, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DocumentationPart
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDocumentationPartInput) (*apigateway.DocumentationPart, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDocumentationPartInput) *apigateway.DocumentationPart); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationPart)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateDocumentationPartInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDocumentationPartRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateDocumentationPartRequest(_a0 *apigateway.UpdateDocumentationPartInput) (*request.Request, *apigateway.DocumentationPart) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DocumentationPart
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDocumentationPartInput) (*request.Request, *apigateway.DocumentationPart)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDocumentationPartInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateDocumentationPartInput) *apigateway.DocumentationPart); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DocumentationPart)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDocumentationPartWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateDocumentationPartWithContext(_a0 context.Context, _a1 *apigateway.UpdateDocumentationPartInput, _a2 ...request.Option) (*apigateway.DocumentationPart, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DocumentationPart
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateDocumentationPartInput, ...request.Option) (*apigateway.DocumentationPart, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateDocumentationPartInput, ...request.Option) *apigateway.DocumentationPart); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationPart)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateDocumentationPartInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDocumentationVersion provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateDocumentationVersion(_a0 *apigateway.UpdateDocumentationVersionInput) (*apigateway.DocumentationVersion, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DocumentationVersion
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDocumentationVersionInput) (*apigateway.DocumentationVersion, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDocumentationVersionInput) *apigateway.DocumentationVersion); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationVersion)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateDocumentationVersionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDocumentationVersionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateDocumentationVersionRequest(_a0 *apigateway.UpdateDocumentationVersionInput) (*request.Request, *apigateway.DocumentationVersion) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DocumentationVersion
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDocumentationVersionInput) (*request.Request, *apigateway.DocumentationVersion)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDocumentationVersionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateDocumentationVersionInput) *apigateway.DocumentationVersion); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DocumentationVersion)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDocumentationVersionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateDocumentationVersionWithContext(_a0 context.Context, _a1 *apigateway.UpdateDocumentationVersionInput, _a2 ...request.Option) (*apigateway.DocumentationVersion, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DocumentationVersion
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateDocumentationVersionInput, ...request.Option) (*apigateway.DocumentationVersion, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateDocumentationVersionInput, ...request.Option) *apigateway.DocumentationVersion); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DocumentationVersion)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateDocumentationVersionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDomainName provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateDomainName(_a0 *apigateway.UpdateDomainNameInput) (*apigateway.DomainName, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.DomainName
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDomainNameInput) (*apigateway.DomainName, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDomainNameInput) *apigateway.DomainName); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DomainName)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateDomainNameInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDomainNameRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateDomainNameRequest(_a0 *apigateway.UpdateDomainNameInput) (*request.Request, *apigateway.DomainName) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.DomainName
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDomainNameInput) (*request.Request, *apigateway.DomainName)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateDomainNameInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateDomainNameInput) *apigateway.DomainName); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.DomainName)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateDomainNameWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateDomainNameWithContext(_a0 context.Context, _a1 *apigateway.UpdateDomainNameInput, _a2 ...request.Option) (*apigateway.DomainName, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.DomainName
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateDomainNameInput, ...request.Option) (*apigateway.DomainName, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateDomainNameInput, ...request.Option) *apigateway.DomainName); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.DomainName)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateDomainNameInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateGatewayResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateGatewayResponse(_a0 *apigateway.UpdateGatewayResponseInput) (*apigateway.UpdateGatewayResponseOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UpdateGatewayResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateGatewayResponseInput) (*apigateway.UpdateGatewayResponseOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateGatewayResponseInput) *apigateway.UpdateGatewayResponseOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateGatewayResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateGatewayResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateGatewayResponseRequest(_a0 *apigateway.UpdateGatewayResponseInput) (*request.Request, *apigateway.UpdateGatewayResponseOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UpdateGatewayResponseOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateGatewayResponseInput) (*request.Request, *apigateway.UpdateGatewayResponseOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateGatewayResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateGatewayResponseInput) *apigateway.UpdateGatewayResponseOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateGatewayResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateGatewayResponseWithContext(_a0 context.Context, _a1 *apigateway.UpdateGatewayResponseInput, _a2 ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UpdateGatewayResponseOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateGatewayResponseInput, ...request.Option) (*apigateway.UpdateGatewayResponseOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateGatewayResponseInput, ...request.Option) *apigateway.UpdateGatewayResponseOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateGatewayResponseOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateGatewayResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateIntegration provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateIntegration(_a0 *apigateway.UpdateIntegrationInput) (*apigateway.Integration, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Integration
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateIntegrationInput) (*apigateway.Integration, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateIntegrationInput) *apigateway.Integration); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Integration)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateIntegrationInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateIntegrationRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateIntegrationRequest(_a0 *apigateway.UpdateIntegrationInput) (*request.Request, *apigateway.Integration) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Integration
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateIntegrationInput) (*request.Request, *apigateway.Integration)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateIntegrationInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateIntegrationInput) *apigateway.Integration); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Integration)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateIntegrationResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateIntegrationResponse(_a0 *apigateway.UpdateIntegrationResponseInput) (*apigateway.IntegrationResponse, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.IntegrationResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateIntegrationResponseInput) (*apigateway.IntegrationResponse, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateIntegrationResponseInput) *apigateway.IntegrationResponse); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.IntegrationResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateIntegrationResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateIntegrationResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateIntegrationResponseRequest(_a0 *apigateway.UpdateIntegrationResponseInput) (*request.Request, *apigateway.IntegrationResponse) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.IntegrationResponse
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateIntegrationResponseInput) (*request.Request, *apigateway.IntegrationResponse)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateIntegrationResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateIntegrationResponseInput) *apigateway.IntegrationResponse); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.IntegrationResponse)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateIntegrationResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateIntegrationResponseWithContext(_a0 context.Context, _a1 *apigateway.UpdateIntegrationResponseInput, _a2 ...request.Option) (*apigateway.IntegrationResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.IntegrationResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateIntegrationResponseInput, ...request.Option) (*apigateway.IntegrationResponse, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateIntegrationResponseInput, ...request.Option) *apigateway.IntegrationResponse); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.IntegrationResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateIntegrationResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateIntegrationWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateIntegrationWithContext(_a0 context.Context, _a1 *apigateway.UpdateIntegrationInput, _a2 ...request.Option) (*apigateway.Integration, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Integration
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateIntegrationInput, ...request.Option) (*apigateway.Integration, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateIntegrationInput, ...request.Option) *apigateway.Integration); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Integration)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateIntegrationInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateMethod provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateMethod(_a0 *apigateway.UpdateMethodInput) (*apigateway.Method, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Method
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateMethodInput) (*apigateway.Method, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateMethodInput) *apigateway.Method); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Method)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateMethodInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateMethodRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateMethodRequest(_a0 *apigateway.UpdateMethodInput) (*request.Request, *apigateway.Method) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Method
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateMethodInput) (*request.Request, *apigateway.Method)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateMethodInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateMethodInput) *apigateway.Method); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Method)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateMethodResponse provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateMethodResponse(_a0 *apigateway.UpdateMethodResponseInput) (*apigateway.MethodResponse, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.MethodResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateMethodResponseInput) (*apigateway.MethodResponse, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateMethodResponseInput) *apigateway.MethodResponse); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.MethodResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateMethodResponseInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateMethodResponseRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateMethodResponseRequest(_a0 *apigateway.UpdateMethodResponseInput) (*request.Request, *apigateway.MethodResponse) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.MethodResponse
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateMethodResponseInput) (*request.Request, *apigateway.MethodResponse)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateMethodResponseInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateMethodResponseInput) *apigateway.MethodResponse); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.MethodResponse)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateMethodResponseWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateMethodResponseWithContext(_a0 context.Context, _a1 *apigateway.UpdateMethodResponseInput, _a2 ...request.Option) (*apigateway.MethodResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.MethodResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateMethodResponseInput, ...request.Option) (*apigateway.MethodResponse, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateMethodResponseInput, ...request.Option) *apigateway.MethodResponse); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.MethodResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateMethodResponseInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateMethodWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateMethodWithContext(_a0 context.Context, _a1 *apigateway.UpdateMethodInput, _a2 ...request.Option) (*apigateway.Method, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Method
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateMethodInput, ...request.Option) (*apigateway.Method, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateMethodInput, ...request.Option) *apigateway.Method); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Method)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateMethodInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateModel provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateModel(_a0 *apigateway.UpdateModelInput) (*apigateway.Model, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Model
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateModelInput) (*apigateway.Model, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateModelInput) *apigateway.Model); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Model)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateModelInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateModelRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateModelRequest(_a0 *apigateway.UpdateModelInput) (*request.Request, *apigateway.Model) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Model
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateModelInput) (*request.Request, *apigateway.Model)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateModelInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateModelInput) *apigateway.Model); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Model)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateModelWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateModelWithContext(_a0 context.Context, _a1 *apigateway.UpdateModelInput, _a2 ...request.Option) (*apigateway.Model, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Model
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateModelInput, ...request.Option) (*apigateway.Model, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateModelInput, ...request.Option) *apigateway.Model); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Model)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateModelInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateRequestValidator provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateRequestValidator(_a0 *apigateway.UpdateRequestValidatorInput) (*apigateway.UpdateRequestValidatorOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UpdateRequestValidatorOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateRequestValidatorInput) (*apigateway.UpdateRequestValidatorOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateRequestValidatorInput) *apigateway.UpdateRequestValidatorOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateRequestValidatorInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateRequestValidatorRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateRequestValidatorRequest(_a0 *apigateway.UpdateRequestValidatorInput) (*request.Request, *apigateway.UpdateRequestValidatorOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UpdateRequestValidatorOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateRequestValidatorInput) (*request.Request, *apigateway.UpdateRequestValidatorOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateRequestValidatorInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateRequestValidatorInput) *apigateway.UpdateRequestValidatorOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateRequestValidatorWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateRequestValidatorWithContext(_a0 context.Context, _a1 *apigateway.UpdateRequestValidatorInput, _a2 ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UpdateRequestValidatorOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateRequestValidatorInput, ...request.Option) (*apigateway.UpdateRequestValidatorOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateRequestValidatorInput, ...request.Option) *apigateway.UpdateRequestValidatorOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateRequestValidatorOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateRequestValidatorInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateResource provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateResource(_a0 *apigateway.UpdateResourceInput) (*apigateway.Resource, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Resource
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateResourceInput) (*apigateway.Resource, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateResourceInput) *apigateway.Resource); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Resource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateResourceInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateResourceRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateResourceRequest(_a0 *apigateway.UpdateResourceInput) (*request.Request, *apigateway.Resource) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Resource
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateResourceInput) (*request.Request, *apigateway.Resource)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateResourceInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateResourceInput) *apigateway.Resource); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Resource)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateResourceWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateResourceWithContext(_a0 context.Context, _a1 *apigateway.UpdateResourceInput, _a2 ...request.Option) (*apigateway.Resource, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Resource
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateResourceInput, ...request.Option) (*apigateway.Resource, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateResourceInput, ...request.Option) *apigateway.Resource); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Resource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateResourceInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateRestApi provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateRestApi(_a0 *apigateway.UpdateRestApiInput) (*apigateway.RestApi, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateRestApiInput) (*apigateway.RestApi, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateRestApiInput) *apigateway.RestApi); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateRestApiInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateRestApiRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateRestApiRequest(_a0 *apigateway.UpdateRestApiInput) (*request.Request, *apigateway.RestApi) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.RestApi
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateRestApiInput) (*request.Request, *apigateway.RestApi)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateRestApiInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateRestApiInput) *apigateway.RestApi); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.RestApi)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateRestApiWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateRestApiWithContext(_a0 context.Context, _a1 *apigateway.UpdateRestApiInput, _a2 ...request.Option) (*apigateway.RestApi, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.RestApi
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateRestApiInput, ...request.Option) (*apigateway.RestApi, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateRestApiInput, ...request.Option) *apigateway.RestApi); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.RestApi)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateRestApiInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateStage provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateStage(_a0 *apigateway.UpdateStageInput) (*apigateway.Stage, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Stage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateStageInput) (*apigateway.Stage, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateStageInput) *apigateway.Stage); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Stage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateStageInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateStageRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateStageRequest(_a0 *apigateway.UpdateStageInput) (*request.Request, *apigateway.Stage) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Stage
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateStageInput) (*request.Request, *apigateway.Stage)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateStageInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateStageInput) *apigateway.Stage); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Stage)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateStageWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateStageWithContext(_a0 context.Context, _a1 *apigateway.UpdateStageInput, _a2 ...request.Option) (*apigateway.Stage, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Stage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateStageInput, ...request.Option) (*apigateway.Stage, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateStageInput, ...request.Option) *apigateway.Stage); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Stage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateStageInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateUsage provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateUsage(_a0 *apigateway.UpdateUsageInput) (*apigateway.Usage, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.Usage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateUsageInput) (*apigateway.Usage, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateUsageInput) *apigateway.Usage); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Usage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateUsageInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateUsagePlan provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateUsagePlan(_a0 *apigateway.UpdateUsagePlanInput) (*apigateway.UsagePlan, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UsagePlan
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateUsagePlanInput) (*apigateway.UsagePlan, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateUsagePlanInput) *apigateway.UsagePlan); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlan)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateUsagePlanInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateUsagePlanRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateUsagePlanRequest(_a0 *apigateway.UpdateUsagePlanInput) (*request.Request, *apigateway.UsagePlan) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UsagePlan
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateUsagePlanInput) (*request.Request, *apigateway.UsagePlan)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateUsagePlanInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateUsagePlanInput) *apigateway.UsagePlan); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UsagePlan)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateUsagePlanWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateUsagePlanWithContext(_a0 context.Context, _a1 *apigateway.UpdateUsagePlanInput, _a2 ...request.Option) (*apigateway.UsagePlan, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UsagePlan
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateUsagePlanInput, ...request.Option) (*apigateway.UsagePlan, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateUsagePlanInput, ...request.Option) *apigateway.UsagePlan); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UsagePlan)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateUsagePlanInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateUsageRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateUsageRequest(_a0 *apigateway.UpdateUsageInput) (*request.Request, *apigateway.Usage) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.Usage
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateUsageInput) (*request.Request, *apigateway.Usage)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateUsageInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateUsageInput) *apigateway.Usage); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.Usage)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateUsageWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateUsageWithContext(_a0 context.Context, _a1 *apigateway.UpdateUsageInput, _a2 ...request.Option) (*apigateway.Usage, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.Usage
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateUsageInput, ...request.Option) (*apigateway.Usage, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateUsageInput, ...request.Option) *apigateway.Usage); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.Usage)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateUsageInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateVpcLink provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateVpcLink(_a0 *apigateway.UpdateVpcLinkInput) (*apigateway.UpdateVpcLinkOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *apigateway.UpdateVpcLinkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateVpcLinkInput) (*apigateway.UpdateVpcLinkOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateVpcLinkInput) *apigateway.UpdateVpcLinkOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateVpcLinkInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateVpcLinkRequest provides a mock function with given fields: _a0
 func (_m *MockFakeApiGateway) UpdateVpcLinkRequest(_a0 *apigateway.UpdateVpcLinkInput) (*request.Request, *apigateway.UpdateVpcLinkOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *apigateway.UpdateVpcLinkOutput
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateVpcLinkInput) (*request.Request, *apigateway.UpdateVpcLinkOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*apigateway.UpdateVpcLinkInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*apigateway.UpdateVpcLinkInput) *apigateway.UpdateVpcLinkOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateVpcLinkWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeApiGateway) UpdateVpcLinkWithContext(_a0 context.Context, _a1 *apigateway.UpdateVpcLinkInput, _a2 ...request.Option) (*apigateway.UpdateVpcLinkOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *apigateway.UpdateVpcLinkOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateVpcLinkInput, ...request.Option) (*apigateway.UpdateVpcLinkOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *apigateway.UpdateVpcLinkInput, ...request.Option) *apigateway.UpdateVpcLinkOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*apigateway.UpdateVpcLinkOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *apigateway.UpdateVpcLinkInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockFakeApiGateway interface {
@@ -10884,10 +2328,6 @@ type mockConstructorTestingTNewMockFakeApiGateway interface {
 
 // NewMockFakeApiGateway creates a new instance of MockFakeApiGateway. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockFakeApiGateway(t mockConstructorTestingTNewMockFakeApiGateway) *MockFakeApiGateway {
-	mock := &MockFakeApiGateway{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

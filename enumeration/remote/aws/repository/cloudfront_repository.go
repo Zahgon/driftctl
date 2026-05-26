@@ -17,31 +17,11 @@ type cloudfrontRepository struct {
 }
 
 func NewCloudfrontRepository(session *session.Session, c cache.Cache) *cloudfrontRepository {
-	return &cloudfrontRepository{
-		cloudfront.New(session),
-		c,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (r *cloudfrontRepository) ListAllDistributions() ([]*cloudfront.DistributionSummary, error) {
-	if v := r.cache.Get("cloudfrontListAllDistributions"); v != nil {
-		return v.([]*cloudfront.DistributionSummary), nil
-	}
-
-	var distributions []*cloudfront.DistributionSummary
-	input := cloudfront.ListDistributionsInput{}
-	err := r.client.ListDistributionsPages(&input,
-		func(resp *cloudfront.ListDistributionsOutput, lastPage bool) bool {
-			if resp.DistributionList != nil {
-				distributions = append(distributions, resp.DistributionList.Items...)
-			}
-			return !lastPage
-		},
-	)
-	if err != nil {
-		return nil, err
-	}
-
-	r.cache.Put("cloudfrontListAllDistributions", distributions)
-	return distributions, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

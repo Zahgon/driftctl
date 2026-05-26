@@ -1,9 +1,6 @@
 package output
 
 import (
-	"encoding/json"
-	"os"
-
 	"github.com/snyk/driftctl/pkg/analyser"
 )
 
@@ -14,27 +11,6 @@ type JSON struct {
 	path string
 }
 
-func NewJSON(path string) *JSON {
-	return &JSON{path}
-}
+func NewJSON(path string) *JSON { _ = "STUB: not implemented"; return nil }
 
-func (c *JSON) Write(analysis *analyser.Analysis) error {
-	file := os.Stdout
-	if !isStdOut(c.path) {
-		f, err := os.OpenFile(c.path, os.O_CREATE|os.O_RDWR|os.O_TRUNC, 0600)
-		if err != nil {
-			return err
-		}
-		defer f.Close()
-		file = f
-	}
-
-	json, err := json.MarshalIndent(analysis, "", "\t")
-	if err != nil {
-		return err
-	}
-	if _, err := file.Write(json); err != nil {
-		return err
-	}
-	return nil
-}
+func (c *JSON) Write(analysis *analyser.Analysis) error { _ = "STUB: not implemented"; return nil }

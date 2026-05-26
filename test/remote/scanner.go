@@ -9,15 +9,11 @@ type SortableScanner struct {
 }
 
 func NewSortableScanner(scanner resource.Supplier) *SortableScanner {
-	return &SortableScanner{
-		Scanner: scanner,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (s *SortableScanner) Resources() ([]*resource.Resource, error) {
-	resources, err := s.Scanner.Resources()
-	if err != nil {
-		return nil, err
-	}
-	return resource.Sort(resources), nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

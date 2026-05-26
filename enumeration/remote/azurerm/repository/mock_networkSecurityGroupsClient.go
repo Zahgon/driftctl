@@ -14,18 +14,8 @@ type mockNetworkSecurityGroupsClient struct {
 
 // ListAll provides a mock function with given fields: options
 func (_m *mockNetworkSecurityGroupsClient) ListAll(options *armnetwork.NetworkSecurityGroupsListAllOptions) networkSecurityGroupsListAllPager {
-	ret := _m.Called(options)
-
-	var r0 networkSecurityGroupsListAllPager
-	if rf, ok := ret.Get(0).(func(*armnetwork.NetworkSecurityGroupsListAllOptions) networkSecurityGroupsListAllPager); ok {
-		r0 = rf(options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(networkSecurityGroupsListAllPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(networkSecurityGroupsListAllPager)
 }
 
 type mockConstructorTestingTnewMockNetworkSecurityGroupsClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockNetworkSecurityGroupsClient interface {
 
 // newMockNetworkSecurityGroupsClient creates a new instance of mockNetworkSecurityGroupsClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockNetworkSecurityGroupsClient(t mockConstructorTestingTnewMockNetworkSecurityGroupsClient) *mockNetworkSecurityGroupsClient {
-	mock := &mockNetworkSecurityGroupsClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

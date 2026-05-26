@@ -1,14 +1,10 @@
 package repository
 
 import (
-	"context"
-	"fmt"
-
 	asset "cloud.google.com/go/asset/apiv1"
 	assetpb "cloud.google.com/go/asset/apiv1/assetpb"
 	"github.com/snyk/driftctl/enumeration/remote/cache"
 	"github.com/snyk/driftctl/enumeration/remote/google/config"
-	"google.golang.org/api/iterator"
 )
 
 // https://cloud.google.com/asset-inventory/docs/supported-asset-types#supported_resource_types
@@ -75,215 +71,141 @@ type assetRepository struct {
 }
 
 func NewAssetRepository(client *asset.Client, config config.GCPTerraformConfig, c cache.Cache) *assetRepository {
-	return &assetRepository{
-		client,
-		config,
-		c,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (s assetRepository) listAllResources(ty string) ([]*assetpb.Asset, error) {
-	req := &assetpb.ListAssetsRequest{
-		Parent:      fmt.Sprintf("projects/%s", s.config.Project),
-		ContentType: assetpb.ContentType_RESOURCE,
-		AssetTypes: []string{
-			cloudFunctionsFunction,
-			bigtableInstanceAssetType,
-			bigtableTableAssetType,
-			sqlDatabaseInstanceAssetType,
-			computeGlobalAddressAssetType,
-			nodeGroupAssetType,
-			computeForwardingRuleAssetType,
-			instanceGroupManagerAssetType,
-			computeGlobalForwardingRuleAssetType,
-			computeSslCertificateAssetType,
-		},
-	}
-	var results []*assetpb.Asset
-
-	cacheKey := "listAllResources"
-	cachedResults := s.cache.GetAndLock(cacheKey)
-	defer s.cache.Unlock(cacheKey)
-	if cachedResults != nil {
-		results = cachedResults.([]*assetpb.Asset)
-	}
-
-	if results == nil {
-		it := s.client.ListAssets(context.Background(), req)
-		for {
-			resource, err := it.Next()
-			if err == iterator.Done {
-				break
-			}
-			if err != nil {
-				return nil, err
-			}
-			results = append(results, resource)
-		}
-		s.cache.Put(cacheKey, results)
-	}
-
-	filteredResults := []*assetpb.Asset{}
-	for _, result := range results {
-		if result.AssetType == ty {
-			filteredResults = append(filteredResults, result)
-		}
-	}
-
-	return filteredResults, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) searchAllResources(ty string) ([]*assetpb.ResourceSearchResult, error) {
-	req := &assetpb.SearchAllResourcesRequest{
-		Scope: fmt.Sprintf("projects/%s", s.config.Project),
-		AssetTypes: []string{
-			storageBucketAssetType,
-			computeFirewallAssetType,
-			computeRouterAssetType,
-			computeInstanceAssetType,
-			computeNetworkAssetType,
-			computeSubnetworkAssetType,
-			dnsManagedZoneAssetType,
-			computeInstanceGroupAssetType,
-			bigqueryDatasetAssetType,
-			bigqueryTableAssetType,
-			computeAddressAssetType,
-			computeDiskAssetType,
-			computeImageAssetType,
-			healthCheckAssetType,
-			cloudRunServiceAssetType,
-		},
-	}
-	var results []*assetpb.ResourceSearchResult
-
-	cacheKey := "SearchAllResources"
-	cachedResults := s.cache.GetAndLock(cacheKey)
-	defer s.cache.Unlock(cacheKey)
-	if cachedResults != nil {
-		results = cachedResults.([]*assetpb.ResourceSearchResult)
-	}
-
-	if results == nil {
-		it := s.client.SearchAllResources(context.Background(), req)
-		for {
-			resource, err := it.Next()
-			if err == iterator.Done {
-				break
-			}
-			if err != nil {
-				return nil, err
-			}
-			results = append(results, resource)
-		}
-		s.cache.Put(cacheKey, results)
-	}
-
-	filteredResults := []*assetpb.ResourceSearchResult{}
-	for _, result := range results {
-		if result.AssetType == ty {
-			filteredResults = append(filteredResults, result)
-		}
-	}
-
-	return filteredResults, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllBuckets() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(storageBucketAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllFirewalls() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(computeFirewallAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllRouters() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(computeRouterAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllInstances() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(computeInstanceAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllNetworks() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(computeNetworkAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllDNSManagedZones() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(dnsManagedZoneAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllInstanceGroups() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(computeInstanceGroupAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllDatasets() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(bigqueryDatasetAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllTables() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(bigqueryTableAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllAddresses() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(computeAddressAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllGlobalAddresses() ([]*assetpb.Asset, error) {
-	return s.listAllResources(computeGlobalAddressAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllFunctions() ([]*assetpb.Asset, error) {
-	return s.listAllResources(cloudFunctionsFunction)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllSubnetworks() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(computeSubnetworkAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllDisks() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(computeDiskAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllImages() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(computeImageAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllBigtableInstances() ([]*assetpb.Asset, error) {
-	return s.listAllResources(bigtableInstanceAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllBigtableTables() ([]*assetpb.Asset, error) {
-	return s.listAllResources(bigtableTableAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllSQLDatabaseInstances() ([]*assetpb.Asset, error) {
-	return s.listAllResources(sqlDatabaseInstanceAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllHealthChecks() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(healthCheckAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllCloudRunServices() ([]*assetpb.ResourceSearchResult, error) {
-	return s.searchAllResources(cloudRunServiceAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllNodeGroups() ([]*assetpb.Asset, error) {
-	return s.listAllResources(nodeGroupAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllForwardingRules() ([]*assetpb.Asset, error) {
-	return s.listAllResources(computeForwardingRuleAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllInstanceGroupManagers() ([]*assetpb.Asset, error) {
-	return s.listAllResources(instanceGroupManagerAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllGlobalForwardingRules() ([]*assetpb.Asset, error) {
-	return s.listAllResources(computeGlobalForwardingRuleAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s assetRepository) SearchAllSslCertificates() ([]*assetpb.Asset, error) {
-	return s.listAllResources(computeSslCertificateAssetType)
+	_ = "STUB: not implemented"
+	return nil, nil
 }

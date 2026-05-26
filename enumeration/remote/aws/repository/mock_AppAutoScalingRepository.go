@@ -14,96 +14,26 @@ type MockAppAutoScalingRepository struct {
 
 // DescribeScalableTargets provides a mock function with given fields: _a0
 func (_m *MockAppAutoScalingRepository) DescribeScalableTargets(_a0 string) ([]*applicationautoscaling.ScalableTarget, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*applicationautoscaling.ScalableTarget
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*applicationautoscaling.ScalableTarget, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*applicationautoscaling.ScalableTarget); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*applicationautoscaling.ScalableTarget)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScalingPolicies provides a mock function with given fields: _a0
 func (_m *MockAppAutoScalingRepository) DescribeScalingPolicies(_a0 string) ([]*applicationautoscaling.ScalingPolicy, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*applicationautoscaling.ScalingPolicy
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*applicationautoscaling.ScalingPolicy, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*applicationautoscaling.ScalingPolicy); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*applicationautoscaling.ScalingPolicy)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeScheduledActions provides a mock function with given fields: _a0
 func (_m *MockAppAutoScalingRepository) DescribeScheduledActions(_a0 string) ([]*applicationautoscaling.ScheduledAction, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*applicationautoscaling.ScheduledAction
-	var r1 error
-	if rf, ok := ret.Get(0).(func(string) ([]*applicationautoscaling.ScheduledAction, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(string) []*applicationautoscaling.ScheduledAction); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*applicationautoscaling.ScheduledAction)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(string) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ServiceNamespaceValues provides a mock function with given fields:
 func (_m *MockAppAutoScalingRepository) ServiceNamespaceValues() []string {
-	ret := _m.Called()
-
-	var r0 []string
-	if rf, ok := ret.Get(0).(func() []string); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]string)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 type mockConstructorTestingTNewMockAppAutoScalingRepository interface {
@@ -113,10 +43,6 @@ type mockConstructorTestingTNewMockAppAutoScalingRepository interface {
 
 // NewMockAppAutoScalingRepository creates a new instance of MockAppAutoScalingRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockAppAutoScalingRepository(t mockConstructorTestingTNewMockAppAutoScalingRepository) *MockAppAutoScalingRepository {
-	mock := &MockAppAutoScalingRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

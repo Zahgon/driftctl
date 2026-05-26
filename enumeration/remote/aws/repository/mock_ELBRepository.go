@@ -14,28 +14,8 @@ type MockELBRepository struct {
 
 // ListAllLoadBalancers provides a mock function with given fields:
 func (_m *MockELBRepository) ListAllLoadBalancers() ([]*elb.LoadBalancerDescription, error) {
-	ret := _m.Called()
-
-	var r0 []*elb.LoadBalancerDescription
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*elb.LoadBalancerDescription, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*elb.LoadBalancerDescription); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*elb.LoadBalancerDescription)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockELBRepository interface {
@@ -45,10 +25,6 @@ type mockConstructorTestingTNewMockELBRepository interface {
 
 // NewMockELBRepository creates a new instance of MockELBRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockELBRepository(t mockConstructorTestingTNewMockELBRepository) *MockELBRepository {
-	mock := &MockELBRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

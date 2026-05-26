@@ -14,210 +14,50 @@ type MockNetworkRepository struct {
 
 // ListAllFirewalls provides a mock function with given fields:
 func (_m *MockNetworkRepository) ListAllFirewalls() ([]*armnetwork.AzureFirewall, error) {
-	ret := _m.Called()
-
-	var r0 []*armnetwork.AzureFirewall
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armnetwork.AzureFirewall, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armnetwork.AzureFirewall); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armnetwork.AzureFirewall)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllLoadBalancers provides a mock function with given fields:
 func (_m *MockNetworkRepository) ListAllLoadBalancers() ([]*armnetwork.LoadBalancer, error) {
-	ret := _m.Called()
-
-	var r0 []*armnetwork.LoadBalancer
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armnetwork.LoadBalancer, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armnetwork.LoadBalancer); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armnetwork.LoadBalancer)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllPublicIPAddresses provides a mock function with given fields:
 func (_m *MockNetworkRepository) ListAllPublicIPAddresses() ([]*armnetwork.PublicIPAddress, error) {
-	ret := _m.Called()
-
-	var r0 []*armnetwork.PublicIPAddress
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armnetwork.PublicIPAddress, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armnetwork.PublicIPAddress); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armnetwork.PublicIPAddress)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllRouteTables provides a mock function with given fields:
 func (_m *MockNetworkRepository) ListAllRouteTables() ([]*armnetwork.RouteTable, error) {
-	ret := _m.Called()
-
-	var r0 []*armnetwork.RouteTable
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armnetwork.RouteTable, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armnetwork.RouteTable); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armnetwork.RouteTable)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllSecurityGroups provides a mock function with given fields:
 func (_m *MockNetworkRepository) ListAllSecurityGroups() ([]*armnetwork.NetworkSecurityGroup, error) {
-	ret := _m.Called()
-
-	var r0 []*armnetwork.NetworkSecurityGroup
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armnetwork.NetworkSecurityGroup, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armnetwork.NetworkSecurityGroup); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armnetwork.NetworkSecurityGroup)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllSubnets provides a mock function with given fields: virtualNetwork
 func (_m *MockNetworkRepository) ListAllSubnets(virtualNetwork *armnetwork.VirtualNetwork) ([]*armnetwork.Subnet, error) {
-	ret := _m.Called(virtualNetwork)
-
-	var r0 []*armnetwork.Subnet
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armnetwork.VirtualNetwork) ([]*armnetwork.Subnet, error)); ok {
-		return rf(virtualNetwork)
-	}
-	if rf, ok := ret.Get(0).(func(*armnetwork.VirtualNetwork) []*armnetwork.Subnet); ok {
-		r0 = rf(virtualNetwork)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armnetwork.Subnet)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armnetwork.VirtualNetwork) error); ok {
-		r1 = rf(virtualNetwork)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllVirtualNetworks provides a mock function with given fields:
 func (_m *MockNetworkRepository) ListAllVirtualNetworks() ([]*armnetwork.VirtualNetwork, error) {
-	ret := _m.Called()
-
-	var r0 []*armnetwork.VirtualNetwork
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armnetwork.VirtualNetwork, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armnetwork.VirtualNetwork); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armnetwork.VirtualNetwork)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListLoadBalancerRules provides a mock function with given fields: _a0
 func (_m *MockNetworkRepository) ListLoadBalancerRules(_a0 *armnetwork.LoadBalancer) ([]*armnetwork.LoadBalancingRule, error) {
-	ret := _m.Called(_a0)
-
-	var r0 []*armnetwork.LoadBalancingRule
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armnetwork.LoadBalancer) ([]*armnetwork.LoadBalancingRule, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*armnetwork.LoadBalancer) []*armnetwork.LoadBalancingRule); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armnetwork.LoadBalancingRule)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armnetwork.LoadBalancer) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockNetworkRepository interface {
@@ -227,10 +67,6 @@ type mockConstructorTestingTNewMockNetworkRepository interface {
 
 // NewMockNetworkRepository creates a new instance of MockNetworkRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockNetworkRepository(t mockConstructorTestingTNewMockNetworkRepository) *MockNetworkRepository {
-	mock := &MockNetworkRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

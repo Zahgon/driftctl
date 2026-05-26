@@ -13,24 +13,6 @@ type store struct {
 	buckets map[int]*bucket
 }
 
-func New() Store {
-	return &store{
-		m:       &sync.Mutex{},
-		buckets: map[int]*bucket{},
-	}
-}
+func New() Store { _ = "STUB: not implemented"; return *new(Store) }
 
-func (s store) Bucket(name BucketName) Bucket {
-	s.m.Lock()
-	defer s.m.Unlock()
-
-	key := int(name)
-	if _, exist := s.buckets[key]; !exist {
-		s.buckets[key] = &bucket{
-			m:      &sync.RWMutex{},
-			values: map[string]interface{}{},
-		}
-	}
-
-	return s.buckets[key]
-}
+func (s store) Bucket(name BucketName) Bucket { _ = "STUB: not implemented"; return *new(Bucket) }

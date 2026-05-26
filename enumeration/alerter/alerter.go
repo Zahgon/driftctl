@@ -1,8 +1,6 @@
 package alerter
 
 import (
-	"fmt"
-
 	"github.com/snyk/driftctl/enumeration/resource"
 )
 
@@ -16,60 +14,19 @@ type Alerter struct {
 	doneCh   chan bool
 }
 
-func NewAlerter() *Alerter {
-	var alerter = &Alerter{
-		alerts:   make(Alerts),
-		alertsCh: make(chan Alerts),
-		doneCh:   make(chan bool),
-	}
+func NewAlerter() *Alerter { _ = "STUB: not implemented"; return nil }
 
-	go alerter.run()
+func (a *Alerter) run() { _ = "STUB: not implemented"; return }
 
-	return alerter
-}
+func (a *Alerter) SetAlerts(alerts Alerts) { _ = "STUB: not implemented"; return }
 
-func (a *Alerter) run() {
-	defer func() { a.doneCh <- true }()
-	for alert := range a.alertsCh {
-		for k, v := range alert {
-			if val, ok := a.alerts[k]; ok {
-				a.alerts[k] = append(val, v...)
-			} else {
-				a.alerts[k] = v
-			}
-		}
-	}
-}
+func (a *Alerter) Retrieve() Alerts { _ = "STUB: not implemented"; return *new(Alerts) }
 
-func (a *Alerter) SetAlerts(alerts Alerts) {
-	a.alerts = alerts
-}
-
-func (a *Alerter) Retrieve() Alerts {
-	close(a.alertsCh)
-	<-a.doneCh
-	return a.alerts
-}
-
-func (a *Alerter) SendAlert(key string, alert Alert) {
-	a.alertsCh <- Alerts{
-		key: []Alert{alert},
-	}
-}
+func (a *Alerter) SendAlert(key string, alert Alert) { _ = "STUB: not implemented"; return }
 
 func (a *Alerter) IsResourceIgnored(res *resource.Resource) bool {
-	alert, alertExists := a.alerts[fmt.Sprintf("%s.%s", res.ResourceType(), res.ResourceId())]
-	wildcardAlert, wildcardAlertExists := a.alerts[res.ResourceType()]
-	shouldIgnoreAlert := a.shouldBeIgnored(alert)
-	shouldIgnoreWildcardAlert := a.shouldBeIgnored(wildcardAlert)
-	return (alertExists && shouldIgnoreAlert) || (wildcardAlertExists && shouldIgnoreWildcardAlert)
-}
-
-func (a *Alerter) shouldBeIgnored(alert []Alert) bool {
-	for _, a := range alert {
-		if a.ShouldIgnoreResource() {
-			return true
-		}
-	}
+	_ = "STUB: not implemented"
 	return false
 }
+
+func (a *Alerter) shouldBeIgnored(alert []Alert) bool { _ = "STUB: not implemented"; return false }

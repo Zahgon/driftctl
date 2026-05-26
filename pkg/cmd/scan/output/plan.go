@@ -1,10 +1,6 @@
 package output
 
 import (
-	"encoding/json"
-	"fmt"
-	"os"
-
 	"github.com/snyk/driftctl/enumeration/resource"
 	"github.com/snyk/driftctl/pkg/analyser"
 )
@@ -51,78 +47,23 @@ type Plan struct {
 	path string
 }
 
-func NewPlan(path string) *Plan {
-	return &Plan{path}
+func NewPlan(path string) *Plan { _ = "STUB: not implemented"; return nil }
+
+func (c *Plan) Write(analysis *analyser.Analysis) error { _ = "STUB: not implemented"; return nil }
+
+func addPlannedValues(analysis *analyser.Analysis) module {
+	_ = "STUB: not implemented"
+	return *new(module)
 }
 
-func (c *Plan) Write(analysis *analyser.Analysis) error {
-	file := os.Stdout
-	if !isStdOut(c.path) {
-		f, err := os.OpenFile(c.path, os.O_CREATE|os.O_RDWR|os.O_TRUNC, 0600)
-		if err != nil {
-			return err
-		}
-		defer f.Close()
-		file = f
-	}
-	output := plan{FormatVersion: FormatVersion}
-	output.PlannedValues.RootModule = addPlannedValues(analysis)
-	output.ResourceChanges = addResourceChanges(analysis)
-	jsonPlan, err := json.MarshalIndent(output, "", "\t")
-	if err != nil {
-		return err
-	}
-	if _, err := file.Write(jsonPlan); err != nil {
-		return err
-	}
+func listRsc(resources []*resource.Resource) []rsc { _ = "STUB: not implemented"; return nil }
+
+func addResourceChanges(analysis *analyser.Analysis) []rscChange {
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func addPlannedValues(analysis *analyser.Analysis) module {
-	managedRsc := listRsc(analysis.Managed())
-	unmanagedRsc := listRsc(analysis.Unmanaged())
-	return module{
-		Resources: append(managedRsc, unmanagedRsc...),
-	}
-}
-
-func listRsc(resources []*resource.Resource) []rsc {
-	var ret []rsc
-	for _, res := range resources {
-		r := rsc{
-			Address:         fmt.Sprintf("%s.%s", res.ResourceType(), res.ResourceId()),
-			Type:            res.ResourceType(),
-			Name:            res.ResourceId(),
-			AttributeValues: *res.Attributes(),
-		}
-		ret = append(ret, r)
-	}
-	return ret
-}
-
-func addResourceChanges(analysis *analyser.Analysis) []rscChange {
-	managedRsc := listRscChange(analysis.Managed(), "no-op")
-	unmanagedRsc := listRscChange(analysis.Unmanaged(), "create")
-	return append(managedRsc, unmanagedRsc...)
-}
-
 func listRscChange(resources []*resource.Resource, action string) []rscChange {
-	var ret []rscChange
-	for _, res := range resources {
-		r := rscChange{
-			Address: fmt.Sprintf("%s.%s", res.ResourceType(), res.ResourceId()),
-			Type:    res.ResourceType(),
-			Name:    res.ResourceId(),
-			Change: change{
-				Actions: []string{action},
-				After:   *res.Attributes(),
-			},
-		}
-		if action == "no-op" {
-			r.Change.Before = *res.Attributes()
-		}
-		ret = append(ret, r)
-
-	}
-	return ret
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type EC2EipAssociationEnumerator struct {
@@ -13,36 +11,16 @@ type EC2EipAssociationEnumerator struct {
 }
 
 func NewEC2EipAssociationEnumerator(repo repository.EC2Repository, factory resource.ResourceFactory) *EC2EipAssociationEnumerator {
-	return &EC2EipAssociationEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *EC2EipAssociationEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsEipAssociationResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *EC2EipAssociationEnumerator) Enumerate() ([]*resource.Resource, error) {
-	addresses, err := e.repository.ListAllAddressesAssociation()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(addresses))
-
-	for _, address := range addresses {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*address.AssociationId,
-				map[string]interface{}{
-					"allocation_id": *address.AllocationId,
-				},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

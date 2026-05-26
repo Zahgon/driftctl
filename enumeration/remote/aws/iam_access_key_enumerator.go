@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	resourceaws "github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type IamAccessKeyEnumerator struct {
@@ -13,40 +11,16 @@ type IamAccessKeyEnumerator struct {
 }
 
 func NewIamAccessKeyEnumerator(repository repository.IAMRepository, factory resource.ResourceFactory) *IamAccessKeyEnumerator {
-	return &IamAccessKeyEnumerator{
-		repository,
-		factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *IamAccessKeyEnumerator) SupportedType() resource.ResourceType {
-	return resourceaws.AwsIamAccessKeyResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *IamAccessKeyEnumerator) Enumerate() ([]*resource.Resource, error) {
-	users, err := e.repository.ListAllUsers()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingErrorWithType(err, string(e.SupportedType()), resourceaws.AwsIamUserResourceType)
-	}
-
-	keys, err := e.repository.ListAllAccessKeys(users)
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0)
-	for _, key := range keys {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*key.AccessKeyId,
-				map[string]interface{}{
-					"user": *key.UserName,
-				},
-			),
-		)
-	}
-
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

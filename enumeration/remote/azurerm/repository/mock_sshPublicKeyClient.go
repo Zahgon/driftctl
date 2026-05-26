@@ -14,18 +14,8 @@ type mockSshPublicKeyClient struct {
 
 // ListBySubscription provides a mock function with given fields: options
 func (_m *mockSshPublicKeyClient) ListBySubscription(options *armcompute.SSHPublicKeysListBySubscriptionOptions) sshPublicKeyListPager {
-	ret := _m.Called(options)
-
-	var r0 sshPublicKeyListPager
-	if rf, ok := ret.Get(0).(func(*armcompute.SSHPublicKeysListBySubscriptionOptions) sshPublicKeyListPager); ok {
-		r0 = rf(options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(sshPublicKeyListPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(sshPublicKeyListPager)
 }
 
 type mockConstructorTestingTnewMockSshPublicKeyClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockSshPublicKeyClient interface {
 
 // newMockSshPublicKeyClient creates a new instance of mockSshPublicKeyClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockSshPublicKeyClient(t mockConstructorTestingTnewMockSshPublicKeyClient) *mockSshPublicKeyClient {
-	mock := &mockSshPublicKeyClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

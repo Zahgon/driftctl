@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type SNSTopicPolicyEnumerator struct {
@@ -13,36 +11,16 @@ type SNSTopicPolicyEnumerator struct {
 }
 
 func NewSNSTopicPolicyEnumerator(repo repository.SNSRepository, factory resource.ResourceFactory) *SNSTopicPolicyEnumerator {
-	return &SNSTopicPolicyEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *SNSTopicPolicyEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsSnsTopicPolicyResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *SNSTopicPolicyEnumerator) Enumerate() ([]*resource.Resource, error) {
-	topics, err := e.repository.ListAllTopics()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingErrorWithType(err, string(e.SupportedType()), aws.AwsSnsTopicResourceType)
-	}
-
-	results := make([]*resource.Resource, 0, len(topics))
-
-	for _, topic := range topics {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*topic.TopicArn,
-				map[string]interface{}{
-					"topic_arn": *topic.TopicArn,
-				},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

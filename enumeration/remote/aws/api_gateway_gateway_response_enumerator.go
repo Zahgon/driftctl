@@ -2,11 +2,8 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
-	"strings"
 
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type ApiGatewayGatewayResponseEnumerator struct {
@@ -15,43 +12,16 @@ type ApiGatewayGatewayResponseEnumerator struct {
 }
 
 func NewApiGatewayGatewayResponseEnumerator(repo repository.ApiGatewayRepository, factory resource.ResourceFactory) *ApiGatewayGatewayResponseEnumerator {
-	return &ApiGatewayGatewayResponseEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *ApiGatewayGatewayResponseEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsApiGatewayGatewayResponseResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *ApiGatewayGatewayResponseEnumerator) Enumerate() ([]*resource.Resource, error) {
-	apis, err := e.repository.ListAllRestApis()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingErrorWithType(err, string(e.SupportedType()), aws.AwsApiGatewayRestApiResourceType)
-	}
-
-	results := make([]*resource.Resource, 0)
-
-	for _, api := range apis {
-		a := api
-		gtwResponses, err := e.repository.ListAllRestApiGatewayResponses(*a.Id)
-		if err != nil {
-			return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-		}
-
-		for _, gtwResponse := range gtwResponses {
-			g := gtwResponse
-			results = append(
-				results,
-				e.factory.CreateAbstractResource(
-					string(e.SupportedType()),
-					strings.Join([]string{"aggr", *a.Id, *g.ResponseType}, "-"),
-					map[string]interface{}{},
-				),
-			)
-		}
-
-	}
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

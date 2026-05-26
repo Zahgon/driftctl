@@ -17,26 +17,8 @@ type mockPostgresqlDatabaseClient struct {
 
 // ListByServer provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *mockPostgresqlDatabaseClient) ListByServer(_a0 context.Context, _a1 string, _a2 string, _a3 *armpostgresql.DatabasesListByServerOptions) (armpostgresql.DatabasesListByServerResponse, error) {
-	ret := _m.Called(_a0, _a1, _a2, _a3)
-
-	var r0 armpostgresql.DatabasesListByServerResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, string, string, *armpostgresql.DatabasesListByServerOptions) (armpostgresql.DatabasesListByServerResponse, error)); ok {
-		return rf(_a0, _a1, _a2, _a3)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, string, string, *armpostgresql.DatabasesListByServerOptions) armpostgresql.DatabasesListByServerResponse); ok {
-		r0 = rf(_a0, _a1, _a2, _a3)
-	} else {
-		r0 = ret.Get(0).(armpostgresql.DatabasesListByServerResponse)
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, string, string, *armpostgresql.DatabasesListByServerOptions) error); ok {
-		r1 = rf(_a0, _a1, _a2, _a3)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return *new(armpostgresql.DatabasesListByServerResponse), nil
 }
 
 type mockConstructorTestingTnewMockPostgresqlDatabaseClient interface {
@@ -46,10 +28,6 @@ type mockConstructorTestingTnewMockPostgresqlDatabaseClient interface {
 
 // newMockPostgresqlDatabaseClient creates a new instance of mockPostgresqlDatabaseClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockPostgresqlDatabaseClient(t mockConstructorTestingTnewMockPostgresqlDatabaseClient) *mockPostgresqlDatabaseClient {
-	mock := &mockPostgresqlDatabaseClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

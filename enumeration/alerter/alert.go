@@ -1,9 +1,6 @@
 package alerter
 
 import (
-	"encoding/json"
-	"fmt"
-
 	"github.com/snyk/driftctl/enumeration/resource"
 )
 
@@ -20,18 +17,19 @@ type UnsupportedResourcetypeAlert struct {
 }
 
 func NewUnsupportedResourcetypeAlert(typ string) *UnsupportedResourcetypeAlert {
-	return &UnsupportedResourcetypeAlert{Typ: typ}
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (f *UnsupportedResourcetypeAlert) Message() string {
-	return fmt.Sprintf("%s is not supported...", f.Typ)
-}
+func (f *UnsupportedResourcetypeAlert) Message() string { _ = "STUB: not implemented"; return "" }
 
 func (f *UnsupportedResourcetypeAlert) ShouldIgnoreResource() bool {
+	_ = "STUB: not implemented"
 	return false
 }
 
 func (f *UnsupportedResourcetypeAlert) Resource() *resource.Resource {
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -40,17 +38,11 @@ type FakeAlert struct {
 	IgnoreResource bool
 }
 
-func (f *FakeAlert) Message() string {
-	return f.Msg
-}
+func (f *FakeAlert) Message() string { _ = "STUB: not implemented"; return "" }
 
-func (f *FakeAlert) ShouldIgnoreResource() bool {
-	return f.IgnoreResource
-}
+func (f *FakeAlert) ShouldIgnoreResource() bool { _ = "STUB: not implemented"; return false }
 
-func (f *FakeAlert) Resource() *resource.Resource {
-	return nil
-}
+func (f *FakeAlert) Resource() *resource.Resource { _ = "STUB: not implemented"; return nil }
 
 type SerializableAlert struct {
 	Alert
@@ -60,28 +52,18 @@ type SerializedAlert struct {
 	Msg string `json:"message"`
 }
 
-func (u *SerializedAlert) Message() string {
-	return u.Msg
-}
+func (u *SerializedAlert) Message() string { _ = "STUB: not implemented"; return "" }
 
-func (u *SerializedAlert) ShouldIgnoreResource() bool {
-	return false
-}
+func (u *SerializedAlert) ShouldIgnoreResource() bool { _ = "STUB: not implemented"; return false }
 
-func (s *SerializedAlert) Resource() *resource.Resource {
-	return nil
-}
+func (s *SerializedAlert) Resource() *resource.Resource { _ = "STUB: not implemented"; return nil }
 
 func (s *SerializableAlert) UnmarshalJSON(bytes []byte) error {
-	var res SerializedAlert
-
-	if err := json.Unmarshal(bytes, &res); err != nil {
-		return err
-	}
-	s.Alert = &res
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (s *SerializableAlert) MarshalJSON() ([]byte, error) {
-	return json.Marshal(SerializedAlert{Msg: s.Message()})
+	_ = "STUB: not implemented"
+	return nil, nil
 }

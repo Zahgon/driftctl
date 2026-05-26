@@ -2,14 +2,13 @@ package repository
 
 import (
 	"context"
-	"fmt"
+
 	"github.com/snyk/driftctl/enumeration/remote/azurerm/common"
 	"github.com/snyk/driftctl/enumeration/remote/cache"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore"
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/arm"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/postgresql/armpostgresql"
-	"github.com/Azure/go-autorest/autorest/azure"
 )
 
 type PostgresqlRespository interface {
@@ -26,7 +25,8 @@ type postgresqlServersClient interface {
 }
 
 func (c postgresqlServersClientImpl) List(ctx context.Context, options *armpostgresql.ServersListOptions) (armpostgresql.ServersListResponse, error) {
-	return c.client.List(ctx, options)
+	_ = "STUB: not implemented"
+	return *new(armpostgresql.ServersListResponse), nil
 }
 
 type postgresqlDatabaseClientImpl struct {
@@ -38,7 +38,8 @@ type postgresqlDatabaseClient interface {
 }
 
 func (c postgresqlDatabaseClientImpl) ListByServer(ctx context.Context, resGroup string, serverName string, options *armpostgresql.DatabasesListByServerOptions) (armpostgresql.DatabasesListByServerResponse, error) {
-	return c.client.ListByServer(ctx, resGroup, serverName, options)
+	_ = "STUB: not implemented"
+	return *new(armpostgresql.DatabasesListByServerResponse), nil
 }
 
 type postgresqlRepository struct {
@@ -48,46 +49,16 @@ type postgresqlRepository struct {
 }
 
 func NewPostgresqlRepository(cred azcore.TokenCredential, options *arm.ClientOptions, config common.AzureProviderConfig, cache cache.Cache) *postgresqlRepository {
-	return &postgresqlRepository{
-		postgresqlServersClientImpl{client: armpostgresql.NewServersClient(config.SubscriptionID, cred, options)},
-		postgresqlDatabaseClientImpl{client: armpostgresql.NewDatabasesClient(config.SubscriptionID, cred, options)},
-		cache,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (s *postgresqlRepository) ListAllServers() ([]*armpostgresql.Server, error) {
-	cacheKey := "postgresqlListAllServers"
-
-	defer s.cache.Unlock(cacheKey)
-	if v := s.cache.GetAndLock(cacheKey); v != nil {
-		return v.([]*armpostgresql.Server), nil
-	}
-
-	res, err := s.serversClient.List(context.Background(), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	s.cache.Put(cacheKey, res.Value)
-	return res.Value, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s *postgresqlRepository) ListAllDatabasesByServer(server *armpostgresql.Server) ([]*armpostgresql.Database, error) {
-	res, err := azure.ParseResourceID(*server.ID)
-	if err != nil {
-		return nil, err
-	}
-
-	cacheKey := fmt.Sprintf("postgresqlListAllDatabases_%s_%s", res.ResourceGroup, *server.Name)
-	if v := s.cache.Get(cacheKey); v != nil {
-		return v.([]*armpostgresql.Database), nil
-	}
-
-	result, err := s.databaseClient.ListByServer(context.Background(), res.ResourceGroup, *server.Name, nil)
-	if err != nil {
-		return nil, err
-	}
-
-	s.cache.Put(cacheKey, result.Value)
-	return result.Value, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

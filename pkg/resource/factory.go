@@ -13,27 +13,11 @@ type DriftctlResourceFactory struct {
 }
 
 func NewDriftctlResourceFactory(resourceSchemaRepository SchemaRepositoryInterface) *DriftctlResourceFactory {
-	return &DriftctlResourceFactory{
-		resourceSchemaRepository: resourceSchemaRepository,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (r *DriftctlResourceFactory) CreateAbstractResource(ty, id string, data map[string]interface{}) *resource.Resource {
-	attributes := resource.Attributes(data)
-	attributes.SanitizeDefaults()
-
-	schema, _ := r.resourceSchemaRepository.GetSchema(ty)
-	res := resource.Resource{
-		Id:    id,
-		Type:  ty,
-		Attrs: &attributes,
-		Sch:   schema,
-	}
-
-	schema, exist := r.resourceSchemaRepository.GetSchema(ty)
-	if exist && schema.NormalizeFunc != nil {
-		schema.NormalizeFunc(&res)
-	}
-
-	return &res
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -1,9 +1,7 @@
 package middlewares
 
 import (
-	"github.com/sirupsen/logrus"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/pkg/resource/aws"
 )
 
 // SQS queues from AWS have a weird behaviour when we fetch them.
@@ -15,47 +13,21 @@ import (
 type AwsDefaultSQSQueuePolicy struct{}
 
 func NewAwsDefaultSQSQueuePolicy() AwsDefaultSQSQueuePolicy {
-	return AwsDefaultSQSQueuePolicy{}
+	_ = "STUB: not implemented"
+	return *new(AwsDefaultSQSQueuePolicy)
 }
 
 func (m AwsDefaultSQSQueuePolicy) Execute(remoteResources, resourcesFromState *[]*resource.Resource) error {
-	newRemoteResources := make([]*resource.Resource, 0)
-	for _, res := range *remoteResources {
-		// Ignore all resources other than sqs_queue_policy
-		if res.ResourceType() != aws.AwsSqsQueuePolicyResourceType {
-			newRemoteResources = append(newRemoteResources, res)
-			continue
-		}
-
-		// Ignore all non-default queue policy
-		pol, exists := res.Attrs.Get("policy")
-		policy := pol.(string)
-		if exists && policy != "" {
-			newRemoteResources = append(newRemoteResources, res)
-			continue
-		}
-
-		// Check if queue policy is managed by IaC
-		existInState := false
-		for _, stateResource := range *resourcesFromState {
-			if res.Equal(stateResource) {
-				existInState = true
-				break
-			}
-		}
-
-		// Include resource if it's managed in IaC
-		if existInState {
-			newRemoteResources = append(newRemoteResources, res)
-			continue
-		}
-
-		// Else, resource is not added to newRemoteResources slice so it will be ignored
-		logrus.WithFields(logrus.Fields{
-			"id":   res.ResourceId(),
-			"type": res.ResourceType(),
-		}).Debug("Ignoring default queue policy as it is not managed by IaC")
-	}
-	*remoteResources = newRemoteResources
+	_ = "STUB: not implemented"
 	return nil
 }
+
+// Ignore all resources other than sqs_queue_policy
+
+// Ignore all non-default queue policy
+
+// Check if queue policy is managed by IaC
+
+// Include resource if it's managed in IaC
+
+// Else, resource is not added to newRemoteResources slice so it will be ignored

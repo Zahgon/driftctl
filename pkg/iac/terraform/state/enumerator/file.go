@@ -1,10 +1,6 @@
 package enumerator
 
 import (
-	"fmt"
-	"os"
-	"path/filepath"
-
 	"github.com/snyk/driftctl/pkg/iac/config"
 )
 
@@ -18,51 +14,12 @@ type FileEnumerator struct {
 }
 
 func NewFileEnumerator(config config.SupplierConfig) *FileEnumerator {
-	return &FileEnumerator{
-		config,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (s *FileEnumerator) Origin() string {
-	return s.config.String()
-}
+func (s *FileEnumerator) Origin() string { _ = "STUB: not implemented"; return "" }
 
-func (s *FileEnumerator) Enumerate() ([]string, error) {
-	path := s.config.Path
+func (s *FileEnumerator) Enumerate() ([]string, error) { _ = "STUB: not implemented"; return nil, nil }
 
-	info, err := os.Lstat(path)
-	if isGlob := HasMeta(path); !isGlob && err != nil {
-		return nil, err
-	}
-	if err == nil {
-		// if we got a symlink, use its destination
-		if info.Mode()&os.ModeSymlink != 0 {
-			destination, err := filepath.EvalSymlinks(path)
-			if err != nil {
-				return nil, err
-			}
-			path = destination
-			info, err = os.Stat(destination)
-			if err != nil {
-				return nil, err
-			}
-		}
-
-		if info != nil && !info.IsDir() {
-			return []string{path}, nil
-		}
-
-		path = filepath.Join(path, "**/*.tfstate")
-	}
-
-	keys, err := Glob(path)
-	if err != nil {
-		return keys, err
-	}
-
-	if len(keys) == 0 {
-		return keys, fmt.Errorf("no Terraform state was found in %s, exiting", s.config.Path)
-	}
-
-	return keys, err
-}
+// if we got a symlink, use its destination

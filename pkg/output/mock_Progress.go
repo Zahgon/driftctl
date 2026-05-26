@@ -11,32 +11,27 @@ type MockProgress struct {
 
 // Inc provides a mock function with given fields:
 func (_m *MockProgress) Inc() {
-	_m.Called()
+	_ = "STUB: not implemented"
+
+	// Start provides a mock function with given fields:
+	return
 }
 
-// Start provides a mock function with given fields:
 func (_m *MockProgress) Start() {
-	_m.Called()
+	_ = "STUB: not implemented"
+
+	// Stop provides a mock function with given fields:
+	return
 }
 
-// Stop provides a mock function with given fields:
 func (_m *MockProgress) Stop() {
-	_m.Called()
+	_ = "STUB: not implemented"
+
+	// Val provides a mock function with given fields:
+	return
 }
 
-// Val provides a mock function with given fields:
-func (_m *MockProgress) Val() uint64 {
-	ret := _m.Called()
-
-	var r0 uint64
-	if rf, ok := ret.Get(0).(func() uint64); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Get(0).(uint64)
-	}
-
-	return r0
-}
+func (_m *MockProgress) Val() uint64 { _ = "STUB: not implemented"; return 0 }
 
 type mockConstructorTestingTNewMockProgress interface {
 	mock.TestingT
@@ -45,10 +40,6 @@ type mockConstructorTestingTNewMockProgress interface {
 
 // NewMockProgress creates a new instance of MockProgress. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockProgress(t mockConstructorTestingTNewMockProgress) *MockProgress {
-	mock := &MockProgress{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

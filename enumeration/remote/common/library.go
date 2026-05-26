@@ -13,16 +13,8 @@ type RemoteLibrary struct {
 	enumerators []Enumerator
 }
 
-func NewRemoteLibrary() *RemoteLibrary {
-	return &RemoteLibrary{
-		make([]Enumerator, 0),
-	}
-}
+func NewRemoteLibrary() *RemoteLibrary { _ = "STUB: not implemented"; return nil }
 
-func (r *RemoteLibrary) AddEnumerator(enumerator Enumerator) {
-	r.enumerators = append(r.enumerators, enumerator)
-}
+func (r *RemoteLibrary) AddEnumerator(enumerator Enumerator) { _ = "STUB: not implemented"; return }
 
-func (r *RemoteLibrary) Enumerators() []Enumerator {
-	return r.enumerators
-}
+func (r *RemoteLibrary) Enumerators() []Enumerator { _ = "STUB: not implemented"; return nil }

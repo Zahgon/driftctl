@@ -5,9 +5,6 @@ import (
 )
 
 func InitResourcesMetadata(resourceSchemaRepository resource.SchemaRepositoryInterface) {
-	initGithubBranchProtectionMetaData(resourceSchemaRepository)
-	initGithubMembershipMetaData(resourceSchemaRepository)
-	initGithubRepositoryMetaData(resourceSchemaRepository)
-	initGithubTeamMetaData(resourceSchemaRepository)
-	initGithubTeamMembershipMetaData(resourceSchemaRepository)
+	_ = "STUB: not implemented"
+	return
 }

@@ -14,18 +14,8 @@ type mockPrivateZonesClient struct {
 
 // List provides a mock function with given fields: options
 func (_m *mockPrivateZonesClient) List(options *armprivatedns.PrivateZonesListOptions) privateDNSZoneListPager {
-	ret := _m.Called(options)
-
-	var r0 privateDNSZoneListPager
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZonesListOptions) privateDNSZoneListPager); ok {
-		r0 = rf(options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(privateDNSZoneListPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(privateDNSZoneListPager)
 }
 
 type mockConstructorTestingTnewMockPrivateZonesClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockPrivateZonesClient interface {
 
 // newMockPrivateZonesClient creates a new instance of mockPrivateZonesClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockPrivateZonesClient(t mockConstructorTestingTnewMockPrivateZonesClient) *mockPrivateZonesClient {
-	mock := &mockPrivateZonesClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -14,54 +14,14 @@ type MockPostgresqlRespository struct {
 
 // ListAllDatabasesByServer provides a mock function with given fields: server
 func (_m *MockPostgresqlRespository) ListAllDatabasesByServer(server *armpostgresql.Server) ([]*armpostgresql.Database, error) {
-	ret := _m.Called(server)
-
-	var r0 []*armpostgresql.Database
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armpostgresql.Server) ([]*armpostgresql.Database, error)); ok {
-		return rf(server)
-	}
-	if rf, ok := ret.Get(0).(func(*armpostgresql.Server) []*armpostgresql.Database); ok {
-		r0 = rf(server)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armpostgresql.Database)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armpostgresql.Server) error); ok {
-		r1 = rf(server)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllServers provides a mock function with given fields:
 func (_m *MockPostgresqlRespository) ListAllServers() ([]*armpostgresql.Server, error) {
-	ret := _m.Called()
-
-	var r0 []*armpostgresql.Server
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armpostgresql.Server, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armpostgresql.Server); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armpostgresql.Server)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockPostgresqlRespository interface {
@@ -71,10 +31,6 @@ type mockConstructorTestingTNewMockPostgresqlRespository interface {
 
 // NewMockPostgresqlRespository creates a new instance of MockPostgresqlRespository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockPostgresqlRespository(t mockConstructorTestingTNewMockPostgresqlRespository) *MockPostgresqlRespository {
-	mock := &MockPostgresqlRespository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

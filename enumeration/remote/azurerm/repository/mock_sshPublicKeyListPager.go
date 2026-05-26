@@ -16,45 +16,18 @@ type mockSshPublicKeyListPager struct {
 }
 
 // Err provides a mock function with given fields:
-func (_m *mockSshPublicKeyListPager) Err() error {
-	ret := _m.Called()
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func() error); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
-}
+func (_m *mockSshPublicKeyListPager) Err() error { _ = "STUB: not implemented"; return nil }
 
 // NextPage provides a mock function with given fields: ctx
 func (_m *mockSshPublicKeyListPager) NextPage(ctx context.Context) bool {
-	ret := _m.Called(ctx)
-
-	var r0 bool
-	if rf, ok := ret.Get(0).(func(context.Context) bool); ok {
-		r0 = rf(ctx)
-	} else {
-		r0 = ret.Get(0).(bool)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return false
 }
 
 // PageResponse provides a mock function with given fields:
 func (_m *mockSshPublicKeyListPager) PageResponse() armcompute.SSHPublicKeysListBySubscriptionResponse {
-	ret := _m.Called()
-
-	var r0 armcompute.SSHPublicKeysListBySubscriptionResponse
-	if rf, ok := ret.Get(0).(func() armcompute.SSHPublicKeysListBySubscriptionResponse); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Get(0).(armcompute.SSHPublicKeysListBySubscriptionResponse)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(armcompute.SSHPublicKeysListBySubscriptionResponse)
 }
 
 type mockConstructorTestingTnewMockSshPublicKeyListPager interface {
@@ -64,10 +37,6 @@ type mockConstructorTestingTnewMockSshPublicKeyListPager interface {
 
 // newMockSshPublicKeyListPager creates a new instance of mockSshPublicKeyListPager. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockSshPublicKeyListPager(t mockConstructorTestingTnewMockSshPublicKeyListPager) *mockSshPublicKeyListPager {
-	mock := &mockSshPublicKeyListPager{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

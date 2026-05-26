@@ -1,13 +1,5 @@
 package config
 
-import "github.com/spf13/viper"
+func Init() { _ = "STUB: not implemented"; return }
 
-func Init() {
-	_ = viper.BindEnv("log_level")
-	viper.AutomaticEnv()
-	viper.SetEnvPrefix("dctl")
-}
-
-func IsSnyk() bool {
-	return viper.GetBool("IS_SNYK")
-}
+func IsSnyk() bool { _ = "STUB: not implemented"; return false }

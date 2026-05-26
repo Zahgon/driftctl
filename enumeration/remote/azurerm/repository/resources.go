@@ -1,7 +1,6 @@
 package repository
 
 import (
-	"context"
 	"github.com/snyk/driftctl/enumeration/remote/azurerm/common"
 	"github.com/snyk/driftctl/enumeration/remote/cache"
 
@@ -28,7 +27,8 @@ type resourcesClientImpl struct {
 }
 
 func (c resourcesClientImpl) List(options *armresources.ResourceGroupsListOptions) resourcesListPager {
-	return c.client.List(options)
+	_ = "STUB: not implemented"
+	return *new(resourcesListPager)
 }
 
 type resourcesRepository struct {
@@ -37,32 +37,11 @@ type resourcesRepository struct {
 }
 
 func NewResourcesRepository(cred azcore.TokenCredential, options *arm.ClientOptions, config common.AzureProviderConfig, cache cache.Cache) *resourcesRepository {
-	return &resourcesRepository{
-		&resourcesClientImpl{armresources.NewResourceGroupsClient(config.SubscriptionID, cred, options)},
-		cache,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (s *resourcesRepository) ListAllResourceGroups() ([]*armresources.ResourceGroup, error) {
-	cacheKey := "resourcesListAllResourceGroups"
-	if v := s.cache.Get(cacheKey); v != nil {
-		return v.([]*armresources.ResourceGroup), nil
-	}
-
-	pager := s.client.List(nil)
-	results := make([]*armresources.ResourceGroup, 0)
-	for pager.NextPage(context.Background()) {
-		resp := pager.PageResponse()
-		if err := pager.Err(); err != nil {
-			return nil, err
-		}
-		results = append(results, resp.ResourceGroupsListResult.Value...)
-	}
-	if err := pager.Err(); err != nil {
-		return nil, err
-	}
-
-	s.cache.Put(cacheKey, results)
-
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

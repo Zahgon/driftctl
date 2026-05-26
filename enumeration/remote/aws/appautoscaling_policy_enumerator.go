@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type AppAutoscalingPolicyEnumerator struct {
@@ -13,41 +11,16 @@ type AppAutoscalingPolicyEnumerator struct {
 }
 
 func NewAppAutoscalingPolicyEnumerator(repository repository.AppAutoScalingRepository, factory resource.ResourceFactory) *AppAutoscalingPolicyEnumerator {
-	return &AppAutoscalingPolicyEnumerator{
-		repository,
-		factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *AppAutoscalingPolicyEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsAppAutoscalingPolicyResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *AppAutoscalingPolicyEnumerator) Enumerate() ([]*resource.Resource, error) {
-	results := make([]*resource.Resource, 0)
-
-	for _, ns := range e.repository.ServiceNamespaceValues() {
-		policies, err := e.repository.DescribeScalingPolicies(ns)
-		if err != nil {
-			return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-		}
-
-		for _, policy := range policies {
-			results = append(
-				results,
-				e.factory.CreateAbstractResource(
-					string(e.SupportedType()),
-					*policy.PolicyName,
-					map[string]interface{}{
-						"name":               *policy.PolicyName,
-						"resource_id":        *policy.ResourceId,
-						"scalable_dimension": *policy.ScalableDimension,
-						"service_namespace":  *policy.ServiceNamespace,
-					},
-				),
-			)
-		}
-	}
-
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

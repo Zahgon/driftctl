@@ -18,4597 +18,986 @@ type MockFakeKMS struct {
 
 // CancelKeyDeletion provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CancelKeyDeletion(_a0 *kms.CancelKeyDeletionInput) (*kms.CancelKeyDeletionOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.CancelKeyDeletionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.CancelKeyDeletionInput) (*kms.CancelKeyDeletionOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CancelKeyDeletionInput) *kms.CancelKeyDeletionOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CancelKeyDeletionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CancelKeyDeletionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CancelKeyDeletionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CancelKeyDeletionRequest(_a0 *kms.CancelKeyDeletionInput) (*request.Request, *kms.CancelKeyDeletionOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.CancelKeyDeletionOutput
-	if rf, ok := ret.Get(0).(func(*kms.CancelKeyDeletionInput) (*request.Request, *kms.CancelKeyDeletionOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CancelKeyDeletionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CancelKeyDeletionInput) *kms.CancelKeyDeletionOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.CancelKeyDeletionOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CancelKeyDeletionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) CancelKeyDeletionWithContext(_a0 context.Context, _a1 *kms.CancelKeyDeletionInput, _a2 ...request.Option) (*kms.CancelKeyDeletionOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.CancelKeyDeletionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CancelKeyDeletionInput, ...request.Option) (*kms.CancelKeyDeletionOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CancelKeyDeletionInput, ...request.Option) *kms.CancelKeyDeletionOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CancelKeyDeletionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.CancelKeyDeletionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ConnectCustomKeyStore provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ConnectCustomKeyStore(_a0 *kms.ConnectCustomKeyStoreInput) (*kms.ConnectCustomKeyStoreOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ConnectCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ConnectCustomKeyStoreInput) (*kms.ConnectCustomKeyStoreOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ConnectCustomKeyStoreInput) *kms.ConnectCustomKeyStoreOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ConnectCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ConnectCustomKeyStoreInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ConnectCustomKeyStoreRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ConnectCustomKeyStoreRequest(_a0 *kms.ConnectCustomKeyStoreInput) (*request.Request, *kms.ConnectCustomKeyStoreOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ConnectCustomKeyStoreOutput
-	if rf, ok := ret.Get(0).(func(*kms.ConnectCustomKeyStoreInput) (*request.Request, *kms.ConnectCustomKeyStoreOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ConnectCustomKeyStoreInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ConnectCustomKeyStoreInput) *kms.ConnectCustomKeyStoreOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ConnectCustomKeyStoreOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ConnectCustomKeyStoreWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ConnectCustomKeyStoreWithContext(_a0 context.Context, _a1 *kms.ConnectCustomKeyStoreInput, _a2 ...request.Option) (*kms.ConnectCustomKeyStoreOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ConnectCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ConnectCustomKeyStoreInput, ...request.Option) (*kms.ConnectCustomKeyStoreOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ConnectCustomKeyStoreInput, ...request.Option) *kms.ConnectCustomKeyStoreOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ConnectCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ConnectCustomKeyStoreInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateAlias provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CreateAlias(_a0 *kms.CreateAliasInput) (*kms.CreateAliasOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.CreateAliasOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.CreateAliasInput) (*kms.CreateAliasOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CreateAliasInput) *kms.CreateAliasOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CreateAliasOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CreateAliasInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateAliasRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CreateAliasRequest(_a0 *kms.CreateAliasInput) (*request.Request, *kms.CreateAliasOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.CreateAliasOutput
-	if rf, ok := ret.Get(0).(func(*kms.CreateAliasInput) (*request.Request, *kms.CreateAliasOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CreateAliasInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CreateAliasInput) *kms.CreateAliasOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.CreateAliasOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateAliasWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) CreateAliasWithContext(_a0 context.Context, _a1 *kms.CreateAliasInput, _a2 ...request.Option) (*kms.CreateAliasOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.CreateAliasOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CreateAliasInput, ...request.Option) (*kms.CreateAliasOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CreateAliasInput, ...request.Option) *kms.CreateAliasOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CreateAliasOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.CreateAliasInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateCustomKeyStore provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CreateCustomKeyStore(_a0 *kms.CreateCustomKeyStoreInput) (*kms.CreateCustomKeyStoreOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.CreateCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.CreateCustomKeyStoreInput) (*kms.CreateCustomKeyStoreOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CreateCustomKeyStoreInput) *kms.CreateCustomKeyStoreOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CreateCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CreateCustomKeyStoreInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateCustomKeyStoreRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CreateCustomKeyStoreRequest(_a0 *kms.CreateCustomKeyStoreInput) (*request.Request, *kms.CreateCustomKeyStoreOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.CreateCustomKeyStoreOutput
-	if rf, ok := ret.Get(0).(func(*kms.CreateCustomKeyStoreInput) (*request.Request, *kms.CreateCustomKeyStoreOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CreateCustomKeyStoreInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CreateCustomKeyStoreInput) *kms.CreateCustomKeyStoreOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.CreateCustomKeyStoreOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateCustomKeyStoreWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) CreateCustomKeyStoreWithContext(_a0 context.Context, _a1 *kms.CreateCustomKeyStoreInput, _a2 ...request.Option) (*kms.CreateCustomKeyStoreOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.CreateCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CreateCustomKeyStoreInput, ...request.Option) (*kms.CreateCustomKeyStoreOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CreateCustomKeyStoreInput, ...request.Option) *kms.CreateCustomKeyStoreOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CreateCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.CreateCustomKeyStoreInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateGrant provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CreateGrant(_a0 *kms.CreateGrantInput) (*kms.CreateGrantOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.CreateGrantOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.CreateGrantInput) (*kms.CreateGrantOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CreateGrantInput) *kms.CreateGrantOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CreateGrantOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CreateGrantInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateGrantRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CreateGrantRequest(_a0 *kms.CreateGrantInput) (*request.Request, *kms.CreateGrantOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.CreateGrantOutput
-	if rf, ok := ret.Get(0).(func(*kms.CreateGrantInput) (*request.Request, *kms.CreateGrantOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CreateGrantInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CreateGrantInput) *kms.CreateGrantOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.CreateGrantOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateGrantWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) CreateGrantWithContext(_a0 context.Context, _a1 *kms.CreateGrantInput, _a2 ...request.Option) (*kms.CreateGrantOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.CreateGrantOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CreateGrantInput, ...request.Option) (*kms.CreateGrantOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CreateGrantInput, ...request.Option) *kms.CreateGrantOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CreateGrantOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.CreateGrantInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateKey provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CreateKey(_a0 *kms.CreateKeyInput) (*kms.CreateKeyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.CreateKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.CreateKeyInput) (*kms.CreateKeyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CreateKeyInput) *kms.CreateKeyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CreateKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CreateKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) CreateKeyRequest(_a0 *kms.CreateKeyInput) (*request.Request, *kms.CreateKeyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.CreateKeyOutput
-	if rf, ok := ret.Get(0).(func(*kms.CreateKeyInput) (*request.Request, *kms.CreateKeyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.CreateKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.CreateKeyInput) *kms.CreateKeyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.CreateKeyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // CreateKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) CreateKeyWithContext(_a0 context.Context, _a1 *kms.CreateKeyInput, _a2 ...request.Option) (*kms.CreateKeyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.CreateKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CreateKeyInput, ...request.Option) (*kms.CreateKeyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.CreateKeyInput, ...request.Option) *kms.CreateKeyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.CreateKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.CreateKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Decrypt provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) Decrypt(_a0 *kms.DecryptInput) (*kms.DecryptOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.DecryptOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.DecryptInput) (*kms.DecryptOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DecryptInput) *kms.DecryptOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DecryptOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DecryptInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DecryptRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DecryptRequest(_a0 *kms.DecryptInput) (*request.Request, *kms.DecryptOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.DecryptOutput
-	if rf, ok := ret.Get(0).(func(*kms.DecryptInput) (*request.Request, *kms.DecryptOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DecryptInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DecryptInput) *kms.DecryptOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.DecryptOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DecryptWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) DecryptWithContext(_a0 context.Context, _a1 *kms.DecryptInput, _a2 ...request.Option) (*kms.DecryptOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.DecryptOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DecryptInput, ...request.Option) (*kms.DecryptOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DecryptInput, ...request.Option) *kms.DecryptOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DecryptOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.DecryptInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteAlias provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DeleteAlias(_a0 *kms.DeleteAliasInput) (*kms.DeleteAliasOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.DeleteAliasOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.DeleteAliasInput) (*kms.DeleteAliasOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DeleteAliasInput) *kms.DeleteAliasOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DeleteAliasOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DeleteAliasInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteAliasRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DeleteAliasRequest(_a0 *kms.DeleteAliasInput) (*request.Request, *kms.DeleteAliasOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.DeleteAliasOutput
-	if rf, ok := ret.Get(0).(func(*kms.DeleteAliasInput) (*request.Request, *kms.DeleteAliasOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DeleteAliasInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DeleteAliasInput) *kms.DeleteAliasOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.DeleteAliasOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteAliasWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) DeleteAliasWithContext(_a0 context.Context, _a1 *kms.DeleteAliasInput, _a2 ...request.Option) (*kms.DeleteAliasOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.DeleteAliasOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DeleteAliasInput, ...request.Option) (*kms.DeleteAliasOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DeleteAliasInput, ...request.Option) *kms.DeleteAliasOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DeleteAliasOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.DeleteAliasInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteCustomKeyStore provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DeleteCustomKeyStore(_a0 *kms.DeleteCustomKeyStoreInput) (*kms.DeleteCustomKeyStoreOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.DeleteCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.DeleteCustomKeyStoreInput) (*kms.DeleteCustomKeyStoreOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DeleteCustomKeyStoreInput) *kms.DeleteCustomKeyStoreOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DeleteCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DeleteCustomKeyStoreInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteCustomKeyStoreRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DeleteCustomKeyStoreRequest(_a0 *kms.DeleteCustomKeyStoreInput) (*request.Request, *kms.DeleteCustomKeyStoreOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.DeleteCustomKeyStoreOutput
-	if rf, ok := ret.Get(0).(func(*kms.DeleteCustomKeyStoreInput) (*request.Request, *kms.DeleteCustomKeyStoreOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DeleteCustomKeyStoreInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DeleteCustomKeyStoreInput) *kms.DeleteCustomKeyStoreOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.DeleteCustomKeyStoreOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteCustomKeyStoreWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) DeleteCustomKeyStoreWithContext(_a0 context.Context, _a1 *kms.DeleteCustomKeyStoreInput, _a2 ...request.Option) (*kms.DeleteCustomKeyStoreOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.DeleteCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DeleteCustomKeyStoreInput, ...request.Option) (*kms.DeleteCustomKeyStoreOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DeleteCustomKeyStoreInput, ...request.Option) *kms.DeleteCustomKeyStoreOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DeleteCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.DeleteCustomKeyStoreInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteImportedKeyMaterial provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DeleteImportedKeyMaterial(_a0 *kms.DeleteImportedKeyMaterialInput) (*kms.DeleteImportedKeyMaterialOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.DeleteImportedKeyMaterialOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.DeleteImportedKeyMaterialInput) (*kms.DeleteImportedKeyMaterialOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DeleteImportedKeyMaterialInput) *kms.DeleteImportedKeyMaterialOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DeleteImportedKeyMaterialOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DeleteImportedKeyMaterialInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteImportedKeyMaterialRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DeleteImportedKeyMaterialRequest(_a0 *kms.DeleteImportedKeyMaterialInput) (*request.Request, *kms.DeleteImportedKeyMaterialOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.DeleteImportedKeyMaterialOutput
-	if rf, ok := ret.Get(0).(func(*kms.DeleteImportedKeyMaterialInput) (*request.Request, *kms.DeleteImportedKeyMaterialOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DeleteImportedKeyMaterialInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DeleteImportedKeyMaterialInput) *kms.DeleteImportedKeyMaterialOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.DeleteImportedKeyMaterialOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DeleteImportedKeyMaterialWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) DeleteImportedKeyMaterialWithContext(_a0 context.Context, _a1 *kms.DeleteImportedKeyMaterialInput, _a2 ...request.Option) (*kms.DeleteImportedKeyMaterialOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.DeleteImportedKeyMaterialOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DeleteImportedKeyMaterialInput, ...request.Option) (*kms.DeleteImportedKeyMaterialOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DeleteImportedKeyMaterialInput, ...request.Option) *kms.DeleteImportedKeyMaterialOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DeleteImportedKeyMaterialOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.DeleteImportedKeyMaterialInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeCustomKeyStores provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DescribeCustomKeyStores(_a0 *kms.DescribeCustomKeyStoresInput) (*kms.DescribeCustomKeyStoresOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.DescribeCustomKeyStoresOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.DescribeCustomKeyStoresInput) (*kms.DescribeCustomKeyStoresOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DescribeCustomKeyStoresInput) *kms.DescribeCustomKeyStoresOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DescribeCustomKeyStoresOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DescribeCustomKeyStoresInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeCustomKeyStoresPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeKMS) DescribeCustomKeyStoresPages(_a0 *kms.DescribeCustomKeyStoresInput, _a1 func(*kms.DescribeCustomKeyStoresOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*kms.DescribeCustomKeyStoresInput, func(*kms.DescribeCustomKeyStoresOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeCustomKeyStoresPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeKMS) DescribeCustomKeyStoresPagesWithContext(_a0 context.Context, _a1 *kms.DescribeCustomKeyStoresInput, _a2 func(*kms.DescribeCustomKeyStoresOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DescribeCustomKeyStoresInput, func(*kms.DescribeCustomKeyStoresOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // DescribeCustomKeyStoresRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DescribeCustomKeyStoresRequest(_a0 *kms.DescribeCustomKeyStoresInput) (*request.Request, *kms.DescribeCustomKeyStoresOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.DescribeCustomKeyStoresOutput
-	if rf, ok := ret.Get(0).(func(*kms.DescribeCustomKeyStoresInput) (*request.Request, *kms.DescribeCustomKeyStoresOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DescribeCustomKeyStoresInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DescribeCustomKeyStoresInput) *kms.DescribeCustomKeyStoresOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.DescribeCustomKeyStoresOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeCustomKeyStoresWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) DescribeCustomKeyStoresWithContext(_a0 context.Context, _a1 *kms.DescribeCustomKeyStoresInput, _a2 ...request.Option) (*kms.DescribeCustomKeyStoresOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.DescribeCustomKeyStoresOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DescribeCustomKeyStoresInput, ...request.Option) (*kms.DescribeCustomKeyStoresOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DescribeCustomKeyStoresInput, ...request.Option) *kms.DescribeCustomKeyStoresOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DescribeCustomKeyStoresOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.DescribeCustomKeyStoresInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeKey provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DescribeKey(_a0 *kms.DescribeKeyInput) (*kms.DescribeKeyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.DescribeKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.DescribeKeyInput) (*kms.DescribeKeyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DescribeKeyInput) *kms.DescribeKeyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DescribeKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DescribeKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DescribeKeyRequest(_a0 *kms.DescribeKeyInput) (*request.Request, *kms.DescribeKeyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.DescribeKeyOutput
-	if rf, ok := ret.Get(0).(func(*kms.DescribeKeyInput) (*request.Request, *kms.DescribeKeyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DescribeKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DescribeKeyInput) *kms.DescribeKeyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.DescribeKeyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DescribeKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) DescribeKeyWithContext(_a0 context.Context, _a1 *kms.DescribeKeyInput, _a2 ...request.Option) (*kms.DescribeKeyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.DescribeKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DescribeKeyInput, ...request.Option) (*kms.DescribeKeyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DescribeKeyInput, ...request.Option) *kms.DescribeKeyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DescribeKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.DescribeKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DisableKey provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DisableKey(_a0 *kms.DisableKeyInput) (*kms.DisableKeyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.DisableKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.DisableKeyInput) (*kms.DisableKeyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DisableKeyInput) *kms.DisableKeyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DisableKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DisableKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DisableKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DisableKeyRequest(_a0 *kms.DisableKeyInput) (*request.Request, *kms.DisableKeyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.DisableKeyOutput
-	if rf, ok := ret.Get(0).(func(*kms.DisableKeyInput) (*request.Request, *kms.DisableKeyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DisableKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DisableKeyInput) *kms.DisableKeyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.DisableKeyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DisableKeyRotation provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DisableKeyRotation(_a0 *kms.DisableKeyRotationInput) (*kms.DisableKeyRotationOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.DisableKeyRotationOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.DisableKeyRotationInput) (*kms.DisableKeyRotationOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DisableKeyRotationInput) *kms.DisableKeyRotationOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DisableKeyRotationOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DisableKeyRotationInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DisableKeyRotationRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DisableKeyRotationRequest(_a0 *kms.DisableKeyRotationInput) (*request.Request, *kms.DisableKeyRotationOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.DisableKeyRotationOutput
-	if rf, ok := ret.Get(0).(func(*kms.DisableKeyRotationInput) (*request.Request, *kms.DisableKeyRotationOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DisableKeyRotationInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DisableKeyRotationInput) *kms.DisableKeyRotationOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.DisableKeyRotationOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DisableKeyRotationWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) DisableKeyRotationWithContext(_a0 context.Context, _a1 *kms.DisableKeyRotationInput, _a2 ...request.Option) (*kms.DisableKeyRotationOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.DisableKeyRotationOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DisableKeyRotationInput, ...request.Option) (*kms.DisableKeyRotationOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DisableKeyRotationInput, ...request.Option) *kms.DisableKeyRotationOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DisableKeyRotationOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.DisableKeyRotationInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DisableKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) DisableKeyWithContext(_a0 context.Context, _a1 *kms.DisableKeyInput, _a2 ...request.Option) (*kms.DisableKeyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.DisableKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DisableKeyInput, ...request.Option) (*kms.DisableKeyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DisableKeyInput, ...request.Option) *kms.DisableKeyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DisableKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.DisableKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DisconnectCustomKeyStore provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DisconnectCustomKeyStore(_a0 *kms.DisconnectCustomKeyStoreInput) (*kms.DisconnectCustomKeyStoreOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.DisconnectCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.DisconnectCustomKeyStoreInput) (*kms.DisconnectCustomKeyStoreOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DisconnectCustomKeyStoreInput) *kms.DisconnectCustomKeyStoreOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DisconnectCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DisconnectCustomKeyStoreInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DisconnectCustomKeyStoreRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) DisconnectCustomKeyStoreRequest(_a0 *kms.DisconnectCustomKeyStoreInput) (*request.Request, *kms.DisconnectCustomKeyStoreOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.DisconnectCustomKeyStoreOutput
-	if rf, ok := ret.Get(0).(func(*kms.DisconnectCustomKeyStoreInput) (*request.Request, *kms.DisconnectCustomKeyStoreOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.DisconnectCustomKeyStoreInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.DisconnectCustomKeyStoreInput) *kms.DisconnectCustomKeyStoreOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.DisconnectCustomKeyStoreOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // DisconnectCustomKeyStoreWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) DisconnectCustomKeyStoreWithContext(_a0 context.Context, _a1 *kms.DisconnectCustomKeyStoreInput, _a2 ...request.Option) (*kms.DisconnectCustomKeyStoreOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.DisconnectCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DisconnectCustomKeyStoreInput, ...request.Option) (*kms.DisconnectCustomKeyStoreOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.DisconnectCustomKeyStoreInput, ...request.Option) *kms.DisconnectCustomKeyStoreOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.DisconnectCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.DisconnectCustomKeyStoreInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EnableKey provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) EnableKey(_a0 *kms.EnableKeyInput) (*kms.EnableKeyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.EnableKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.EnableKeyInput) (*kms.EnableKeyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.EnableKeyInput) *kms.EnableKeyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.EnableKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.EnableKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EnableKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) EnableKeyRequest(_a0 *kms.EnableKeyInput) (*request.Request, *kms.EnableKeyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.EnableKeyOutput
-	if rf, ok := ret.Get(0).(func(*kms.EnableKeyInput) (*request.Request, *kms.EnableKeyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.EnableKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.EnableKeyInput) *kms.EnableKeyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.EnableKeyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EnableKeyRotation provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) EnableKeyRotation(_a0 *kms.EnableKeyRotationInput) (*kms.EnableKeyRotationOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.EnableKeyRotationOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.EnableKeyRotationInput) (*kms.EnableKeyRotationOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.EnableKeyRotationInput) *kms.EnableKeyRotationOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.EnableKeyRotationOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.EnableKeyRotationInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EnableKeyRotationRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) EnableKeyRotationRequest(_a0 *kms.EnableKeyRotationInput) (*request.Request, *kms.EnableKeyRotationOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.EnableKeyRotationOutput
-	if rf, ok := ret.Get(0).(func(*kms.EnableKeyRotationInput) (*request.Request, *kms.EnableKeyRotationOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.EnableKeyRotationInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.EnableKeyRotationInput) *kms.EnableKeyRotationOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.EnableKeyRotationOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EnableKeyRotationWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) EnableKeyRotationWithContext(_a0 context.Context, _a1 *kms.EnableKeyRotationInput, _a2 ...request.Option) (*kms.EnableKeyRotationOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.EnableKeyRotationOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.EnableKeyRotationInput, ...request.Option) (*kms.EnableKeyRotationOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.EnableKeyRotationInput, ...request.Option) *kms.EnableKeyRotationOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.EnableKeyRotationOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.EnableKeyRotationInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EnableKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) EnableKeyWithContext(_a0 context.Context, _a1 *kms.EnableKeyInput, _a2 ...request.Option) (*kms.EnableKeyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.EnableKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.EnableKeyInput, ...request.Option) (*kms.EnableKeyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.EnableKeyInput, ...request.Option) *kms.EnableKeyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.EnableKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.EnableKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Encrypt provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) Encrypt(_a0 *kms.EncryptInput) (*kms.EncryptOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.EncryptOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.EncryptInput) (*kms.EncryptOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.EncryptInput) *kms.EncryptOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.EncryptOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.EncryptInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EncryptRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) EncryptRequest(_a0 *kms.EncryptInput) (*request.Request, *kms.EncryptOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.EncryptOutput
-	if rf, ok := ret.Get(0).(func(*kms.EncryptInput) (*request.Request, *kms.EncryptOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.EncryptInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.EncryptInput) *kms.EncryptOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.EncryptOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // EncryptWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) EncryptWithContext(_a0 context.Context, _a1 *kms.EncryptInput, _a2 ...request.Option) (*kms.EncryptOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.EncryptOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.EncryptInput, ...request.Option) (*kms.EncryptOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.EncryptInput, ...request.Option) *kms.EncryptOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.EncryptOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.EncryptInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKey provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateDataKey(_a0 *kms.GenerateDataKeyInput) (*kms.GenerateDataKeyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GenerateDataKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyInput) (*kms.GenerateDataKeyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyInput) *kms.GenerateDataKeyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateDataKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateDataKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyPair provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateDataKeyPair(_a0 *kms.GenerateDataKeyPairInput) (*kms.GenerateDataKeyPairOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GenerateDataKeyPairOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyPairInput) (*kms.GenerateDataKeyPairOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyPairInput) *kms.GenerateDataKeyPairOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateDataKeyPairOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateDataKeyPairInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyPairRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateDataKeyPairRequest(_a0 *kms.GenerateDataKeyPairInput) (*request.Request, *kms.GenerateDataKeyPairOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GenerateDataKeyPairOutput
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyPairInput) (*request.Request, *kms.GenerateDataKeyPairOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyPairInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateDataKeyPairInput) *kms.GenerateDataKeyPairOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GenerateDataKeyPairOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyPairWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GenerateDataKeyPairWithContext(_a0 context.Context, _a1 *kms.GenerateDataKeyPairInput, _a2 ...request.Option) (*kms.GenerateDataKeyPairOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GenerateDataKeyPairOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateDataKeyPairInput, ...request.Option) (*kms.GenerateDataKeyPairOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateDataKeyPairInput, ...request.Option) *kms.GenerateDataKeyPairOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateDataKeyPairOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GenerateDataKeyPairInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyPairWithoutPlaintext provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateDataKeyPairWithoutPlaintext(_a0 *kms.GenerateDataKeyPairWithoutPlaintextInput) (*kms.GenerateDataKeyPairWithoutPlaintextOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GenerateDataKeyPairWithoutPlaintextOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyPairWithoutPlaintextInput) (*kms.GenerateDataKeyPairWithoutPlaintextOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyPairWithoutPlaintextInput) *kms.GenerateDataKeyPairWithoutPlaintextOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateDataKeyPairWithoutPlaintextOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateDataKeyPairWithoutPlaintextInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyPairWithoutPlaintextRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateDataKeyPairWithoutPlaintextRequest(_a0 *kms.GenerateDataKeyPairWithoutPlaintextInput) (*request.Request, *kms.GenerateDataKeyPairWithoutPlaintextOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GenerateDataKeyPairWithoutPlaintextOutput
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyPairWithoutPlaintextInput) (*request.Request, *kms.GenerateDataKeyPairWithoutPlaintextOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyPairWithoutPlaintextInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateDataKeyPairWithoutPlaintextInput) *kms.GenerateDataKeyPairWithoutPlaintextOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GenerateDataKeyPairWithoutPlaintextOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyPairWithoutPlaintextWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GenerateDataKeyPairWithoutPlaintextWithContext(_a0 context.Context, _a1 *kms.GenerateDataKeyPairWithoutPlaintextInput, _a2 ...request.Option) (*kms.GenerateDataKeyPairWithoutPlaintextOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GenerateDataKeyPairWithoutPlaintextOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateDataKeyPairWithoutPlaintextInput, ...request.Option) (*kms.GenerateDataKeyPairWithoutPlaintextOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateDataKeyPairWithoutPlaintextInput, ...request.Option) *kms.GenerateDataKeyPairWithoutPlaintextOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateDataKeyPairWithoutPlaintextOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GenerateDataKeyPairWithoutPlaintextInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateDataKeyRequest(_a0 *kms.GenerateDataKeyInput) (*request.Request, *kms.GenerateDataKeyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GenerateDataKeyOutput
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyInput) (*request.Request, *kms.GenerateDataKeyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateDataKeyInput) *kms.GenerateDataKeyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GenerateDataKeyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GenerateDataKeyWithContext(_a0 context.Context, _a1 *kms.GenerateDataKeyInput, _a2 ...request.Option) (*kms.GenerateDataKeyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GenerateDataKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateDataKeyInput, ...request.Option) (*kms.GenerateDataKeyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateDataKeyInput, ...request.Option) *kms.GenerateDataKeyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateDataKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GenerateDataKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyWithoutPlaintext provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateDataKeyWithoutPlaintext(_a0 *kms.GenerateDataKeyWithoutPlaintextInput) (*kms.GenerateDataKeyWithoutPlaintextOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GenerateDataKeyWithoutPlaintextOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyWithoutPlaintextInput) (*kms.GenerateDataKeyWithoutPlaintextOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyWithoutPlaintextInput) *kms.GenerateDataKeyWithoutPlaintextOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateDataKeyWithoutPlaintextOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateDataKeyWithoutPlaintextInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyWithoutPlaintextRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateDataKeyWithoutPlaintextRequest(_a0 *kms.GenerateDataKeyWithoutPlaintextInput) (*request.Request, *kms.GenerateDataKeyWithoutPlaintextOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GenerateDataKeyWithoutPlaintextOutput
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyWithoutPlaintextInput) (*request.Request, *kms.GenerateDataKeyWithoutPlaintextOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateDataKeyWithoutPlaintextInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateDataKeyWithoutPlaintextInput) *kms.GenerateDataKeyWithoutPlaintextOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GenerateDataKeyWithoutPlaintextOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateDataKeyWithoutPlaintextWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GenerateDataKeyWithoutPlaintextWithContext(_a0 context.Context, _a1 *kms.GenerateDataKeyWithoutPlaintextInput, _a2 ...request.Option) (*kms.GenerateDataKeyWithoutPlaintextOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GenerateDataKeyWithoutPlaintextOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateDataKeyWithoutPlaintextInput, ...request.Option) (*kms.GenerateDataKeyWithoutPlaintextOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateDataKeyWithoutPlaintextInput, ...request.Option) *kms.GenerateDataKeyWithoutPlaintextOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateDataKeyWithoutPlaintextOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GenerateDataKeyWithoutPlaintextInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateMac provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateMac(_a0 *kms.GenerateMacInput) (*kms.GenerateMacOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GenerateMacOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GenerateMacInput) (*kms.GenerateMacOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateMacInput) *kms.GenerateMacOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateMacOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateMacInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateMacRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateMacRequest(_a0 *kms.GenerateMacInput) (*request.Request, *kms.GenerateMacOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GenerateMacOutput
-	if rf, ok := ret.Get(0).(func(*kms.GenerateMacInput) (*request.Request, *kms.GenerateMacOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateMacInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateMacInput) *kms.GenerateMacOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GenerateMacOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateMacWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GenerateMacWithContext(_a0 context.Context, _a1 *kms.GenerateMacInput, _a2 ...request.Option) (*kms.GenerateMacOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GenerateMacOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateMacInput, ...request.Option) (*kms.GenerateMacOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateMacInput, ...request.Option) *kms.GenerateMacOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateMacOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GenerateMacInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateRandom provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateRandom(_a0 *kms.GenerateRandomInput) (*kms.GenerateRandomOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GenerateRandomOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GenerateRandomInput) (*kms.GenerateRandomOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateRandomInput) *kms.GenerateRandomOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateRandomOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateRandomInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateRandomRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GenerateRandomRequest(_a0 *kms.GenerateRandomInput) (*request.Request, *kms.GenerateRandomOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GenerateRandomOutput
-	if rf, ok := ret.Get(0).(func(*kms.GenerateRandomInput) (*request.Request, *kms.GenerateRandomOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GenerateRandomInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GenerateRandomInput) *kms.GenerateRandomOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GenerateRandomOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GenerateRandomWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GenerateRandomWithContext(_a0 context.Context, _a1 *kms.GenerateRandomInput, _a2 ...request.Option) (*kms.GenerateRandomOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GenerateRandomOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateRandomInput, ...request.Option) (*kms.GenerateRandomOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GenerateRandomInput, ...request.Option) *kms.GenerateRandomOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GenerateRandomOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GenerateRandomInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetKeyPolicy provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GetKeyPolicy(_a0 *kms.GetKeyPolicyInput) (*kms.GetKeyPolicyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GetKeyPolicyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GetKeyPolicyInput) (*kms.GetKeyPolicyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GetKeyPolicyInput) *kms.GetKeyPolicyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GetKeyPolicyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GetKeyPolicyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetKeyPolicyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GetKeyPolicyRequest(_a0 *kms.GetKeyPolicyInput) (*request.Request, *kms.GetKeyPolicyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GetKeyPolicyOutput
-	if rf, ok := ret.Get(0).(func(*kms.GetKeyPolicyInput) (*request.Request, *kms.GetKeyPolicyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GetKeyPolicyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GetKeyPolicyInput) *kms.GetKeyPolicyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GetKeyPolicyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetKeyPolicyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GetKeyPolicyWithContext(_a0 context.Context, _a1 *kms.GetKeyPolicyInput, _a2 ...request.Option) (*kms.GetKeyPolicyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GetKeyPolicyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GetKeyPolicyInput, ...request.Option) (*kms.GetKeyPolicyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GetKeyPolicyInput, ...request.Option) *kms.GetKeyPolicyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GetKeyPolicyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GetKeyPolicyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetKeyRotationStatus provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GetKeyRotationStatus(_a0 *kms.GetKeyRotationStatusInput) (*kms.GetKeyRotationStatusOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GetKeyRotationStatusOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GetKeyRotationStatusInput) (*kms.GetKeyRotationStatusOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GetKeyRotationStatusInput) *kms.GetKeyRotationStatusOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GetKeyRotationStatusOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GetKeyRotationStatusInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetKeyRotationStatusRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GetKeyRotationStatusRequest(_a0 *kms.GetKeyRotationStatusInput) (*request.Request, *kms.GetKeyRotationStatusOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GetKeyRotationStatusOutput
-	if rf, ok := ret.Get(0).(func(*kms.GetKeyRotationStatusInput) (*request.Request, *kms.GetKeyRotationStatusOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GetKeyRotationStatusInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GetKeyRotationStatusInput) *kms.GetKeyRotationStatusOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GetKeyRotationStatusOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetKeyRotationStatusWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GetKeyRotationStatusWithContext(_a0 context.Context, _a1 *kms.GetKeyRotationStatusInput, _a2 ...request.Option) (*kms.GetKeyRotationStatusOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GetKeyRotationStatusOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GetKeyRotationStatusInput, ...request.Option) (*kms.GetKeyRotationStatusOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GetKeyRotationStatusInput, ...request.Option) *kms.GetKeyRotationStatusOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GetKeyRotationStatusOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GetKeyRotationStatusInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetParametersForImport provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GetParametersForImport(_a0 *kms.GetParametersForImportInput) (*kms.GetParametersForImportOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GetParametersForImportOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GetParametersForImportInput) (*kms.GetParametersForImportOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GetParametersForImportInput) *kms.GetParametersForImportOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GetParametersForImportOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GetParametersForImportInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetParametersForImportRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GetParametersForImportRequest(_a0 *kms.GetParametersForImportInput) (*request.Request, *kms.GetParametersForImportOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GetParametersForImportOutput
-	if rf, ok := ret.Get(0).(func(*kms.GetParametersForImportInput) (*request.Request, *kms.GetParametersForImportOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GetParametersForImportInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GetParametersForImportInput) *kms.GetParametersForImportOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GetParametersForImportOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetParametersForImportWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GetParametersForImportWithContext(_a0 context.Context, _a1 *kms.GetParametersForImportInput, _a2 ...request.Option) (*kms.GetParametersForImportOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GetParametersForImportOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GetParametersForImportInput, ...request.Option) (*kms.GetParametersForImportOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GetParametersForImportInput, ...request.Option) *kms.GetParametersForImportOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GetParametersForImportOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GetParametersForImportInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetPublicKey provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GetPublicKey(_a0 *kms.GetPublicKeyInput) (*kms.GetPublicKeyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.GetPublicKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.GetPublicKeyInput) (*kms.GetPublicKeyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GetPublicKeyInput) *kms.GetPublicKeyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GetPublicKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GetPublicKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetPublicKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) GetPublicKeyRequest(_a0 *kms.GetPublicKeyInput) (*request.Request, *kms.GetPublicKeyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.GetPublicKeyOutput
-	if rf, ok := ret.Get(0).(func(*kms.GetPublicKeyInput) (*request.Request, *kms.GetPublicKeyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.GetPublicKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.GetPublicKeyInput) *kms.GetPublicKeyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.GetPublicKeyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // GetPublicKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) GetPublicKeyWithContext(_a0 context.Context, _a1 *kms.GetPublicKeyInput, _a2 ...request.Option) (*kms.GetPublicKeyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.GetPublicKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GetPublicKeyInput, ...request.Option) (*kms.GetPublicKeyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.GetPublicKeyInput, ...request.Option) *kms.GetPublicKeyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.GetPublicKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.GetPublicKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportKeyMaterial provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ImportKeyMaterial(_a0 *kms.ImportKeyMaterialInput) (*kms.ImportKeyMaterialOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ImportKeyMaterialOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ImportKeyMaterialInput) (*kms.ImportKeyMaterialOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ImportKeyMaterialInput) *kms.ImportKeyMaterialOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ImportKeyMaterialOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ImportKeyMaterialInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportKeyMaterialRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ImportKeyMaterialRequest(_a0 *kms.ImportKeyMaterialInput) (*request.Request, *kms.ImportKeyMaterialOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ImportKeyMaterialOutput
-	if rf, ok := ret.Get(0).(func(*kms.ImportKeyMaterialInput) (*request.Request, *kms.ImportKeyMaterialOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ImportKeyMaterialInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ImportKeyMaterialInput) *kms.ImportKeyMaterialOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ImportKeyMaterialOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ImportKeyMaterialWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ImportKeyMaterialWithContext(_a0 context.Context, _a1 *kms.ImportKeyMaterialInput, _a2 ...request.Option) (*kms.ImportKeyMaterialOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ImportKeyMaterialOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ImportKeyMaterialInput, ...request.Option) (*kms.ImportKeyMaterialOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ImportKeyMaterialInput, ...request.Option) *kms.ImportKeyMaterialOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ImportKeyMaterialOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ImportKeyMaterialInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAliases provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListAliases(_a0 *kms.ListAliasesInput) (*kms.ListAliasesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ListAliasesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ListAliasesInput) (*kms.ListAliasesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListAliasesInput) *kms.ListAliasesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListAliasesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListAliasesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAliasesPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeKMS) ListAliasesPages(_a0 *kms.ListAliasesInput, _a1 func(*kms.ListAliasesOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*kms.ListAliasesInput, func(*kms.ListAliasesOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListAliasesPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeKMS) ListAliasesPagesWithContext(_a0 context.Context, _a1 *kms.ListAliasesInput, _a2 func(*kms.ListAliasesOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListAliasesInput, func(*kms.ListAliasesOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListAliasesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListAliasesRequest(_a0 *kms.ListAliasesInput) (*request.Request, *kms.ListAliasesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ListAliasesOutput
-	if rf, ok := ret.Get(0).(func(*kms.ListAliasesInput) (*request.Request, *kms.ListAliasesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListAliasesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListAliasesInput) *kms.ListAliasesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ListAliasesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAliasesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ListAliasesWithContext(_a0 context.Context, _a1 *kms.ListAliasesInput, _a2 ...request.Option) (*kms.ListAliasesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ListAliasesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListAliasesInput, ...request.Option) (*kms.ListAliasesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListAliasesInput, ...request.Option) *kms.ListAliasesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListAliasesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ListAliasesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListGrants provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListGrants(_a0 *kms.ListGrantsInput) (*kms.ListGrantsResponse, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ListGrantsResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ListGrantsInput) (*kms.ListGrantsResponse, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListGrantsInput) *kms.ListGrantsResponse); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListGrantsResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListGrantsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListGrantsPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeKMS) ListGrantsPages(_a0 *kms.ListGrantsInput, _a1 func(*kms.ListGrantsResponse, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*kms.ListGrantsInput, func(*kms.ListGrantsResponse, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListGrantsPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeKMS) ListGrantsPagesWithContext(_a0 context.Context, _a1 *kms.ListGrantsInput, _a2 func(*kms.ListGrantsResponse, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListGrantsInput, func(*kms.ListGrantsResponse, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListGrantsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListGrantsRequest(_a0 *kms.ListGrantsInput) (*request.Request, *kms.ListGrantsResponse) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ListGrantsResponse
-	if rf, ok := ret.Get(0).(func(*kms.ListGrantsInput) (*request.Request, *kms.ListGrantsResponse)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListGrantsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListGrantsInput) *kms.ListGrantsResponse); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ListGrantsResponse)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListGrantsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ListGrantsWithContext(_a0 context.Context, _a1 *kms.ListGrantsInput, _a2 ...request.Option) (*kms.ListGrantsResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ListGrantsResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListGrantsInput, ...request.Option) (*kms.ListGrantsResponse, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListGrantsInput, ...request.Option) *kms.ListGrantsResponse); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListGrantsResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ListGrantsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListKeyPolicies provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListKeyPolicies(_a0 *kms.ListKeyPoliciesInput) (*kms.ListKeyPoliciesOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ListKeyPoliciesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ListKeyPoliciesInput) (*kms.ListKeyPoliciesOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListKeyPoliciesInput) *kms.ListKeyPoliciesOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListKeyPoliciesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListKeyPoliciesInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListKeyPoliciesPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeKMS) ListKeyPoliciesPages(_a0 *kms.ListKeyPoliciesInput, _a1 func(*kms.ListKeyPoliciesOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*kms.ListKeyPoliciesInput, func(*kms.ListKeyPoliciesOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListKeyPoliciesPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeKMS) ListKeyPoliciesPagesWithContext(_a0 context.Context, _a1 *kms.ListKeyPoliciesInput, _a2 func(*kms.ListKeyPoliciesOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListKeyPoliciesInput, func(*kms.ListKeyPoliciesOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListKeyPoliciesRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListKeyPoliciesRequest(_a0 *kms.ListKeyPoliciesInput) (*request.Request, *kms.ListKeyPoliciesOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ListKeyPoliciesOutput
-	if rf, ok := ret.Get(0).(func(*kms.ListKeyPoliciesInput) (*request.Request, *kms.ListKeyPoliciesOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListKeyPoliciesInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListKeyPoliciesInput) *kms.ListKeyPoliciesOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ListKeyPoliciesOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListKeyPoliciesWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ListKeyPoliciesWithContext(_a0 context.Context, _a1 *kms.ListKeyPoliciesInput, _a2 ...request.Option) (*kms.ListKeyPoliciesOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ListKeyPoliciesOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListKeyPoliciesInput, ...request.Option) (*kms.ListKeyPoliciesOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListKeyPoliciesInput, ...request.Option) *kms.ListKeyPoliciesOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListKeyPoliciesOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ListKeyPoliciesInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListKeys provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListKeys(_a0 *kms.ListKeysInput) (*kms.ListKeysOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ListKeysOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ListKeysInput) (*kms.ListKeysOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListKeysInput) *kms.ListKeysOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListKeysOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListKeysInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListKeysPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeKMS) ListKeysPages(_a0 *kms.ListKeysInput, _a1 func(*kms.ListKeysOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*kms.ListKeysInput, func(*kms.ListKeysOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListKeysPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeKMS) ListKeysPagesWithContext(_a0 context.Context, _a1 *kms.ListKeysInput, _a2 func(*kms.ListKeysOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListKeysInput, func(*kms.ListKeysOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListKeysRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListKeysRequest(_a0 *kms.ListKeysInput) (*request.Request, *kms.ListKeysOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ListKeysOutput
-	if rf, ok := ret.Get(0).(func(*kms.ListKeysInput) (*request.Request, *kms.ListKeysOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListKeysInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListKeysInput) *kms.ListKeysOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ListKeysOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListKeysWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ListKeysWithContext(_a0 context.Context, _a1 *kms.ListKeysInput, _a2 ...request.Option) (*kms.ListKeysOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ListKeysOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListKeysInput, ...request.Option) (*kms.ListKeysOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListKeysInput, ...request.Option) *kms.ListKeysOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListKeysOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ListKeysInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListResourceTags provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListResourceTags(_a0 *kms.ListResourceTagsInput) (*kms.ListResourceTagsOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ListResourceTagsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ListResourceTagsInput) (*kms.ListResourceTagsOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListResourceTagsInput) *kms.ListResourceTagsOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListResourceTagsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListResourceTagsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListResourceTagsPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeKMS) ListResourceTagsPages(_a0 *kms.ListResourceTagsInput, _a1 func(*kms.ListResourceTagsOutput, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*kms.ListResourceTagsInput, func(*kms.ListResourceTagsOutput, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListResourceTagsPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeKMS) ListResourceTagsPagesWithContext(_a0 context.Context, _a1 *kms.ListResourceTagsInput, _a2 func(*kms.ListResourceTagsOutput, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListResourceTagsInput, func(*kms.ListResourceTagsOutput, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListResourceTagsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListResourceTagsRequest(_a0 *kms.ListResourceTagsInput) (*request.Request, *kms.ListResourceTagsOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ListResourceTagsOutput
-	if rf, ok := ret.Get(0).(func(*kms.ListResourceTagsInput) (*request.Request, *kms.ListResourceTagsOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListResourceTagsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListResourceTagsInput) *kms.ListResourceTagsOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ListResourceTagsOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListResourceTagsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ListResourceTagsWithContext(_a0 context.Context, _a1 *kms.ListResourceTagsInput, _a2 ...request.Option) (*kms.ListResourceTagsOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ListResourceTagsOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListResourceTagsInput, ...request.Option) (*kms.ListResourceTagsOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListResourceTagsInput, ...request.Option) *kms.ListResourceTagsOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListResourceTagsOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ListResourceTagsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListRetirableGrants provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListRetirableGrants(_a0 *kms.ListRetirableGrantsInput) (*kms.ListGrantsResponse, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ListGrantsResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ListRetirableGrantsInput) (*kms.ListGrantsResponse, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListRetirableGrantsInput) *kms.ListGrantsResponse); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListGrantsResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListRetirableGrantsInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListRetirableGrantsPages provides a mock function with given fields: _a0, _a1
 func (_m *MockFakeKMS) ListRetirableGrantsPages(_a0 *kms.ListRetirableGrantsInput, _a1 func(*kms.ListGrantsResponse, bool) bool) error {
-	ret := _m.Called(_a0, _a1)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(*kms.ListRetirableGrantsInput, func(*kms.ListGrantsResponse, bool) bool) error); ok {
-		r0 = rf(_a0, _a1)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListRetirableGrantsPagesWithContext provides a mock function with given fields: _a0, _a1, _a2, _a3
 func (_m *MockFakeKMS) ListRetirableGrantsPagesWithContext(_a0 context.Context, _a1 *kms.ListRetirableGrantsInput, _a2 func(*kms.ListGrantsResponse, bool) bool, _a3 ...request.Option) error {
-	_va := make([]interface{}, len(_a3))
-	for _i := range _a3 {
-		_va[_i] = _a3[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1, _a2)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListRetirableGrantsInput, func(*kms.ListGrantsResponse, bool) bool, ...request.Option) error); ok {
-		r0 = rf(_a0, _a1, _a2, _a3...)
-	} else {
-		r0 = ret.Error(0)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // ListRetirableGrantsRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ListRetirableGrantsRequest(_a0 *kms.ListRetirableGrantsInput) (*request.Request, *kms.ListGrantsResponse) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ListGrantsResponse
-	if rf, ok := ret.Get(0).(func(*kms.ListRetirableGrantsInput) (*request.Request, *kms.ListGrantsResponse)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ListRetirableGrantsInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ListRetirableGrantsInput) *kms.ListGrantsResponse); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ListGrantsResponse)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListRetirableGrantsWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ListRetirableGrantsWithContext(_a0 context.Context, _a1 *kms.ListRetirableGrantsInput, _a2 ...request.Option) (*kms.ListGrantsResponse, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ListGrantsResponse
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListRetirableGrantsInput, ...request.Option) (*kms.ListGrantsResponse, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ListRetirableGrantsInput, ...request.Option) *kms.ListGrantsResponse); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ListGrantsResponse)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ListRetirableGrantsInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutKeyPolicy provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) PutKeyPolicy(_a0 *kms.PutKeyPolicyInput) (*kms.PutKeyPolicyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.PutKeyPolicyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.PutKeyPolicyInput) (*kms.PutKeyPolicyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.PutKeyPolicyInput) *kms.PutKeyPolicyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.PutKeyPolicyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.PutKeyPolicyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutKeyPolicyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) PutKeyPolicyRequest(_a0 *kms.PutKeyPolicyInput) (*request.Request, *kms.PutKeyPolicyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.PutKeyPolicyOutput
-	if rf, ok := ret.Get(0).(func(*kms.PutKeyPolicyInput) (*request.Request, *kms.PutKeyPolicyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.PutKeyPolicyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.PutKeyPolicyInput) *kms.PutKeyPolicyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.PutKeyPolicyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // PutKeyPolicyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) PutKeyPolicyWithContext(_a0 context.Context, _a1 *kms.PutKeyPolicyInput, _a2 ...request.Option) (*kms.PutKeyPolicyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.PutKeyPolicyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.PutKeyPolicyInput, ...request.Option) (*kms.PutKeyPolicyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.PutKeyPolicyInput, ...request.Option) *kms.PutKeyPolicyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.PutKeyPolicyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.PutKeyPolicyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ReEncrypt provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ReEncrypt(_a0 *kms.ReEncryptInput) (*kms.ReEncryptOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ReEncryptOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ReEncryptInput) (*kms.ReEncryptOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ReEncryptInput) *kms.ReEncryptOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ReEncryptOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ReEncryptInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ReEncryptRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ReEncryptRequest(_a0 *kms.ReEncryptInput) (*request.Request, *kms.ReEncryptOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ReEncryptOutput
-	if rf, ok := ret.Get(0).(func(*kms.ReEncryptInput) (*request.Request, *kms.ReEncryptOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ReEncryptInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ReEncryptInput) *kms.ReEncryptOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ReEncryptOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ReEncryptWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ReEncryptWithContext(_a0 context.Context, _a1 *kms.ReEncryptInput, _a2 ...request.Option) (*kms.ReEncryptOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ReEncryptOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ReEncryptInput, ...request.Option) (*kms.ReEncryptOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ReEncryptInput, ...request.Option) *kms.ReEncryptOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ReEncryptOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ReEncryptInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ReplicateKey provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ReplicateKey(_a0 *kms.ReplicateKeyInput) (*kms.ReplicateKeyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ReplicateKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ReplicateKeyInput) (*kms.ReplicateKeyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ReplicateKeyInput) *kms.ReplicateKeyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ReplicateKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ReplicateKeyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ReplicateKeyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ReplicateKeyRequest(_a0 *kms.ReplicateKeyInput) (*request.Request, *kms.ReplicateKeyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ReplicateKeyOutput
-	if rf, ok := ret.Get(0).(func(*kms.ReplicateKeyInput) (*request.Request, *kms.ReplicateKeyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ReplicateKeyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ReplicateKeyInput) *kms.ReplicateKeyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ReplicateKeyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ReplicateKeyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ReplicateKeyWithContext(_a0 context.Context, _a1 *kms.ReplicateKeyInput, _a2 ...request.Option) (*kms.ReplicateKeyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ReplicateKeyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ReplicateKeyInput, ...request.Option) (*kms.ReplicateKeyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ReplicateKeyInput, ...request.Option) *kms.ReplicateKeyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ReplicateKeyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ReplicateKeyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RetireGrant provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) RetireGrant(_a0 *kms.RetireGrantInput) (*kms.RetireGrantOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.RetireGrantOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.RetireGrantInput) (*kms.RetireGrantOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.RetireGrantInput) *kms.RetireGrantOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.RetireGrantOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.RetireGrantInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RetireGrantRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) RetireGrantRequest(_a0 *kms.RetireGrantInput) (*request.Request, *kms.RetireGrantOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.RetireGrantOutput
-	if rf, ok := ret.Get(0).(func(*kms.RetireGrantInput) (*request.Request, *kms.RetireGrantOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.RetireGrantInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.RetireGrantInput) *kms.RetireGrantOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.RetireGrantOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RetireGrantWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) RetireGrantWithContext(_a0 context.Context, _a1 *kms.RetireGrantInput, _a2 ...request.Option) (*kms.RetireGrantOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.RetireGrantOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.RetireGrantInput, ...request.Option) (*kms.RetireGrantOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.RetireGrantInput, ...request.Option) *kms.RetireGrantOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.RetireGrantOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.RetireGrantInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RevokeGrant provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) RevokeGrant(_a0 *kms.RevokeGrantInput) (*kms.RevokeGrantOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.RevokeGrantOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.RevokeGrantInput) (*kms.RevokeGrantOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.RevokeGrantInput) *kms.RevokeGrantOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.RevokeGrantOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.RevokeGrantInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RevokeGrantRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) RevokeGrantRequest(_a0 *kms.RevokeGrantInput) (*request.Request, *kms.RevokeGrantOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.RevokeGrantOutput
-	if rf, ok := ret.Get(0).(func(*kms.RevokeGrantInput) (*request.Request, *kms.RevokeGrantOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.RevokeGrantInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.RevokeGrantInput) *kms.RevokeGrantOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.RevokeGrantOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // RevokeGrantWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) RevokeGrantWithContext(_a0 context.Context, _a1 *kms.RevokeGrantInput, _a2 ...request.Option) (*kms.RevokeGrantOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.RevokeGrantOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.RevokeGrantInput, ...request.Option) (*kms.RevokeGrantOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.RevokeGrantInput, ...request.Option) *kms.RevokeGrantOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.RevokeGrantOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.RevokeGrantInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ScheduleKeyDeletion provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ScheduleKeyDeletion(_a0 *kms.ScheduleKeyDeletionInput) (*kms.ScheduleKeyDeletionOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.ScheduleKeyDeletionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.ScheduleKeyDeletionInput) (*kms.ScheduleKeyDeletionOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ScheduleKeyDeletionInput) *kms.ScheduleKeyDeletionOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ScheduleKeyDeletionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ScheduleKeyDeletionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ScheduleKeyDeletionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) ScheduleKeyDeletionRequest(_a0 *kms.ScheduleKeyDeletionInput) (*request.Request, *kms.ScheduleKeyDeletionOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.ScheduleKeyDeletionOutput
-	if rf, ok := ret.Get(0).(func(*kms.ScheduleKeyDeletionInput) (*request.Request, *kms.ScheduleKeyDeletionOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.ScheduleKeyDeletionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.ScheduleKeyDeletionInput) *kms.ScheduleKeyDeletionOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.ScheduleKeyDeletionOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ScheduleKeyDeletionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) ScheduleKeyDeletionWithContext(_a0 context.Context, _a1 *kms.ScheduleKeyDeletionInput, _a2 ...request.Option) (*kms.ScheduleKeyDeletionOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.ScheduleKeyDeletionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ScheduleKeyDeletionInput, ...request.Option) (*kms.ScheduleKeyDeletionOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.ScheduleKeyDeletionInput, ...request.Option) *kms.ScheduleKeyDeletionOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.ScheduleKeyDeletionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.ScheduleKeyDeletionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Sign provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) Sign(_a0 *kms.SignInput) (*kms.SignOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.SignOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.SignInput) (*kms.SignOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.SignInput) *kms.SignOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.SignOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.SignInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SignRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) SignRequest(_a0 *kms.SignInput) (*request.Request, *kms.SignOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.SignOutput
-	if rf, ok := ret.Get(0).(func(*kms.SignInput) (*request.Request, *kms.SignOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.SignInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.SignInput) *kms.SignOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.SignOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SignWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) SignWithContext(_a0 context.Context, _a1 *kms.SignInput, _a2 ...request.Option) (*kms.SignOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.SignOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.SignInput, ...request.Option) (*kms.SignOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.SignInput, ...request.Option) *kms.SignOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.SignOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.SignInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TagResource provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) TagResource(_a0 *kms.TagResourceInput) (*kms.TagResourceOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.TagResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.TagResourceInput) (*kms.TagResourceOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.TagResourceInput) *kms.TagResourceOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.TagResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.TagResourceInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TagResourceRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) TagResourceRequest(_a0 *kms.TagResourceInput) (*request.Request, *kms.TagResourceOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.TagResourceOutput
-	if rf, ok := ret.Get(0).(func(*kms.TagResourceInput) (*request.Request, *kms.TagResourceOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.TagResourceInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.TagResourceInput) *kms.TagResourceOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.TagResourceOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // TagResourceWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) TagResourceWithContext(_a0 context.Context, _a1 *kms.TagResourceInput, _a2 ...request.Option) (*kms.TagResourceOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.TagResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.TagResourceInput, ...request.Option) (*kms.TagResourceOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.TagResourceInput, ...request.Option) *kms.TagResourceOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.TagResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.TagResourceInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UntagResource provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UntagResource(_a0 *kms.UntagResourceInput) (*kms.UntagResourceOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.UntagResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.UntagResourceInput) (*kms.UntagResourceOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UntagResourceInput) *kms.UntagResourceOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UntagResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UntagResourceInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UntagResourceRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UntagResourceRequest(_a0 *kms.UntagResourceInput) (*request.Request, *kms.UntagResourceOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.UntagResourceOutput
-	if rf, ok := ret.Get(0).(func(*kms.UntagResourceInput) (*request.Request, *kms.UntagResourceOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UntagResourceInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UntagResourceInput) *kms.UntagResourceOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.UntagResourceOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UntagResourceWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) UntagResourceWithContext(_a0 context.Context, _a1 *kms.UntagResourceInput, _a2 ...request.Option) (*kms.UntagResourceOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.UntagResourceOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UntagResourceInput, ...request.Option) (*kms.UntagResourceOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UntagResourceInput, ...request.Option) *kms.UntagResourceOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UntagResourceOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.UntagResourceInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateAlias provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UpdateAlias(_a0 *kms.UpdateAliasInput) (*kms.UpdateAliasOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.UpdateAliasOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.UpdateAliasInput) (*kms.UpdateAliasOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UpdateAliasInput) *kms.UpdateAliasOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UpdateAliasOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UpdateAliasInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateAliasRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UpdateAliasRequest(_a0 *kms.UpdateAliasInput) (*request.Request, *kms.UpdateAliasOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.UpdateAliasOutput
-	if rf, ok := ret.Get(0).(func(*kms.UpdateAliasInput) (*request.Request, *kms.UpdateAliasOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UpdateAliasInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UpdateAliasInput) *kms.UpdateAliasOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.UpdateAliasOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateAliasWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) UpdateAliasWithContext(_a0 context.Context, _a1 *kms.UpdateAliasInput, _a2 ...request.Option) (*kms.UpdateAliasOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.UpdateAliasOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UpdateAliasInput, ...request.Option) (*kms.UpdateAliasOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UpdateAliasInput, ...request.Option) *kms.UpdateAliasOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UpdateAliasOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.UpdateAliasInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateCustomKeyStore provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UpdateCustomKeyStore(_a0 *kms.UpdateCustomKeyStoreInput) (*kms.UpdateCustomKeyStoreOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.UpdateCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.UpdateCustomKeyStoreInput) (*kms.UpdateCustomKeyStoreOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UpdateCustomKeyStoreInput) *kms.UpdateCustomKeyStoreOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UpdateCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UpdateCustomKeyStoreInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateCustomKeyStoreRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UpdateCustomKeyStoreRequest(_a0 *kms.UpdateCustomKeyStoreInput) (*request.Request, *kms.UpdateCustomKeyStoreOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.UpdateCustomKeyStoreOutput
-	if rf, ok := ret.Get(0).(func(*kms.UpdateCustomKeyStoreInput) (*request.Request, *kms.UpdateCustomKeyStoreOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UpdateCustomKeyStoreInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UpdateCustomKeyStoreInput) *kms.UpdateCustomKeyStoreOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.UpdateCustomKeyStoreOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateCustomKeyStoreWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) UpdateCustomKeyStoreWithContext(_a0 context.Context, _a1 *kms.UpdateCustomKeyStoreInput, _a2 ...request.Option) (*kms.UpdateCustomKeyStoreOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.UpdateCustomKeyStoreOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UpdateCustomKeyStoreInput, ...request.Option) (*kms.UpdateCustomKeyStoreOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UpdateCustomKeyStoreInput, ...request.Option) *kms.UpdateCustomKeyStoreOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UpdateCustomKeyStoreOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.UpdateCustomKeyStoreInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateKeyDescription provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UpdateKeyDescription(_a0 *kms.UpdateKeyDescriptionInput) (*kms.UpdateKeyDescriptionOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.UpdateKeyDescriptionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.UpdateKeyDescriptionInput) (*kms.UpdateKeyDescriptionOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UpdateKeyDescriptionInput) *kms.UpdateKeyDescriptionOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UpdateKeyDescriptionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UpdateKeyDescriptionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateKeyDescriptionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UpdateKeyDescriptionRequest(_a0 *kms.UpdateKeyDescriptionInput) (*request.Request, *kms.UpdateKeyDescriptionOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.UpdateKeyDescriptionOutput
-	if rf, ok := ret.Get(0).(func(*kms.UpdateKeyDescriptionInput) (*request.Request, *kms.UpdateKeyDescriptionOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UpdateKeyDescriptionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UpdateKeyDescriptionInput) *kms.UpdateKeyDescriptionOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.UpdateKeyDescriptionOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdateKeyDescriptionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) UpdateKeyDescriptionWithContext(_a0 context.Context, _a1 *kms.UpdateKeyDescriptionInput, _a2 ...request.Option) (*kms.UpdateKeyDescriptionOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.UpdateKeyDescriptionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UpdateKeyDescriptionInput, ...request.Option) (*kms.UpdateKeyDescriptionOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UpdateKeyDescriptionInput, ...request.Option) *kms.UpdateKeyDescriptionOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UpdateKeyDescriptionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.UpdateKeyDescriptionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdatePrimaryRegion provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UpdatePrimaryRegion(_a0 *kms.UpdatePrimaryRegionInput) (*kms.UpdatePrimaryRegionOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.UpdatePrimaryRegionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.UpdatePrimaryRegionInput) (*kms.UpdatePrimaryRegionOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UpdatePrimaryRegionInput) *kms.UpdatePrimaryRegionOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UpdatePrimaryRegionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UpdatePrimaryRegionInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdatePrimaryRegionRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) UpdatePrimaryRegionRequest(_a0 *kms.UpdatePrimaryRegionInput) (*request.Request, *kms.UpdatePrimaryRegionOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.UpdatePrimaryRegionOutput
-	if rf, ok := ret.Get(0).(func(*kms.UpdatePrimaryRegionInput) (*request.Request, *kms.UpdatePrimaryRegionOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.UpdatePrimaryRegionInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.UpdatePrimaryRegionInput) *kms.UpdatePrimaryRegionOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.UpdatePrimaryRegionOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // UpdatePrimaryRegionWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) UpdatePrimaryRegionWithContext(_a0 context.Context, _a1 *kms.UpdatePrimaryRegionInput, _a2 ...request.Option) (*kms.UpdatePrimaryRegionOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.UpdatePrimaryRegionOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UpdatePrimaryRegionInput, ...request.Option) (*kms.UpdatePrimaryRegionOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.UpdatePrimaryRegionInput, ...request.Option) *kms.UpdatePrimaryRegionOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.UpdatePrimaryRegionOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.UpdatePrimaryRegionInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // Verify provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) Verify(_a0 *kms.VerifyInput) (*kms.VerifyOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.VerifyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.VerifyInput) (*kms.VerifyOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.VerifyInput) *kms.VerifyOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.VerifyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.VerifyInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // VerifyMac provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) VerifyMac(_a0 *kms.VerifyMacInput) (*kms.VerifyMacOutput, error) {
-	ret := _m.Called(_a0)
-
-	var r0 *kms.VerifyMacOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*kms.VerifyMacInput) (*kms.VerifyMacOutput, error)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.VerifyMacInput) *kms.VerifyMacOutput); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.VerifyMacOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.VerifyMacInput) error); ok {
-		r1 = rf(_a0)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // VerifyMacRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) VerifyMacRequest(_a0 *kms.VerifyMacInput) (*request.Request, *kms.VerifyMacOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.VerifyMacOutput
-	if rf, ok := ret.Get(0).(func(*kms.VerifyMacInput) (*request.Request, *kms.VerifyMacOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.VerifyMacInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.VerifyMacInput) *kms.VerifyMacOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.VerifyMacOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // VerifyMacWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) VerifyMacWithContext(_a0 context.Context, _a1 *kms.VerifyMacInput, _a2 ...request.Option) (*kms.VerifyMacOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.VerifyMacOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.VerifyMacInput, ...request.Option) (*kms.VerifyMacOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.VerifyMacInput, ...request.Option) *kms.VerifyMacOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.VerifyMacOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.VerifyMacInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // VerifyRequest provides a mock function with given fields: _a0
 func (_m *MockFakeKMS) VerifyRequest(_a0 *kms.VerifyInput) (*request.Request, *kms.VerifyOutput) {
-	ret := _m.Called(_a0)
-
-	var r0 *request.Request
-	var r1 *kms.VerifyOutput
-	if rf, ok := ret.Get(0).(func(*kms.VerifyInput) (*request.Request, *kms.VerifyOutput)); ok {
-		return rf(_a0)
-	}
-	if rf, ok := ret.Get(0).(func(*kms.VerifyInput) *request.Request); ok {
-		r0 = rf(_a0)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*request.Request)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*kms.VerifyInput) *kms.VerifyOutput); ok {
-		r1 = rf(_a0)
-	} else {
-		if ret.Get(1) != nil {
-			r1 = ret.Get(1).(*kms.VerifyOutput)
-		}
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // VerifyWithContext provides a mock function with given fields: _a0, _a1, _a2
 func (_m *MockFakeKMS) VerifyWithContext(_a0 context.Context, _a1 *kms.VerifyInput, _a2 ...request.Option) (*kms.VerifyOutput, error) {
-	_va := make([]interface{}, len(_a2))
-	for _i := range _a2 {
-		_va[_i] = _a2[_i]
-	}
-	var _ca []interface{}
-	_ca = append(_ca, _a0, _a1)
-	_ca = append(_ca, _va...)
-	ret := _m.Called(_ca...)
-
-	var r0 *kms.VerifyOutput
-	var r1 error
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.VerifyInput, ...request.Option) (*kms.VerifyOutput, error)); ok {
-		return rf(_a0, _a1, _a2...)
-	}
-	if rf, ok := ret.Get(0).(func(context.Context, *kms.VerifyInput, ...request.Option) *kms.VerifyOutput); ok {
-		r0 = rf(_a0, _a1, _a2...)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*kms.VerifyOutput)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(context.Context, *kms.VerifyInput, ...request.Option) error); ok {
-		r1 = rf(_a0, _a1, _a2...)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockFakeKMS interface {
@@ -4618,10 +1007,6 @@ type mockConstructorTestingTNewMockFakeKMS interface {
 
 // NewMockFakeKMS creates a new instance of MockFakeKMS. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockFakeKMS(t mockConstructorTestingTNewMockFakeKMS) *MockFakeKMS {
-	mock := &MockFakeKMS{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

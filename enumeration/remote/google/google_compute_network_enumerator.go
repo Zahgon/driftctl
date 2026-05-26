@@ -1,10 +1,8 @@
 package google
 
 import (
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/remote/google/repository"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/google"
 )
 
 type GoogleComputeNetworkEnumerator struct {
@@ -13,36 +11,16 @@ type GoogleComputeNetworkEnumerator struct {
 }
 
 func NewGoogleComputeNetworkEnumerator(repo repository.AssetRepository, factory resource.ResourceFactory) *GoogleComputeNetworkEnumerator {
-	return &GoogleComputeNetworkEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *GoogleComputeNetworkEnumerator) SupportedType() resource.ResourceType {
-	return google.GoogleComputeNetworkResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *GoogleComputeNetworkEnumerator) Enumerate() ([]*resource.Resource, error) {
-	resources, err := e.repository.SearchAllNetworks()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(resources))
-
-	for _, res := range resources {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				trimResourceName(res.GetName()),
-				map[string]interface{}{
-					"name": res.DisplayName,
-				},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

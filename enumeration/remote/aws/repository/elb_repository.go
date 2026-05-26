@@ -17,27 +17,11 @@ type elbRepository struct {
 }
 
 func NewELBRepository(session *session.Session, c cache.Cache) *elbRepository {
-	return &elbRepository{
-		elb.New(session),
-		c,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (r *elbRepository) ListAllLoadBalancers() ([]*elb.LoadBalancerDescription, error) {
-	if v := r.cache.Get("elbListAllLoadBalancers"); v != nil {
-		return v.([]*elb.LoadBalancerDescription), nil
-	}
-
-	results := make([]*elb.LoadBalancerDescription, 0)
-	input := elb.DescribeLoadBalancersInput{}
-	err := r.client.DescribeLoadBalancersPages(&input, func(res *elb.DescribeLoadBalancersOutput, lastPage bool) bool {
-		results = append(results, res.LoadBalancerDescriptions...)
-		return !lastPage
-	})
-	if err != nil {
-		return nil, err
-	}
-
-	r.cache.Put("elbListAllLoadBalancers", results)
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

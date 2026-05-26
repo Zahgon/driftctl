@@ -14,210 +14,50 @@ type MockPrivateDNSRepository struct {
 
 // ListAllAAAARecords provides a mock function with given fields: zone
 func (_m *MockPrivateDNSRepository) ListAllAAAARecords(zone *armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error) {
-	ret := _m.Called(zone)
-
-	var r0 []*armprivatedns.RecordSet
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error)); ok {
-		return rf(zone)
-	}
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) []*armprivatedns.RecordSet); ok {
-		r0 = rf(zone)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armprivatedns.RecordSet)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armprivatedns.PrivateZone) error); ok {
-		r1 = rf(zone)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllARecords provides a mock function with given fields: zone
 func (_m *MockPrivateDNSRepository) ListAllARecords(zone *armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error) {
-	ret := _m.Called(zone)
-
-	var r0 []*armprivatedns.RecordSet
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error)); ok {
-		return rf(zone)
-	}
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) []*armprivatedns.RecordSet); ok {
-		r0 = rf(zone)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armprivatedns.RecordSet)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armprivatedns.PrivateZone) error); ok {
-		r1 = rf(zone)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllCNAMERecords provides a mock function with given fields: zone
 func (_m *MockPrivateDNSRepository) ListAllCNAMERecords(zone *armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error) {
-	ret := _m.Called(zone)
-
-	var r0 []*armprivatedns.RecordSet
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error)); ok {
-		return rf(zone)
-	}
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) []*armprivatedns.RecordSet); ok {
-		r0 = rf(zone)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armprivatedns.RecordSet)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armprivatedns.PrivateZone) error); ok {
-		r1 = rf(zone)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllMXRecords provides a mock function with given fields: zone
 func (_m *MockPrivateDNSRepository) ListAllMXRecords(zone *armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error) {
-	ret := _m.Called(zone)
-
-	var r0 []*armprivatedns.RecordSet
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error)); ok {
-		return rf(zone)
-	}
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) []*armprivatedns.RecordSet); ok {
-		r0 = rf(zone)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armprivatedns.RecordSet)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armprivatedns.PrivateZone) error); ok {
-		r1 = rf(zone)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllPTRRecords provides a mock function with given fields: zone
 func (_m *MockPrivateDNSRepository) ListAllPTRRecords(zone *armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error) {
-	ret := _m.Called(zone)
-
-	var r0 []*armprivatedns.RecordSet
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error)); ok {
-		return rf(zone)
-	}
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) []*armprivatedns.RecordSet); ok {
-		r0 = rf(zone)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armprivatedns.RecordSet)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armprivatedns.PrivateZone) error); ok {
-		r1 = rf(zone)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllPrivateZones provides a mock function with given fields:
 func (_m *MockPrivateDNSRepository) ListAllPrivateZones() ([]*armprivatedns.PrivateZone, error) {
-	ret := _m.Called()
-
-	var r0 []*armprivatedns.PrivateZone
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armprivatedns.PrivateZone, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armprivatedns.PrivateZone); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armprivatedns.PrivateZone)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllSRVRecords provides a mock function with given fields: zone
 func (_m *MockPrivateDNSRepository) ListAllSRVRecords(zone *armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error) {
-	ret := _m.Called(zone)
-
-	var r0 []*armprivatedns.RecordSet
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error)); ok {
-		return rf(zone)
-	}
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) []*armprivatedns.RecordSet); ok {
-		r0 = rf(zone)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armprivatedns.RecordSet)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armprivatedns.PrivateZone) error); ok {
-		r1 = rf(zone)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllTXTRecords provides a mock function with given fields: zone
 func (_m *MockPrivateDNSRepository) ListAllTXTRecords(zone *armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error) {
-	ret := _m.Called(zone)
-
-	var r0 []*armprivatedns.RecordSet
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) ([]*armprivatedns.RecordSet, error)); ok {
-		return rf(zone)
-	}
-	if rf, ok := ret.Get(0).(func(*armprivatedns.PrivateZone) []*armprivatedns.RecordSet); ok {
-		r0 = rf(zone)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armprivatedns.RecordSet)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*armprivatedns.PrivateZone) error); ok {
-		r1 = rf(zone)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockPrivateDNSRepository interface {
@@ -227,10 +67,6 @@ type mockConstructorTestingTNewMockPrivateDNSRepository interface {
 
 // NewMockPrivateDNSRepository creates a new instance of MockPrivateDNSRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockPrivateDNSRepository(t mockConstructorTestingTNewMockPrivateDNSRepository) *MockPrivateDNSRepository {
-	mock := &MockPrivateDNSRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -14,18 +14,8 @@ type mockSubnetsClient struct {
 
 // List provides a mock function with given fields: resourceGroupName, virtualNetworkName, options
 func (_m *mockSubnetsClient) List(resourceGroupName string, virtualNetworkName string, options *armnetwork.SubnetsListOptions) subnetsListPager {
-	ret := _m.Called(resourceGroupName, virtualNetworkName, options)
-
-	var r0 subnetsListPager
-	if rf, ok := ret.Get(0).(func(string, string, *armnetwork.SubnetsListOptions) subnetsListPager); ok {
-		r0 = rf(resourceGroupName, virtualNetworkName, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(subnetsListPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(subnetsListPager)
 }
 
 type mockConstructorTestingTnewMockSubnetsClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockSubnetsClient interface {
 
 // newMockSubnetsClient creates a new instance of mockSubnetsClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockSubnetsClient(t mockConstructorTestingTnewMockSubnetsClient) *mockSubnetsClient {
-	mock := &mockSubnetsClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

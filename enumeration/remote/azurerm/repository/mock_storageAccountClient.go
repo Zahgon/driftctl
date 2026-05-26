@@ -14,18 +14,8 @@ type mockStorageAccountClient struct {
 
 // List provides a mock function with given fields: options
 func (_m *mockStorageAccountClient) List(options *armstorage.StorageAccountsListOptions) storageAccountListPager {
-	ret := _m.Called(options)
-
-	var r0 storageAccountListPager
-	if rf, ok := ret.Get(0).(func(*armstorage.StorageAccountsListOptions) storageAccountListPager); ok {
-		r0 = rf(options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(storageAccountListPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(storageAccountListPager)
 }
 
 type mockConstructorTestingTnewMockStorageAccountClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockStorageAccountClient interface {
 
 // newMockStorageAccountClient creates a new instance of mockStorageAccountClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockStorageAccountClient(t mockConstructorTestingTnewMockStorageAccountClient) *mockStorageAccountClient {
-	mock := &mockStorageAccountClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

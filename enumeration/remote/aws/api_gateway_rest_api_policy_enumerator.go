@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type ApiGatewayRestApiPolicyEnumerator struct {
@@ -13,37 +11,16 @@ type ApiGatewayRestApiPolicyEnumerator struct {
 }
 
 func NewApiGatewayRestApiPolicyEnumerator(repo repository.ApiGatewayRepository, factory resource.ResourceFactory) *ApiGatewayRestApiPolicyEnumerator {
-	return &ApiGatewayRestApiPolicyEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *ApiGatewayRestApiPolicyEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsApiGatewayRestApiPolicyResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *ApiGatewayRestApiPolicyEnumerator) Enumerate() ([]*resource.Resource, error) {
-	apis, err := e.repository.ListAllRestApis()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingErrorWithType(err, string(e.SupportedType()), aws.AwsApiGatewayRestApiResourceType)
-	}
-
-	results := make([]*resource.Resource, 0)
-
-	for _, api := range apis {
-		a := api
-		if a.Policy == nil || *a.Policy == "" {
-			continue
-		}
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*a.Id,
-				map[string]interface{}{},
-			),
-		)
-	}
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

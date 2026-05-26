@@ -6,18 +6,9 @@ import (
 
 type TerraformResourceFactory struct{}
 
-func NewTerraformResourceFactory() *TerraformResourceFactory {
-	return &TerraformResourceFactory{}
-}
+func NewTerraformResourceFactory() *TerraformResourceFactory { _ = "STUB: not implemented"; return nil }
 
 func (r *TerraformResourceFactory) CreateAbstractResource(ty, id string, data map[string]interface{}) *resource.Resource {
-	attributes := resource.Attributes(data)
-
-	res := resource.Resource{
-		Id:    id,
-		Type:  ty,
-		Attrs: &attributes,
-	}
-
-	return &res
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -14,54 +14,14 @@ type MockComputeRepository struct {
 
 // ListAllImages provides a mock function with given fields:
 func (_m *MockComputeRepository) ListAllImages() ([]*armcompute.Image, error) {
-	ret := _m.Called()
-
-	var r0 []*armcompute.Image
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armcompute.Image, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armcompute.Image); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armcompute.Image)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllSSHPublicKeys provides a mock function with given fields:
 func (_m *MockComputeRepository) ListAllSSHPublicKeys() ([]*armcompute.SSHPublicKeyResource, error) {
-	ret := _m.Called()
-
-	var r0 []*armcompute.SSHPublicKeyResource
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*armcompute.SSHPublicKeyResource, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*armcompute.SSHPublicKeyResource); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*armcompute.SSHPublicKeyResource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockComputeRepository interface {
@@ -71,10 +31,6 @@ type mockConstructorTestingTNewMockComputeRepository interface {
 
 // NewMockComputeRepository creates a new instance of MockComputeRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockComputeRepository(t mockConstructorTestingTNewMockComputeRepository) *MockComputeRepository {
-	mock := &MockComputeRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

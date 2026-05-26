@@ -17,31 +17,11 @@ type cloudformationRepository struct {
 }
 
 func NewCloudformationRepository(session *session.Session, c cache.Cache) *cloudformationRepository {
-	return &cloudformationRepository{
-		cloudformation.New(session),
-		c,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (r *cloudformationRepository) ListAllStacks() ([]*cloudformation.Stack, error) {
-	if v := r.cache.Get("cloudformationListAllStacks"); v != nil {
-		return v.([]*cloudformation.Stack), nil
-	}
-
-	var stacks []*cloudformation.Stack
-	input := cloudformation.DescribeStacksInput{}
-	err := r.client.DescribeStacksPages(&input,
-		func(resp *cloudformation.DescribeStacksOutput, lastPage bool) bool {
-			if resp.Stacks != nil {
-				stacks = append(stacks, resp.Stacks...)
-			}
-			return !lastPage
-		},
-	)
-	if err != nil {
-		return nil, err
-	}
-
-	r.cache.Put("cloudformationListAllStacks", stacks)
-	return stacks, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

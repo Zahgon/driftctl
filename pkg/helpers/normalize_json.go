@@ -1,7 +1,5 @@
 package helpers
 
-import "encoding/json"
-
 // Since we can't use both hashicorp/terraform and hashicorp/terraform-plugin-sdk
 // dependencies together, we decided to duplicate the helper function below from
 // the original repo.
@@ -13,19 +11,6 @@ import "encoding/json"
 // the JSON parser to normalize it, returns either a parsing
 // error or normalized JSON string.
 func NormalizeJsonString(jsonString interface{}) (string, error) {
-	var j interface{}
-
-	if jsonString == nil || jsonString.(string) == "" {
-		return "", nil
-	}
-
-	s := jsonString.(string)
-
-	err := json.Unmarshal([]byte(s), &j)
-	if err != nil {
-		return s, err
-	}
-
-	bytes, _ := json.Marshal(j)
-	return string(bytes[:]), nil
+	_ = "STUB: not implemented"
+	return "", nil
 }

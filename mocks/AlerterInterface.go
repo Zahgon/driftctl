@@ -14,5 +14,6 @@ type AlerterInterface struct {
 
 // SendAlert provides a mock function with given fields: key, alert
 func (_m *AlerterInterface) SendAlert(key string, alert alerter.Alert) {
-	_m.Called(key, alert)
+	_ = "STUB: not implemented"
+	return
 }

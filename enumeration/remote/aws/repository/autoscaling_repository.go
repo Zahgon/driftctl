@@ -17,28 +17,11 @@ type autoScalingRepository struct {
 }
 
 func NewAutoScalingRepository(session *session.Session, c cache.Cache) *autoScalingRepository {
-	return &autoScalingRepository{
-		autoscaling.New(session),
-		c,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (r *autoScalingRepository) DescribeLaunchConfigurations() ([]*autoscaling.LaunchConfiguration, error) {
-	cacheKey := "DescribeLaunchConfigurations"
-	if v := r.cache.Get(cacheKey); v != nil {
-		return v.([]*autoscaling.LaunchConfiguration), nil
-	}
-
-	var results []*autoscaling.LaunchConfiguration
-	input := &autoscaling.DescribeLaunchConfigurationsInput{}
-	err := r.client.DescribeLaunchConfigurationsPages(input, func(resp *autoscaling.DescribeLaunchConfigurationsOutput, lastPage bool) bool {
-		results = append(results, resp.LaunchConfigurations...)
-		return !lastPage
-	})
-	if err != nil {
-		return nil, err
-	}
-
-	r.cache.Put(cacheKey, results)
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

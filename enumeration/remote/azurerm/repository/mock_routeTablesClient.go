@@ -14,18 +14,8 @@ type mockRouteTablesClient struct {
 
 // ListAll provides a mock function with given fields: options
 func (_m *mockRouteTablesClient) ListAll(options *armnetwork.RouteTablesListAllOptions) routeTablesListAllPager {
-	ret := _m.Called(options)
-
-	var r0 routeTablesListAllPager
-	if rf, ok := ret.Get(0).(func(*armnetwork.RouteTablesListAllOptions) routeTablesListAllPager); ok {
-		r0 = rf(options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(routeTablesListAllPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(routeTablesListAllPager)
 }
 
 type mockConstructorTestingTnewMockRouteTablesClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockRouteTablesClient interface {
 
 // newMockRouteTablesClient creates a new instance of mockRouteTablesClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockRouteTablesClient(t mockConstructorTestingTnewMockRouteTablesClient) *mockRouteTablesClient {
-	mock := &mockRouteTablesClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

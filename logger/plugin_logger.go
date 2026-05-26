@@ -13,8 +13,8 @@ type terraformPluginFormatter struct {
 }
 
 func (f *terraformPluginFormatter) Format(entry *logrus.Entry) ([]byte, error) {
-	entry.Message = "[TerraformPlugin] " + entry.Message
-	return f.Formatter.Format(entry)
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type TerraformPluginLogger struct {
@@ -22,92 +22,79 @@ type TerraformPluginLogger struct {
 }
 
 func NewTerraformPluginLogger() TerraformPluginLogger {
-	config := getConfig()
-	logger := logrus.New()
-	logger.SetLevel(logrus.ErrorLevel)
-	logger.SetReportCaller(false)
-	logger.SetFormatter(&terraformPluginFormatter{Formatter: config.Formatter})
-
-	// Disable terraform provider log if we are not in trace level
-	if config.Level == logrus.TraceLevel {
-		logger.SetLevel(logrus.TraceLevel)
-	}
-
-	return TerraformPluginLogger{logger}
+	_ = "STUB: not implemented"
+	return *new(TerraformPluginLogger)
 }
 
+// Disable terraform provider log if we are not in trace level
+
 func (t TerraformPluginLogger) Trace(msg string, args ...interface{}) {
-	t.logger.Trace(msg, args)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (t TerraformPluginLogger) Debug(msg string, args ...interface{}) {
-	t.Trace(msg, args)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (t TerraformPluginLogger) Info(msg string, args ...interface{}) {
-	t.Trace(msg, args)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (t TerraformPluginLogger) Warn(msg string, args ...interface{}) {
-	t.Trace(msg, args)
+	_ = "STUB: not implemented"
+	return
 }
 
 func (t TerraformPluginLogger) Error(msg string, args ...interface{}) {
-	t.Trace(msg, args)
+	_ = "STUB: not implemented"
+	return
 }
 
-func (t TerraformPluginLogger) IsTrace() bool {
-	return true
-}
+func (t TerraformPluginLogger) IsTrace() bool { _ = "STUB: not implemented"; return false }
 
-func (t TerraformPluginLogger) IsDebug() bool {
-	return false
-}
+func (t TerraformPluginLogger) IsDebug() bool { _ = "STUB: not implemented"; return false }
 
-func (t TerraformPluginLogger) IsInfo() bool {
-	return false
-}
+func (t TerraformPluginLogger) IsInfo() bool { _ = "STUB: not implemented"; return false }
 
-func (t TerraformPluginLogger) IsWarn() bool {
-	return false
-}
+func (t TerraformPluginLogger) IsWarn() bool { _ = "STUB: not implemented"; return false }
 
-func (t TerraformPluginLogger) IsError() bool {
-	return false
-}
+func (t TerraformPluginLogger) IsError() bool { _ = "STUB: not implemented"; return false }
 
 func (t TerraformPluginLogger) With(args ...interface{}) hclog.Logger {
-	return t
+	_ = "STUB: not implemented"
+	return *new(hclog.Logger)
 }
 
 func (t TerraformPluginLogger) Named(name string) hclog.Logger {
-	return t
+	_ = "STUB: not implemented"
+	return *new(hclog.Logger)
 }
 
 func (t TerraformPluginLogger) ResetNamed(name string) hclog.Logger {
-	return t
+	_ = "STUB: not implemented"
+	return *new(hclog.Logger)
 }
 
-func (t TerraformPluginLogger) SetLevel(level hclog.Level) {}
+func (t TerraformPluginLogger) SetLevel(level hclog.Level) { _ = "STUB: not implemented"; return }
 
 func (t TerraformPluginLogger) StandardLogger(opts *hclog.StandardLoggerOptions) *log.Logger {
-	stdLogger := log.New(t.logger.Writer(), "", log.Flags())
-	stdLogger.SetOutput(t.logger.Writer())
-	return stdLogger
-}
-
-func (t TerraformPluginLogger) StandardWriter(opts *hclog.StandardLoggerOptions) io.Writer {
-	return t.logger.Writer()
-}
-
-func (t TerraformPluginLogger) Log(level hclog.Level, msg string, args ...interface{}) {
-	t.logger.Log(logrus.TraceLevel, msg, args)
-}
-
-func (t TerraformPluginLogger) ImpliedArgs() []interface{} {
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (t TerraformPluginLogger) Name() string {
-	return "TerraformPlugin"
+func (t TerraformPluginLogger) StandardWriter(opts *hclog.StandardLoggerOptions) io.Writer {
+	_ = "STUB: not implemented"
+	return *new(io.Writer)
 }
+
+func (t TerraformPluginLogger) Log(level hclog.Level, msg string, args ...interface{}) {
+	_ = "STUB: not implemented"
+	return
+}
+
+func (t TerraformPluginLogger) ImpliedArgs() []interface{} { _ = "STUB: not implemented"; return nil }
+
+func (t TerraformPluginLogger) Name() string { _ = "STUB: not implemented"; return "" }

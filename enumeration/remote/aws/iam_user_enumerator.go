@@ -1,11 +1,8 @@
 package aws
 
 import (
-	awssdk "github.com/aws/aws-sdk-go/aws"
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type IamUserEnumerator struct {
@@ -14,34 +11,16 @@ type IamUserEnumerator struct {
 }
 
 func NewIamUserEnumerator(repo repository.IAMRepository, factory resource.ResourceFactory) *IamUserEnumerator {
-	return &IamUserEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *IamUserEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsIamUserResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *IamUserEnumerator) Enumerate() ([]*resource.Resource, error) {
-	users, err := e.repository.ListAllUsers()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(users))
-
-	for _, user := range users {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				awssdk.StringValue(user.UserName),
-				map[string]interface{}{},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

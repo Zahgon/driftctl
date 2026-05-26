@@ -2,9 +2,7 @@ package azurerm
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/azurerm/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/azurerm"
 )
 
 type AzurermStorageContainerEnumerator struct {
@@ -13,42 +11,16 @@ type AzurermStorageContainerEnumerator struct {
 }
 
 func NewAzurermStorageContainerEnumerator(repo repository.StorageRespository, factory resource.ResourceFactory) *AzurermStorageContainerEnumerator {
-	return &AzurermStorageContainerEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *AzurermStorageContainerEnumerator) SupportedType() resource.ResourceType {
-	return azurerm.AzureStorageContainerResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *AzurermStorageContainerEnumerator) Enumerate() ([]*resource.Resource, error) {
-
-	accounts, err := e.repository.ListAllStorageAccount()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingErrorWithType(err, string(e.SupportedType()), azurerm.AzureStorageAccountResourceType)
-	}
-
-	results := make([]*resource.Resource, 0)
-
-	for _, account := range accounts {
-		containers, err := e.repository.ListAllStorageContainer(account)
-		if err != nil {
-			return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-		}
-
-		for _, container := range containers {
-			results = append(
-				results,
-				e.factory.CreateAbstractResource(
-					string(e.SupportedType()),
-					container,
-					map[string]interface{}{},
-				),
-			)
-		}
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

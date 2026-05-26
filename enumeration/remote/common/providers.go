@@ -22,9 +22,6 @@ var remoteParameterMapping = map[RemoteParameter]string{
 }
 
 func (p RemoteParameter) GetProviderAddress() *lock.ProviderAddress {
-	return &lock.ProviderAddress{
-		Hostname:  "registry.terraform.io",
-		Namespace: "hashicorp",
-		Type:      remoteParameterMapping[p],
-	}
+	_ = "STUB: not implemented"
+	return nil
 }

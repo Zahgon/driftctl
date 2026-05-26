@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type EC2NatGatewayEnumerator struct {
@@ -13,42 +11,16 @@ type EC2NatGatewayEnumerator struct {
 }
 
 func NewEC2NatGatewayEnumerator(repo repository.EC2Repository, factory resource.ResourceFactory) *EC2NatGatewayEnumerator {
-	return &EC2NatGatewayEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *EC2NatGatewayEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsNatGatewayResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *EC2NatGatewayEnumerator) Enumerate() ([]*resource.Resource, error) {
-	natGateways, err := e.repository.ListAllNatGateways()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(natGateways))
-
-	for _, natGateway := range natGateways {
-
-		attrs := map[string]interface{}{}
-		if len(natGateway.NatGatewayAddresses) > 0 {
-			if allocId := natGateway.NatGatewayAddresses[0].AllocationId; allocId != nil {
-				attrs["allocation_id"] = *allocId
-			}
-		}
-
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*natGateway.NatGatewayId,
-				attrs,
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

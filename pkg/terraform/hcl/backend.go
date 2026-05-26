@@ -1,13 +1,8 @@
 package hcl
 
 import (
-	"fmt"
-	"path"
-
 	"github.com/hashicorp/hcl/v2"
 	"github.com/snyk/driftctl/pkg/iac/config"
-	"github.com/snyk/driftctl/pkg/iac/terraform/state"
-	"github.com/snyk/driftctl/pkg/iac/terraform/state/backend"
 )
 
 type BackendBlock struct {
@@ -24,71 +19,26 @@ type BackendBlock struct {
 }
 
 func (b BackendBlock) SupplierConfig(workspace string) *config.SupplierConfig {
-	switch b.Name {
-	case "local":
-		return b.parseLocalBackend()
-	case "s3":
-		return b.parseS3Backend(workspace)
-	case "gcs":
-		return b.parseGCSBackend(workspace)
-	case "azurerm":
-		return b.parseAzurermBackend(workspace)
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (b BackendBlock) parseLocalBackend() *config.SupplierConfig {
-	if b.Path == "" {
-		return nil
-	}
-	return &config.SupplierConfig{
-		Key:     state.TerraformStateReaderSupplier,
-		Backend: backend.BackendKeyFile,
-		Path:    path.Join(b.WorkspaceDir, b.Path),
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (b BackendBlock) parseS3Backend(ws string) *config.SupplierConfig {
-	if b.Bucket == "" || b.Key == "" {
-		return nil
-	}
-
-	keyPrefix := b.WorkspaceKeyPrefix
-	if ws != DefaultStateName {
-		if b.WorkspaceKeyPrefix == "" {
-			b.WorkspaceKeyPrefix = "env:"
-		}
-		keyPrefix = path.Join(b.WorkspaceKeyPrefix, ws)
-	}
-
-	return &config.SupplierConfig{
-		Key:     state.TerraformStateReaderSupplier,
-		Backend: backend.BackendKeyS3,
-		Path:    path.Join(b.Bucket, keyPrefix, b.Key),
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (b BackendBlock) parseGCSBackend(ws string) *config.SupplierConfig {
-	if b.Bucket == "" || b.Prefix == "" {
-		return nil
-	}
-	return &config.SupplierConfig{
-		Key:     state.TerraformStateReaderSupplier,
-		Backend: backend.BackendKeyGS,
-		Path:    fmt.Sprintf("%s.tfstate", path.Join(b.Bucket, b.Prefix, ws)),
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (b BackendBlock) parseAzurermBackend(ws string) *config.SupplierConfig {
-	if b.ContainerName == "" || b.Key == "" {
-		return nil
-	}
-	if ws != DefaultStateName {
-		b.Key = fmt.Sprintf("%senv:%s", b.Key, ws)
-	}
-	return &config.SupplierConfig{
-		Key:     state.TerraformStateReaderSupplier,
-		Backend: backend.BackendKeyAzureRM,
-		Path:    path.Join(b.ContainerName, b.Key),
-	}
+	_ = "STUB: not implemented"
+	return nil
 }

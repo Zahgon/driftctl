@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type DynamoDBTableEnumerator struct {
@@ -13,36 +11,16 @@ type DynamoDBTableEnumerator struct {
 }
 
 func NewDynamoDBTableEnumerator(repository repository.DynamoDBRepository, factory resource.ResourceFactory) *DynamoDBTableEnumerator {
-	return &DynamoDBTableEnumerator{
-		repository,
-		factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *DynamoDBTableEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsDynamodbTableResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *DynamoDBTableEnumerator) Enumerate() ([]*resource.Resource, error) {
-	tables, err := e.repository.ListAllTables()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(tables))
-
-	for _, table := range tables {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*table,
-				map[string]interface{}{
-					"table_name": *table,
-				},
-			),
-		)
-	}
-
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

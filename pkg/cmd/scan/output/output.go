@@ -1,8 +1,6 @@
 package output
 
 import (
-	"sort"
-
 	"github.com/snyk/driftctl/pkg/analyser"
 	"github.com/snyk/driftctl/pkg/output"
 )
@@ -25,73 +23,20 @@ var supportedOutputExample = map[string]string{
 	PlanOutputType:    PlanOutputExample,
 }
 
-func SupportedOutputsExample() []string {
-	examples := make([]string, 0, len(supportedOutputExample))
-	for _, ex := range supportedOutputExample {
-		examples = append(examples, ex)
-	}
-	sort.Strings(examples)
-	return examples
-}
+func SupportedOutputsExample() []string { _ = "STUB: not implemented"; return nil }
 
-func Example(key string) string {
-	return supportedOutputExample[key]
-}
+func Example(key string) string { _ = "STUB: not implemented"; return "" }
 
-func IsSupported(key string) bool {
-	for _, o := range supportedOutputTypes {
-		if o == key {
-			return true
-		}
-	}
-	return false
-}
+func IsSupported(key string) bool { _ = "STUB: not implemented"; return false }
 
-func GetOutput(config OutputConfig) Output {
-	switch config.Key {
-	case JSONOutputType:
-		return NewJSON(config.Path)
-	case HTMLOutputType:
-		return NewHTML(config.Path)
-	case PlanOutputType:
-		return NewPlan(config.Path)
-	case ConsoleOutputType:
-		fallthrough
-	default:
-		return NewConsole()
-	}
-}
+func GetOutput(config OutputConfig) Output { _ = "STUB: not implemented"; return *new(Output) }
 
 // ShouldPrint indicate if we should use the global output or not (e.g. when outputting to stdout).
-func ShouldPrint(outputs []OutputConfig, quiet bool) bool {
-	for _, c := range outputs {
-		p := GetPrinter(c, quiet)
-		if _, ok := p.(*output.VoidPrinter); ok {
-			return false
-		}
-	}
-	return true
-}
+func ShouldPrint(outputs []OutputConfig, quiet bool) bool { _ = "STUB: not implemented"; return false }
 
 func GetPrinter(config OutputConfig, quiet bool) output.Printer {
-	if quiet {
-		return &output.VoidPrinter{}
-	}
-
-	switch config.Key {
-	case JSONOutputType:
-		fallthrough
-	case PlanOutputType:
-		fallthrough
-	case HTMLOutputType:
-		fallthrough
-	case ConsoleOutputType:
-		fallthrough
-	default:
-		return output.NewConsolePrinter()
-	}
+	_ = "STUB: not implemented"
+	return *new(output.Printer)
 }
 
-func isStdOut(path string) bool {
-	return path == "/dev/stdout" || path == "stdout"
-}
+func isStdOut(path string) bool { _ = "STUB: not implemented"; return false }

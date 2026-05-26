@@ -1,14 +1,9 @@
 package remote
 
 import (
-	"github.com/pkg/errors"
 	"github.com/snyk/driftctl/enumeration"
 	"github.com/snyk/driftctl/enumeration/alerter"
-	"github.com/snyk/driftctl/enumeration/remote/aws"
-	"github.com/snyk/driftctl/enumeration/remote/azurerm"
 	"github.com/snyk/driftctl/enumeration/remote/common"
-	"github.com/snyk/driftctl/enumeration/remote/github"
-	"github.com/snyk/driftctl/enumeration/remote/google"
 	"github.com/snyk/driftctl/enumeration/resource"
 	"github.com/snyk/driftctl/enumeration/terraform"
 )
@@ -20,31 +15,11 @@ var supportedRemotes = []string{
 	common.RemoteAzureTerraform,
 }
 
-func IsSupported(remote string) bool {
-	for _, r := range supportedRemotes {
-		if r == remote {
-			return true
-		}
-	}
-	return false
-}
+func IsSupported(remote string) bool { _ = "STUB: not implemented"; return false }
 
 func Activate(remote, version string, alerter alerter.AlerterInterface, providerLibrary *terraform.ProviderLibrary, remoteLibrary *common.RemoteLibrary, progress enumeration.ProgressCounter, factory resource.ResourceFactory, configDir string) error {
-	switch remote {
-	case common.RemoteAWSTerraform:
-		return aws.Init(version, alerter, providerLibrary, remoteLibrary, progress, factory, configDir)
-	case common.RemoteGithubTerraform:
-		return github.Init(version, alerter, providerLibrary, remoteLibrary, progress, factory, configDir)
-	case common.RemoteGoogleTerraform:
-		return google.Init(version, alerter, providerLibrary, remoteLibrary, progress, factory, configDir)
-	case common.RemoteAzureTerraform:
-		return azurerm.Init(version, alerter, providerLibrary, remoteLibrary, progress, factory, configDir)
-
-	default:
-		return errors.Errorf("unsupported remote '%s'", remote)
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func GetSupportedRemotes() []string {
-	return supportedRemotes
-}
+func GetSupportedRemotes() []string { _ = "STUB: not implemented"; return nil }

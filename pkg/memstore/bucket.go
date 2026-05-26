@@ -15,18 +15,8 @@ type bucket struct {
 	values map[string]interface{}
 }
 
-func (b bucket) Set(key string, value interface{}) {
-	b.m.Lock()
-	defer b.m.Unlock()
-	b.values[key] = value
-}
+func (b bucket) Set(key string, value interface{}) { _ = "STUB: not implemented"; return }
 
-func (b bucket) Get(key string) interface{} {
-	b.m.RLock()
-	defer b.m.RUnlock()
-	return b.values[key]
-}
+func (b bucket) Get(key string) interface{} { _ = "STUB: not implemented"; return nil }
 
-func (b bucket) Values() map[string]interface{} {
-	return b.values
-}
+func (b bucket) Values() map[string]interface{} { _ = "STUB: not implemented"; return nil }

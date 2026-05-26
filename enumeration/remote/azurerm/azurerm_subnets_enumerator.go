@@ -2,9 +2,7 @@ package azurerm
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/azurerm/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/azurerm"
 )
 
 type AzurermSubnetEnumerator struct {
@@ -13,39 +11,16 @@ type AzurermSubnetEnumerator struct {
 }
 
 func NewAzurermSubnetEnumerator(repo repository.NetworkRepository, factory resource.ResourceFactory) *AzurermSubnetEnumerator {
-	return &AzurermSubnetEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *AzurermSubnetEnumerator) SupportedType() resource.ResourceType {
-	return azurerm.AzureSubnetResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *AzurermSubnetEnumerator) Enumerate() ([]*resource.Resource, error) {
-	networks, err := e.repository.ListAllVirtualNetworks()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingErrorWithType(err, string(e.SupportedType()), azurerm.AzureVirtualNetworkResourceType)
-	}
-
-	results := make([]*resource.Resource, 0)
-	for _, network := range networks {
-		resources, err := e.repository.ListAllSubnets(network)
-		if err != nil {
-			return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-		}
-		for _, res := range resources {
-			results = append(
-				results,
-				e.factory.CreateAbstractResource(
-					string(e.SupportedType()),
-					*res.ID,
-					map[string]interface{}{},
-				),
-			)
-		}
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

@@ -11,132 +11,32 @@ type MockGithubRepository struct {
 
 // ListBranchProtection provides a mock function with given fields:
 func (_m *MockGithubRepository) ListBranchProtection() ([]string, error) {
-	ret := _m.Called()
-
-	var r0 []string
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]string, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []string); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]string)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListMembership provides a mock function with given fields:
 func (_m *MockGithubRepository) ListMembership() ([]string, error) {
-	ret := _m.Called()
-
-	var r0 []string
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]string, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []string); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]string)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListRepositories provides a mock function with given fields:
 func (_m *MockGithubRepository) ListRepositories() ([]string, error) {
-	ret := _m.Called()
-
-	var r0 []string
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]string, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []string); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]string)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListTeamMemberships provides a mock function with given fields:
 func (_m *MockGithubRepository) ListTeamMemberships() ([]string, error) {
-	ret := _m.Called()
-
-	var r0 []string
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]string, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []string); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]string)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListTeams provides a mock function with given fields:
 func (_m *MockGithubRepository) ListTeams() ([]Team, error) {
-	ret := _m.Called()
-
-	var r0 []Team
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]Team, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []Team); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]Team)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockGithubRepository interface {
@@ -146,10 +46,6 @@ type mockConstructorTestingTNewMockGithubRepository interface {
 
 // NewMockGithubRepository creates a new instance of MockGithubRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockGithubRepository(t mockConstructorTestingTNewMockGithubRepository) *MockGithubRepository {
-	mock := &MockGithubRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

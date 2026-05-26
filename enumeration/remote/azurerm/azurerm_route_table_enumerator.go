@@ -2,9 +2,7 @@ package azurerm
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/azurerm/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/azurerm"
 )
 
 type AzurermRouteTableEnumerator struct {
@@ -13,36 +11,16 @@ type AzurermRouteTableEnumerator struct {
 }
 
 func NewAzurermRouteTableEnumerator(repo repository.NetworkRepository, factory resource.ResourceFactory) *AzurermRouteTableEnumerator {
-	return &AzurermRouteTableEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *AzurermRouteTableEnumerator) SupportedType() resource.ResourceType {
-	return azurerm.AzureRouteTableResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *AzurermRouteTableEnumerator) Enumerate() ([]*resource.Resource, error) {
-	resources, err := e.repository.ListAllRouteTables()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(resources))
-
-	for _, res := range resources {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*res.ID,
-				map[string]interface{}{
-					"name": *res.Name,
-				},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

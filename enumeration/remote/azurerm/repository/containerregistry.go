@@ -1,7 +1,6 @@
 package repository
 
 import (
-	"context"
 	"github.com/snyk/driftctl/enumeration/remote/azurerm/common"
 	"github.com/snyk/driftctl/enumeration/remote/cache"
 
@@ -28,7 +27,8 @@ type registryClientImpl struct {
 }
 
 func (c registryClientImpl) List(options *armcontainerregistry.RegistriesListOptions) registryListAllPager {
-	return c.client.List(options)
+	_ = "STUB: not implemented"
+	return *new(registryListAllPager)
 }
 
 type containerRegistryRepository struct {
@@ -37,33 +37,11 @@ type containerRegistryRepository struct {
 }
 
 func NewContainerRegistryRepository(cred azcore.TokenCredential, options *arm.ClientOptions, config common.AzureProviderConfig, cache cache.Cache) *containerRegistryRepository {
-	return &containerRegistryRepository{
-		&registryClientImpl{client: armcontainerregistry.NewRegistriesClient(config.SubscriptionID, cred, options)},
-		cache,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (s *containerRegistryRepository) ListAllContainerRegistries() ([]*armcontainerregistry.Registry, error) {
-
-	if v := s.cache.Get("ListAllContainerRegistries"); v != nil {
-		return v.([]*armcontainerregistry.Registry), nil
-	}
-
-	pager := s.registryClient.List(nil)
-	results := make([]*armcontainerregistry.Registry, 0)
-	for pager.NextPage(context.Background()) {
-		resp := pager.PageResponse()
-		if err := pager.Err(); err != nil {
-			return nil, err
-		}
-		results = append(results, resp.Value...)
-	}
-
-	if err := pager.Err(); err != nil {
-		return nil, err
-	}
-
-	s.cache.Put("ListAllContainerRegistries", results)
-
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

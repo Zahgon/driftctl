@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	resourceaws "github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type LambdaFunctionEnumerator struct {
@@ -13,36 +11,16 @@ type LambdaFunctionEnumerator struct {
 }
 
 func NewLambdaFunctionEnumerator(repo repository.LambdaRepository, factory resource.ResourceFactory) *LambdaFunctionEnumerator {
-	return &LambdaFunctionEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *LambdaFunctionEnumerator) SupportedType() resource.ResourceType {
-	return resourceaws.AwsLambdaFunctionResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *LambdaFunctionEnumerator) Enumerate() ([]*resource.Resource, error) {
-	functions, err := e.repository.ListAllLambdaFunctions()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(functions))
-
-	for _, function := range functions {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*function.FunctionName,
-				map[string]interface{}{
-					"function_name": *function.FunctionName,
-				},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

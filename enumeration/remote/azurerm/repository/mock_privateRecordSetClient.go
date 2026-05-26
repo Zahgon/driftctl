@@ -14,18 +14,8 @@ type mockPrivateRecordSetClient struct {
 
 // List provides a mock function with given fields: resourceGroupName, privateZoneName, options
 func (_m *mockPrivateRecordSetClient) List(resourceGroupName string, privateZoneName string, options *armprivatedns.RecordSetsListOptions) privateDNSRecordSetListPager {
-	ret := _m.Called(resourceGroupName, privateZoneName, options)
-
-	var r0 privateDNSRecordSetListPager
-	if rf, ok := ret.Get(0).(func(string, string, *armprivatedns.RecordSetsListOptions) privateDNSRecordSetListPager); ok {
-		r0 = rf(resourceGroupName, privateZoneName, options)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(privateDNSRecordSetListPager)
-		}
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(privateDNSRecordSetListPager)
 }
 
 type mockConstructorTestingTnewMockPrivateRecordSetClient interface {
@@ -35,10 +25,6 @@ type mockConstructorTestingTnewMockPrivateRecordSetClient interface {
 
 // newMockPrivateRecordSetClient creates a new instance of mockPrivateRecordSetClient. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func newMockPrivateRecordSetClient(t mockConstructorTestingTnewMockPrivateRecordSetClient) *mockPrivateRecordSetClient {
-	mock := &mockPrivateRecordSetClient{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

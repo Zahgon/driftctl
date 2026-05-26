@@ -1,19 +1,12 @@
 package repository
 
 import (
-	"context"
-	"fmt"
-	"strings"
-
-	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
-	"github.com/sirupsen/logrus"
 	"github.com/snyk/driftctl/enumeration/remote/azurerm/common"
 	"github.com/snyk/driftctl/enumeration/remote/cache"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore"
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/arm"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/storage/armstorage"
-	"github.com/Azure/go-autorest/autorest/azure"
 )
 
 type StorageRespository interface {
@@ -36,7 +29,8 @@ type blobContainerClientImpl struct {
 }
 
 func (c blobContainerClientImpl) List(resourceGroupName string, accountName string, options *armstorage.BlobContainersListOptions) blobContainerListPager {
-	return c.client.List(resourceGroupName, accountName, options)
+	_ = "STUB: not implemented"
+	return *new(blobContainerListPager)
 }
 
 type storageAccountListPager interface {
@@ -53,7 +47,8 @@ type storageAccountClientImpl struct {
 }
 
 func (c storageAccountClientImpl) List(options *armstorage.StorageAccountsListOptions) storageAccountListPager {
-	return c.client.List(options)
+	_ = "STUB: not implemented"
+	return *new(storageAccountListPager)
 }
 
 type storageRepository struct {
@@ -63,90 +58,18 @@ type storageRepository struct {
 }
 
 func NewStorageRepository(cred azcore.TokenCredential, options *arm.ClientOptions, config common.AzureProviderConfig, cache cache.Cache) *storageRepository {
-	return &storageRepository{
-		storageAccountClientImpl{client: armstorage.NewStorageAccountsClient(config.SubscriptionID, cred, options)},
-		blobContainerClientImpl{client: armstorage.NewBlobContainersClient(config.SubscriptionID, cred, options)},
-		cache,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (s *storageRepository) ListAllStorageAccount() ([]*armstorage.StorageAccount, error) {
-
-	cacheKey := "ListAllStorageAccount"
-	v := s.cache.GetAndLock(cacheKey)
-	defer s.cache.Unlock(cacheKey)
-	if v != nil {
-		return v.([]*armstorage.StorageAccount), nil
-	}
-
-	pager := s.storageAccountsClient.List(nil)
-	results := make([]*armstorage.StorageAccount, 0)
-	for pager.NextPage(context.Background()) {
-		resp := pager.PageResponse()
-		if err := pager.Err(); err != nil {
-			return nil, err
-		}
-		results = append(results, resp.StorageAccountsListResult.StorageAccountListResult.Value...)
-	}
-
-	if err := pager.Err(); err != nil {
-		return nil, err
-	}
-
-	s.cache.Put(cacheKey, results)
-
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (s *storageRepository) ListAllStorageContainer(account *armstorage.StorageAccount) ([]string, error) {
-
-	cacheKey := fmt.Sprintf("ListAllStorageContainer_%s", *account.Name)
-	if v := s.cache.Get(cacheKey); v != nil {
-		return v.([]string), nil
-	}
-
-	res, err := azure.ParseResourceID(*account.ID)
-	if err != nil {
-		return nil, err
-	}
-
-	pager := s.blobContainerClient.List(res.ResourceGroup, *account.Name, nil)
-	results := make([]string, 0)
-	for pager.NextPage(context.Background()) {
-		resp := pager.PageResponse()
-		if err := pager.Err(); err != nil {
-			if !shouldIgnoreStorageContainerError(err) {
-				return nil, err
-			}
-		}
-		for _, item := range resp.BlobContainersListResult.ListContainerItems.Value {
-			results = append(results, fmt.Sprintf("%s%s", *account.Properties.PrimaryEndpoints.Blob, *item.Name))
-		}
-	}
-
-	if err := pager.Err(); err != nil {
-		if !shouldIgnoreStorageContainerError(err) {
-			return nil, err
-		}
-	}
-
-	s.cache.Put(cacheKey, results)
-
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
-func shouldIgnoreStorageContainerError(err error) bool {
-	azureErr, ok := err.(azblob.ResponseError)
-	if !ok {
-		return false
-	}
-	unwrapped := azureErr.Unwrap().Error()
-	if strings.Contains(unwrapped, "FeatureNotSupportedForAccount") {
-		logrus.WithFields(logrus.Fields{
-			"repository": "StorageRepository",
-			"error":      err,
-		}).Debug("Ignoring ListStorageContainer error ...")
-		return true
-	}
-	return false
-}
+func shouldIgnoreStorageContainerError(err error) bool { _ = "STUB: not implemented"; return false }

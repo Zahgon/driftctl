@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	resourceaws "github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 var iamRoleExclusionList = map[string]struct{}{
@@ -22,44 +20,18 @@ type IamRoleEnumerator struct {
 }
 
 func NewIamRoleEnumerator(repository repository.IAMRepository, factory resource.ResourceFactory) *IamRoleEnumerator {
-	return &IamRoleEnumerator{
-		repository,
-		factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *IamRoleEnumerator) SupportedType() resource.ResourceType {
-	return resourceaws.AwsIamRoleResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
-func awsIamRoleShouldBeIgnored(roleName string) bool {
-	_, ok := iamRoleExclusionList[roleName]
-	return ok
-}
+func awsIamRoleShouldBeIgnored(roleName string) bool { _ = "STUB: not implemented"; return false }
 
 func (e *IamRoleEnumerator) Enumerate() ([]*resource.Resource, error) {
-	roles, err := e.repository.ListAllRoles()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0)
-	for _, role := range roles {
-		if role.RoleName != nil && awsIamRoleShouldBeIgnored(*role.RoleName) {
-			continue
-		}
-
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*role.RoleName,
-				map[string]interface{}{
-					"path": *role.Path,
-				},
-			),
-		)
-	}
-
-	return results, nil
+	_ = "STUB: not implemented"
+	return nil, nil
 }

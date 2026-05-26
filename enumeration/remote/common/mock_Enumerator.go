@@ -14,42 +14,14 @@ type MockEnumerator struct {
 
 // Enumerate provides a mock function with given fields:
 func (_m *MockEnumerator) Enumerate() ([]*resource.Resource, error) {
-	ret := _m.Called()
-
-	var r0 []*resource.Resource
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*resource.Resource, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*resource.Resource); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*resource.Resource)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // SupportedType provides a mock function with given fields:
 func (_m *MockEnumerator) SupportedType() resource.ResourceType {
-	ret := _m.Called()
-
-	var r0 resource.ResourceType
-	if rf, ok := ret.Get(0).(func() resource.ResourceType); ok {
-		r0 = rf()
-	} else {
-		r0 = ret.Get(0).(resource.ResourceType)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 type mockConstructorTestingTNewMockEnumerator interface {
@@ -59,10 +31,6 @@ type mockConstructorTestingTNewMockEnumerator interface {
 
 // NewMockEnumerator creates a new instance of MockEnumerator. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockEnumerator(t mockConstructorTestingTNewMockEnumerator) *MockEnumerator {
-	mock := &MockEnumerator{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

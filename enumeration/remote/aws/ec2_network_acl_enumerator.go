@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type EC2NetworkACLEnumerator struct {
@@ -13,38 +11,18 @@ type EC2NetworkACLEnumerator struct {
 }
 
 func NewEC2NetworkACLEnumerator(repo repository.EC2Repository, factory resource.ResourceFactory) *EC2NetworkACLEnumerator {
-	return &EC2NetworkACLEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *EC2NetworkACLEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsNetworkACLResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *EC2NetworkACLEnumerator) Enumerate() ([]*resource.Resource, error) {
-	resources, err := e.repository.ListAllNetworkACLs()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(resources))
-
-	for _, res := range resources {
-		// Do not handle default network acl since it is a dedicated resource
-		if *res.IsDefault {
-			continue
-		}
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*res.NetworkAclId,
-				map[string]interface{}{},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }
+
+// Do not handle default network acl since it is a dedicated resource

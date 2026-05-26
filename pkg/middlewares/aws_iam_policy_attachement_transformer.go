@@ -2,7 +2,6 @@ package middlewares
 
 import (
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/pkg/resource/aws"
 )
 
 /**
@@ -16,74 +15,16 @@ type IamPolicyAttachmentTransformer struct {
 }
 
 func NewIamPolicyAttachmentTransformer(resourceFactory resource.ResourceFactory) IamPolicyAttachmentTransformer {
-	return IamPolicyAttachmentTransformer{
-		resourceFactory,
-	}
+	_ = "STUB: not implemented"
+	return *new(IamPolicyAttachmentTransformer)
 }
 
 func (m IamPolicyAttachmentTransformer) Execute(remoteResources, resourcesFromState *[]*resource.Resource) error {
-	*remoteResources = m.transform(remoteResources)
-	*resourcesFromState = m.transform(resourcesFromState)
+	_ = "STUB: not implemented"
 	return nil
 }
 
 func (m IamPolicyAttachmentTransformer) transform(resources *[]*resource.Resource) []*resource.Resource {
-	var newResources []*resource.Resource
-	for _, res := range *resources {
-		if res.ResourceType() != aws.AwsIamUserPolicyAttachmentResourceType &&
-			res.ResourceType() != aws.AwsIamRolePolicyAttachmentResourceType &&
-			res.ResourceType() != aws.AwsIamGroupPolicyAttachmentResourceType {
-			newResources = append(newResources, res)
-			continue
-		}
-
-		if res.ResourceType() == aws.AwsIamUserPolicyAttachmentResourceType {
-			attrs := *res.Attributes()
-			policyAttachmentData := resource.Attributes{
-				"id":         res.ResourceId(),
-				"policy_arn": attrs["policy_arn"],
-				"users":      []interface{}{attrs["user"]},
-				"groups":     []interface{}{},
-				"roles":      []interface{}{},
-			}
-
-			policyAttachment := m.resourceFactory.CreateAbstractResource(aws.AwsIamPolicyAttachmentResourceType, res.ResourceId(), policyAttachmentData)
-
-			newResources = append(newResources, policyAttachment)
-			continue
-		}
-
-		if res.ResourceType() == aws.AwsIamRolePolicyAttachmentResourceType {
-			attrs := *res.Attributes()
-			policyAttachmentData := resource.Attributes{
-				"id":         res.ResourceId(),
-				"policy_arn": attrs["policy_arn"],
-				"users":      []interface{}{},
-				"groups":     []interface{}{},
-				"roles":      []interface{}{attrs["role"]},
-			}
-
-			policyAttachment := m.resourceFactory.CreateAbstractResource(aws.AwsIamPolicyAttachmentResourceType, res.ResourceId(), policyAttachmentData)
-
-			newResources = append(newResources, policyAttachment)
-			continue
-		}
-
-		if res.ResourceType() == aws.AwsIamGroupPolicyAttachmentResourceType {
-			attrs := *res.Attributes()
-			policyAttachmentData := resource.Attributes{
-				"id":         res.ResourceId(),
-				"policy_arn": attrs["policy_arn"],
-				"users":      []interface{}{},
-				"groups":     []interface{}{attrs["group"]},
-				"roles":      []interface{}{},
-			}
-
-			policyAttachment := m.resourceFactory.CreateAbstractResource(aws.AwsIamPolicyAttachmentResourceType, res.ResourceId(), policyAttachmentData)
-
-			newResources = append(newResources, policyAttachment)
-			continue
-		}
-	}
-	return newResources
+	_ = "STUB: not implemented"
+	return nil
 }

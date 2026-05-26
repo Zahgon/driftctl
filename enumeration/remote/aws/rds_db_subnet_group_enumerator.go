@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type RDSDBSubnetGroupEnumerator struct {
@@ -13,34 +11,16 @@ type RDSDBSubnetGroupEnumerator struct {
 }
 
 func NewRDSDBSubnetGroupEnumerator(repo repository.RDSRepository, factory resource.ResourceFactory) *RDSDBSubnetGroupEnumerator {
-	return &RDSDBSubnetGroupEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *RDSDBSubnetGroupEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsDbSubnetGroupResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *RDSDBSubnetGroupEnumerator) Enumerate() ([]*resource.Resource, error) {
-	subnetGroups, err := e.repository.ListAllDBSubnetGroups()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-	}
-
-	results := make([]*resource.Resource, 0, len(subnetGroups))
-
-	for _, subnetGroup := range subnetGroups {
-		results = append(
-			results,
-			e.factory.CreateAbstractResource(
-				string(e.SupportedType()),
-				*subnetGroup.DBSubnetGroupName,
-				map[string]interface{}{},
-			),
-		)
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

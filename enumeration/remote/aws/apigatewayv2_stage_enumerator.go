@@ -2,9 +2,7 @@ package aws
 
 import (
 	"github.com/snyk/driftctl/enumeration/remote/aws/repository"
-	remoteerror "github.com/snyk/driftctl/enumeration/remote/error"
 	"github.com/snyk/driftctl/enumeration/resource"
-	"github.com/snyk/driftctl/enumeration/resource/aws"
 )
 
 type ApiGatewayV2StageEnumerator struct {
@@ -13,42 +11,16 @@ type ApiGatewayV2StageEnumerator struct {
 }
 
 func NewApiGatewayV2StageEnumerator(repo repository.ApiGatewayV2Repository, factory resource.ResourceFactory) *ApiGatewayV2StageEnumerator {
-	return &ApiGatewayV2StageEnumerator{
-		repository: repo,
-		factory:    factory,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (e *ApiGatewayV2StageEnumerator) SupportedType() resource.ResourceType {
-	return aws.AwsApiGatewayV2StageResourceType
+	_ = "STUB: not implemented"
+	return *new(resource.ResourceType)
 }
 
 func (e *ApiGatewayV2StageEnumerator) Enumerate() ([]*resource.Resource, error) {
-	apis, err := e.repository.ListAllApis()
-	if err != nil {
-		return nil, remoteerror.NewResourceListingErrorWithType(err, string(e.SupportedType()), aws.AwsApiGatewayV2ApiResourceType)
-	}
-
-	results := make([]*resource.Resource, 0)
-
-	for _, api := range apis {
-		stages, err := e.repository.ListAllApiStages(*api.ApiId)
-		if err != nil {
-			return nil, remoteerror.NewResourceListingError(err, string(e.SupportedType()))
-		}
-
-		for _, stage := range stages {
-			results = append(
-				results,
-				e.factory.CreateAbstractResource(
-					string(e.SupportedType()),
-					*stage.StageName,
-					map[string]interface{}{},
-				),
-			)
-		}
-
-	}
-
-	return results, err
+	_ = "STUB: not implemented"
+	return nil, nil
 }

@@ -10,33 +10,16 @@ type ParallelResourceReader struct {
 }
 
 func NewParallelResourceReader(runner *parallel.ParallelRunner) *ParallelResourceReader {
-	return &ParallelResourceReader{
-		runner: runner,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func (p *ParallelResourceReader) Wait() ([]cty.Value, error) {
-	results := make([]cty.Value, 0)
-Loop:
-	for {
-		select {
-		case res, ok := <-p.runner.Read():
-			if !ok {
-				break Loop
-			}
-			ctyVal := res.(cty.Value)
-			if !ctyVal.IsNull() {
-				results = append(results, ctyVal)
-			}
-		case <-p.runner.DoneChan():
-			break Loop
-		}
-	}
-	return results, p.runner.Err()
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (p *ParallelResourceReader) Run(runnable func() (cty.Value, error)) {
-	p.runner.Run(func() (interface{}, error) {
-		return runnable()
-	})
+	_ = "STUB: not implemented"
+	return
 }

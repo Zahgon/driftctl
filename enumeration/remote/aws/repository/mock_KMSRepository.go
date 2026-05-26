@@ -14,54 +14,14 @@ type MockKMSRepository struct {
 
 // ListAllAliases provides a mock function with given fields:
 func (_m *MockKMSRepository) ListAllAliases() ([]*kms.AliasListEntry, error) {
-	ret := _m.Called()
-
-	var r0 []*kms.AliasListEntry
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*kms.AliasListEntry, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*kms.AliasListEntry); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*kms.AliasListEntry)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 // ListAllKeys provides a mock function with given fields:
 func (_m *MockKMSRepository) ListAllKeys() ([]*kms.KeyListEntry, error) {
-	ret := _m.Called()
-
-	var r0 []*kms.KeyListEntry
-	var r1 error
-	if rf, ok := ret.Get(0).(func() ([]*kms.KeyListEntry, error)); ok {
-		return rf()
-	}
-	if rf, ok := ret.Get(0).(func() []*kms.KeyListEntry); ok {
-		r0 = rf()
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).([]*kms.KeyListEntry)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func() error); ok {
-		r1 = rf()
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type mockConstructorTestingTNewMockKMSRepository interface {
@@ -71,10 +31,6 @@ type mockConstructorTestingTNewMockKMSRepository interface {
 
 // NewMockKMSRepository creates a new instance of MockKMSRepository. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
 func NewMockKMSRepository(t mockConstructorTestingTNewMockKMSRepository) *MockKMSRepository {
-	mock := &MockKMSRepository{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

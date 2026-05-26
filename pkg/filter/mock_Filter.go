@@ -14,30 +14,14 @@ type MockFilter struct {
 
 // IsResourceIgnored provides a mock function with given fields: res
 func (_m *MockFilter) IsResourceIgnored(res *resource.Resource) bool {
-	ret := _m.Called(res)
-
-	var r0 bool
-	if rf, ok := ret.Get(0).(func(*resource.Resource) bool); ok {
-		r0 = rf(res)
-	} else {
-		r0 = ret.Get(0).(bool)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return false
 }
 
 // IsTypeIgnored provides a mock function with given fields: ty
 func (_m *MockFilter) IsTypeIgnored(ty resource.ResourceType) bool {
-	ret := _m.Called(ty)
-
-	var r0 bool
-	if rf, ok := ret.Get(0).(func(resource.ResourceType) bool); ok {
-		r0 = rf(ty)
-	} else {
-		r0 = ret.Get(0).(bool)
-	}
-
-	return r0
+	_ = "STUB: not implemented"
+	return false
 }
 
 // NewMockFilter creates a new instance of MockFilter. It also registers a testing interface on the mock and a cleanup function to assert the mocks expectations.
@@ -46,10 +30,6 @@ func NewMockFilter(t interface {
 	mock.TestingT
 	Cleanup(func())
 }) *MockFilter {
-	mock := &MockFilter{}
-	mock.Mock.Test(t)
-
-	t.Cleanup(func() { mock.AssertExpectations(t) })
-
-	return mock
+	_ = "STUB: not implemented"
+	return nil
 }

@@ -2,7 +2,6 @@ package diagnostic
 
 import (
 	"github.com/snyk/driftctl/enumeration/alerter"
-	"github.com/snyk/driftctl/enumeration/remote/alerts"
 	"github.com/snyk/driftctl/enumeration/resource"
 )
 
@@ -17,38 +16,17 @@ type diagnosticImpl struct {
 	alert alerter.Alert
 }
 
-func (d *diagnosticImpl) Code() string {
-	if _, ok := d.alert.(*alerts.RemoteAccessDeniedAlert); ok {
-		return "ACCESS_DENIED"
-	}
-	return "UNKNOWN_ERROR"
-}
+func (d *diagnosticImpl) Code() string { _ = "STUB: not implemented"; return "" }
 
-func (d *diagnosticImpl) Message() string {
-	return d.alert.Message()
-}
+func (d *diagnosticImpl) Message() string { _ = "STUB: not implemented"; return "" }
 
-func (d *diagnosticImpl) ResourceType() string {
-	ty := ""
-	if d.Resource() != nil {
-		ty = d.Resource().ResourceType()
-	}
-	return ty
-}
+func (d *diagnosticImpl) ResourceType() string { _ = "STUB: not implemented"; return "" }
 
-func (d *diagnosticImpl) Resource() *resource.Resource {
-	return d.alert.Resource()
-}
+func (d *diagnosticImpl) Resource() *resource.Resource { _ = "STUB: not implemented"; return nil }
 
 type Diagnostics []Diagnostic
 
 func FromAlerts(alertMap alerter.Alerts) Diagnostics {
-	var results Diagnostics
-	for _, v := range alertMap {
-		for _, alert := range v {
-			diag := &diagnosticImpl{alert}
-			results = append(results, diag)
-		}
-	}
-	return results
+	_ = "STUB: not implemented"
+	return *new(Diagnostics)
 }
